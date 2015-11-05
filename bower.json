@@ -3,7 +3,11 @@
   "version": "0.0.1",
   "private": "true",
   "dependencies": {
-    "foundation": "zurb/bower-foundation"
+    "foundation": "zurb/bower-foundation",
+    "viewport-units-buggyfill": "~0.5.5",
+    "vunit": "~0.2.0",
+    "element-inviewport": "~2.0.1",
+    "jquery": "~2.1.4"
   },
   "resolutions": {
     "jquery-placeholder": "~2.1.3",

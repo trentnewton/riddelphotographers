@@ -1,0 +1,14 @@
+{
+  "minify": false,
+  "options": [
+    "domPrefixes",
+    "prefixes",
+    "prefixed",
+    "prefixedCSS",
+    "prefixedCSSValue",
+    "setClasses"
+  ],
+  "feature-detects": [
+    "test/css/vhunit"
+  ]
+}
