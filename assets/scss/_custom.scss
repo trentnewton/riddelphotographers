@@ -138,7 +138,7 @@ svg {
 	background-color: $tabbar-menu-icon-color;
 	margin-bottom: rem-calc(4);
 	transition:
-		transform 0.4s cubic-bezier(1, 0, 0, 1) 0,
+		transform $transition-time cubic-bezier(1, 0, 0, 1) 0,
 		background-color 0.6s ease 0;
 }
 
@@ -238,7 +238,6 @@ svg {
 .main-header {
 	padding: rem-calc(90 0);
 	@extend .centre-align;
-	color: $secondary-color;
 	position: relative;
 }
 
