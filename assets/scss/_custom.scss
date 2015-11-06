@@ -248,18 +248,26 @@ svg {
 	width: rem-calc(717);
 	height: rem-calc(338);
 
-	@media #{$small-only} {
-		width: 100%;
-		height: auto;
+	@media #{$small-portrait} {
+    	width: rem-calc(570);
+    	height: auto;
+    	top: rem-calc(-30);
+	}
+
+	@media #{$small-landscape} {
+		left: -7%;
+    	max-width: 65%;
+    	height: auto;
+    	top: rem-calc(-30);
 	}
 
 	@media only screen 
-    	and (min-device-width: 414px) 
-    	and (max-device-width: 960px) 
-    	and (orientation: landscape) {
+    and (min-device-width : 387px)
+    and (max-device-width : 41.6875em)
+    and (orientation : landscape) {
     	left: -7%;
     	width: 65%;
-    	height: auto;
+    	height: 65%;
     	top: rem-calc(-30);
     }
 
@@ -272,10 +280,14 @@ svg {
 	transform: translateX(50%);
 	margin: rem-calc(90 0);
 
-	@media only screen 
-		and (min-device-width: 414px) 
-    	and (max-device-width: 960px) 
-    	and (orientation: landscape) {
+	@media #{$small-only} {
+    	margin: rem-calc(30 0);
+    }
+
+    @media only screen 
+    and (min-device-width : 23.4375em)
+    and (max-device-width : 1024px)
+    and (orientation : landscape) {
     	margin: rem-calc(30 0);
     }
 
@@ -283,6 +295,17 @@ svg {
 
 .scroll-down {
 	font-size: rem-calc(60);
+
+	@media #{$small-only} {
+		font-size: rem-calc(40);
+	}
+
+	@media only screen 
+    and (min-device-width : 23.4375em)
+    and (max-device-width : 41.6875em)
+    and (orientation : landscape) {
+    	font-size: rem-calc(40);
+    }
 
 	a {
 		color: $secondary-color;
