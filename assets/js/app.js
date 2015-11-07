@@ -1,3 +1,15 @@
+new vUnit({
+  CSSMap: {
+    // The selector (VUnit will create rules ranging from .selector1 to .selector100)
+    '.vh_height': {
+      // The CSS property (any CSS property that accepts px as units)
+      property: 'height',
+      // What to base the value on (vh, vw, vmin or vmax)
+      reference: 'vh'
+    }
+  },
+}).init(); // call the public init() method
+
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
 $(document).foundation();
@@ -28,14 +40,30 @@ $(function() {
   });
 });
 
-new vUnit({
-  CSSMap: {
-    // The selector (VUnit will create rules ranging from .selector1 to .selector100)
-    '.vh_height': {
-      // The CSS property (any CSS property that accepts px as units)
-      property: 'height',
-      // What to base the value on (vh, vw, vmin or vmax)
-      reference: 'vh'
-    }
-  },
-}).init(); // call the public init() method
+
+function showOverlay() {
+  /*
+  In this example I used onScreen to animate the posts as
+  they become visible. I set the tolerance to 50 so the posts
+  start animating once they're 50px inside the viewport.
+  */       
+  $('div.overlay').onScreen({
+    doIn: function() {
+      $(this).animate({
+        opacity: 1
+      },600);
+    },
+    doOut: function() {
+      $(this).animate({
+        opacity: 0
+      },600);
+    },
+    tolerance: 450
+  });
+}
+
+
+// Document ready
+$(function() {
+  showOverlay();
+});
