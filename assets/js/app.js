@@ -1,3 +1,5 @@
+// creat class for viewport measurements
+
 new vUnit({
   CSSMap: {
     // The selector (VUnit will create rules ranging from .selector1 to .selector100)
@@ -13,6 +15,9 @@ new vUnit({
 // Foundation JavaScript
 // Documentation can be found at: http://foundation.zurb.com/docs
 $(document).foundation();
+
+
+// hamburger icon animation
 
 $(function() {
 	$(".right-off-canvas-toggle, .exit-off-canvas").click(function() {
@@ -40,30 +45,27 @@ $(function() {
   });
 });
 
+// animate elements when in the viewport
 
-function showOverlay() {
-  /*
-  In this example I used onScreen to animate the posts as
-  they become visible. I set the tolerance to 50 so the posts
-  start animating once they're 50px inside the viewport.
-  */       
+function showOverlay() {   
   $('div.overlay').onScreen({
     doIn: function() {
       $(this).animate({
         opacity: 1
-      },600);
+      },800);
     },
     doOut: function() {
       $(this).animate({
         opacity: 0
-      },600);
+      },800);
     },
-    tolerance: 450
+    tolerance: 290
   });
 }
 
 
 // Document ready
+
 $(function() {
   showOverlay();
 });
