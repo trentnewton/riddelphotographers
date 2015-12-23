@@ -12,25 +12,30 @@ new vUnit({
   },
 }).init(); // call the public init() method
 
-// Foundation JavaScript
-// Documentation can be found at: http://foundation.zurb.com/docs
-$(document).foundation();
+// start foundation
 
+$(document).foundation();
 
 // hamburger icon animation
 
 $(function() {
-	$(".right-off-canvas-toggle, .exit-off-canvas").click(function() {
-    	$(".top-bar").toggleClass("top-bar-close");
-		$(".middle-bar").toggleClass("middle-bar-close");
-		$(".bottom-bar").toggleClass("bottom-bar-close");
-  	});
-});
+  "use strict";
 
+  $('.hamburger').on('click', function() {
+    $(this).toggleClass('open');
+  });
+
+  $('.js-off-canvas-exit').on('click', function() {
+    $('.hamburger').toggleClass('open');
+  });
+
+});
 
 // scroll to sections
 
 $(function() {
+  "use strict";
+
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
       var target = $(this.hash);
@@ -45,27 +50,63 @@ $(function() {
   });
 });
 
-// animate elements when in the viewport
-
-function showOverlay() {   
-  $('div.overlay').onScreen({
-    doIn: function() {
-      $(this).animate({
-        opacity: 1
-      },800);
-    },
-    doOut: function() {
-      $(this).animate({
-        opacity: 0
-      },800);
-    },
-    tolerance: 290
-  });
-}
-
-
-// Document ready
+// home page sliding content
 
 $(function() {
-  showOverlay();
+  "use strict";
+
+  $('#weddings .main-slide a').on('click', function(){
+      $('#weddings .slides-container').addClass('slide-on');
+  });
+
+  $('#weddings .back-link a').on('click', function(){
+      $('#weddings .slides-container').removeClass('slide-on');
+  });
+
+  $('#engagements .main-slide a').on('click', function(){
+      $('#engagements .slides-container').removeClass('slide-on');
+  });
+
+  $('#engagements .back-link a').on('click', function(){
+      $('#engagements .slides-container').addClass('slide-on');
+  });
+
+  $('#families .main-slide a').on('click', function(){
+      $('#families .slides-container').addClass('slide-on');
+  });
+
+  $('#families .back-link a').on('click', function(){
+      $('#families .slides-container').removeClass('slide-on');
+  });
+
+  $('#personal .main-slide a').on('click', function(){
+      $('#personal .slides-container').removeClass('slide-on');
+  });
+
+  $('#personal .back-link a').on('click', function(){
+      $('#personal .slides-container').addClass('slide-on');
+  });
+
 });
+
+// Initialize masonry grid
+
+$(window).on('load', function(){
+  "use strict";
+
+  // init Masonry
+  var $grid = $('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-item',
+    percentPosition: true
+  });
+
+  // layout Masonry after each image loads
+  $grid.imagesLoaded().progress( function() {
+    $grid.masonry('layout');
+  });
+
+});
+
+
+	

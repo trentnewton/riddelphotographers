@@ -1,0 +1,41 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing || Riddel Photographers</title>
+    <link rel="stylesheet" href="/riddelphotographers/assets/css/app.css" />
+  </head>
+	<body class="pricing-page">
+		<?php include("partials/svg.php"); ?>
+    <!--[if lte IE 9]><p class="old-browser-notice">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> to experience this site.</p><![endif]-->
+    <div id="top" class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <?php include("partials/page-header.php"); ?>
+          <main class="regular-page">
+            <div class="row">
+              <div class="column">
+                <header class="page-title">
+                  <h1>Pricing</h1>
+                  <svg class="title-flourish"><use xlink:href="#title-flourish"></use></svg>
+                </header>
+              </div>
+            </div>
+            <section class="split-boxes" data-equalizer data-equalize-on="large">
+              <div class="columns medium-6 collapse split-box-left" data-equalizer-watch>
+                <div class="row-split">
+                  <div class="content">
+                    <p>We love to tell stories!</p>
+                    <p>Nick and I both strongly believe that your wedding day should be just that and nothing else! It is a day that you get to share with friends and family as you celebrate just how in love you are and we never want to get in the way of that! When we shoot a wedding, we take more of a documentary type of approach where we aim to capture your special moments in their truest form.</p>
+                    <p>Wedding coverage starts at $2000. If you are interested in having us as your wedding photographers or you’d like to see our full price list, then head over to our <a href="/riddelphotographers/contact.php">contact page</a> and send us a quick email to tell us all about your day!</p>
+                    <p>Family shoots, portraits, engagement shoots and newborns all start at $250.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="columns medium-6 collapse split-box-right" data-equalizer-watch>
+              </div>
+            </section>
+          </main>
+    <?php include("partials/footer.php"); ?>
+	</body>
+</html>

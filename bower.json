@@ -1,15 +1,27 @@
 {
-  "name": "foundation-compass-app",
-  "version": "0.0.1",
-  "private": "true",
+  "name": "foundation-sites-template",
+  "version": "1.0.0",
+  "authors": [
+    "ZURB <foundation@zurb.com>"
+  ],
+  "description": "Basic template for a new Foundation for Sites project.",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://foundation.zurb.com",
   "dependencies": {
-    "foundation": "zurb/bower-foundation",
+    "foundation-sites": "~6.0.0",
+    "motion-ui": "~1.1.0",
     "vunit": "~0.2.0",
-    "jquery": "~2.1.4",
-    "animate.css-scss": "~3.1.0",
-    "onScreen": "*",
+    "slick-carousel": "~1.5.9",
+    "jquery-migrate-official": "~1.2.1",
+    "masonry": "~3.3.2"
   },
-  "resolutions": {
-    "jquery-placeholder": "~2.1.3",
-  }
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
 }
