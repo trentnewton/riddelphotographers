@@ -4796,6 +4796,11 @@ svg {
       -ms-transform: translateX(-50%) translateY(-50%) scale(1);
           transform: translateX(-50%) translateY(-50%) scale(1); }
 
+.logo-link:hover:after, .logo-link:focus:after,
+.scroll-down:hover:after,
+.scroll-down:focus:after {
+  opacity: 0.5; }
+
 .scroll-down:before {
   top: 57%;
   left: 50%;
@@ -4804,7 +4809,7 @@ svg {
 
 .logo-link:before, .logo-link:after {
   left: 50%;
-  top: 32%;
+  top: 34%;
   z-index: -1; }
   @media screen and (min-width: 0em) and (max-width: 39.9375em) {
     .logo-link:before, .logo-link:after {
@@ -5131,7 +5136,11 @@ svg {
   margin-top: 5.625rem;
   margin-bottom: 5.625rem;
   font-size: 2.5rem;
-  line-height: 1.1; }
+  line-height: 1.1;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto; }
   @media screen and (min-width: 0em) and (max-width: 39.9375em) and (orientation: portrait) {
     .gallery-page-header {
       margin-top: 0; } }
@@ -5155,11 +5164,7 @@ svg {
 
 .page-title {
   text-align: center;
-  margin-bottom: 1.875rem;
-  -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto; }
+  margin-bottom: 1.875rem; }
 
 .title-flourish {
   width: 6.25rem;

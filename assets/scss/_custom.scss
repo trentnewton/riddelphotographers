@@ -345,6 +345,10 @@ svg {
 			opacity: 1;
 			transform: translateX(-50%) translateY(-50%) scale(1);
 		}
+
+		&:after {
+			opacity: 0.5;
+		}
 		
   }
 
@@ -366,7 +370,7 @@ svg {
 	&:before,
 	&:after {
 		left: 50%;
-		top: 32%;
+		top: 34%;
 		z-index: -1;
 
 		@include breakpoint(small only) {
@@ -886,6 +890,7 @@ svg {
 	margin-bottom: rem-calc(90);
 	font-size: header-size(medium, h2);
 	line-height: 1.1;
+	hyphens: auto;
 
 	@include small-portrait {
 		margin-top: 0;
@@ -921,7 +926,6 @@ svg {
 .page-title {
 	text-align: center;
 	margin-bottom: rem-calc(30);
-	hyphens: auto;
 }
 
 .title-flourish {
