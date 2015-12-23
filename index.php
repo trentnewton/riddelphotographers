@@ -183,9 +183,9 @@
                 <div class="back-link"><a href="#click">Back <svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg></a></div>
                 <div class="row collapse">
                   <div class="medium-4 columns first-section">
-                    <a href="#" class="section-overlay-link">
+                    <a href="#" class="grid-overlay-link">
                       <div class="first-image"></div>
-                      <div class="section-overlay">
+                      <div class="grid-overlay">
                         <h3>Essence</h3>
                       </div>
                     </a>
@@ -193,17 +193,17 @@
                   <div class="medium-4 columns second-section">
                     <div class="row collapse">
                       <div class="column">
-                        <a href="#" class="section-overlay-link">
+                        <a href="#" class="grid-overlay-link">
                           <div class="second-image"></div>
-                          <div class="section-overlay">
+                          <div class="grid-overlay">
                             <h3>Indication</h3>
                           </div>
                         </a>
                       </div>
                       <div class="column">
-                        <a href="#" class="section-overlay-link">
+                        <a href="#" class="grid-overlay-link">
                           <div class="third-image"></div>
-                          <div class="section-overlay">
+                          <div class="grid-overlay">
                             <h3>Festival</h3>
                           </div>
                         </a>
@@ -211,9 +211,9 @@
                     </div>
                   </div>
                   <div class="medium-4 columns third-section">
-                    <a href="#" class="section-overlay-link">
+                    <a href="#" class="grid-overlay-link">
                       <div class="fourth-image"></div>
-                      <div class="section-overlay">
+                      <div class="grid-overlay">
                         <h3>Formal</h3>
                       </div>
                     </a>
