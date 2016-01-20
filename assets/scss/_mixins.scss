@@ -1,0 +1,54 @@
+// global mixins
+
+@mixin vertical-center-relative {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@mixin horizontal-center-relative {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@mixin absolute-center-relative {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin full-bg-img {
+	background-size: cover;
+	background-position: center;
+}
+
+@mixin full-width-height {
+	width: 100%;
+	height: 100%;
+}
+
+@mixin small-portrait {
+  @media screen and (min-width: -zf-bp-to-em($small)) and (max-width: -zf-bp-to-em($medium - 1px)) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin small-landscape {
+  @media screen and (min-width: -zf-bp-to-em($small)) and (max-width: -zf-bp-to-em($medium - 1px)) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin medium-portrait {
+  @media screen and (min-width: -zf-bp-to-em($medium)) and (max-width: -zf-bp-to-em($large - 1px)) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin medium-landscape {
+  @media screen and (min-width: -zf-bp-to-em($medium)) and (max-width: -zf-bp-to-em($large - 1px)) and (orientation: landscape) {
+    @content;
+  }
+}

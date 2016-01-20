@@ -46,6 +46,14 @@
 @include motion-ui-animations;
 
 @import 'slick';
-// @import 'slick-theme';
-
-@import 'custom';
+@import 'slick-theme';
+@import 'mixins';
+@import 'main-styles';
+@import 'forms';
+@import 'animations';
+@import 'off-canvas-menu';
+@import 'header';
+@import 'home-page';
+@import 'gallery-styles';
+@import 'page-styles';
+@import 'footer';

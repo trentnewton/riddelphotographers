@@ -1,11 +1,15 @@
 <?php include("side-navigation.php"); ?>
-<div class="off-canvas-content" data-off-canvas-content>
-  <header class="page-header">
-    <div class="main-elements">
-      <a class="logo-link" title="Home" href="/riddelphotographers/">
-        <img class="main-logo" src="/riddelphotographers/assets/images/logo.png" alt="Riddel Photographers">
-      </a>
-      <?php include("navigation.php"); ?>
-    </div>
-    <button type="button" class="hamburger" data-toggle="offCanvasRight"></button>
-  </header>
+<div class="off-canvas-content gallery-page-header-background" data-off-canvas-content>
+	<header class="top-navigation">
+		<div class="top-navigation-left">
+			<a class="logo-link" title="Home" href="/riddelphotographers/">
+				<img class="main-logo" src="/riddelphotographers/assets/images/logo.png" alt="Riddel Photographers">
+	    	</a>
+		</div>
+		<div class="top-navigation-right">
+			<?php include("navigation.php"); ?>
+		</div>
+		<button class="hamburger" type="button" data-toggle="offCanvasRight">
+			<span class="bar"></span>
+		</button>
+	</header>

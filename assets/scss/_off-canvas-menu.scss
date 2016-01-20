@@ -1,0 +1,102 @@
+// off-canvas menu
+
+.hamburger {
+	transition: 0.1s transform linear;
+	position: absolute;
+	top: rem-calc(12);
+	right: rem-calc(12);
+	height: rem-calc(43);
+	width: rem-calc(56);
+	z-index: 99999;
+	outline: 0;
+	padding: 0;
+	border: 0;
+	@extend .hide-for-large;
+}
+
+.bar {
+	&, 
+	&::before, 
+	&::after {
+		transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
+		position: absolute;
+		background: $primary-color;
+		margin: auto;
+		width: 100%;
+		height: rem-calc(4);
+		content: '';
+		top: 50%;
+		left: 0;
+	}
+
+	& {
+		margin-top: rem-calc(-3);
+	}
+
+	&::before {
+		top: rem-calc(-19);
+	}
+
+	&::after {
+		top: rem-calc(19);
+	}
+
+	&::before,
+	&::after {
+		transform: rotate(0deg);
+	}
+
+	.active & {
+		background: 0;
+
+		&::before {
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+		}
+
+		&::before,
+		&::after {
+			top: 0;
+		}
+
+		&,
+		&::before,
+		&::after {
+			transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
+		}
+
+	}
+
+}
+
+.off-canvas.position-right {
+	padding: rem-calc(48);
+	height: 100%;
+}
+
+.side-nav {
+
+	a {
+		font-weight: 300;
+		font-style: normal;
+		font-size: header-size(medium, h1);
+		color: $white;
+		text-transform: capitalize;
+		display: table;
+		white-space: nowrap;
+
+		@include breakpoint(small only) {
+			font-size: header-size(medium, h3);
+		}
+
+		.active,
+		&:hover {
+			color: $primary-color-50-lighter;
+		}
+
+	}
+
+}

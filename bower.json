@@ -14,7 +14,9 @@
     "vunit": "~0.2.0",
     "slick-carousel": "~1.5.9",
     "jquery-migrate-official": "~1.2.1",
-    "masonry": "~3.3.2"
+    "masonry": "~3.3.2",
+    "jquery-migrate": "~1.2.1",
+    "imagesloaded": "~4.1.0"
   },
   "ignore": [
     "**/.*",

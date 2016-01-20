@@ -12,29 +12,48 @@ new vUnit({
   },
 }).init(); // call the public init() method
 
-// start foundation
+(function($) {
 
-$(document).foundation();
-
-// hamburger icon animation
-
-$(function() {
   "use strict";
 
+  // start foundation
+
+  $(document).foundation();
+
+  // hamburger icon animation
+
   $('.hamburger').on('click', function() {
-    $(this).toggleClass('open');
+    $(this).toggleClass('active');
   });
 
   $('.js-off-canvas-exit').on('click', function() {
-    $('.hamburger').toggleClass('open');
+    $('.hamburger').toggleClass('active');
   });
 
-});
+  // slick slider for home page
 
-// scroll to sections
+  $(document).ready(function(){
 
-$(function() {
-  "use strict";
+    $('.gallery-main').slick({
+      dots: false,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 1,
+      variableWidth: true
+    });
+
+    // detect portrait photos and add class
+
+    $('.image-items-list').find('img').each(function(i,elem){
+      var $this = $(this),
+          ratio = $this.width() / $this.height();
+
+      $this.addClass((ratio < 1) ? 'portrait' : 'landscape');
+    });
+
+  });
+
+  // scroll to sections
 
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
@@ -48,65 +67,47 @@ $(function() {
       }
     }
   });
-});
 
-// home page sliding content
+  // home page sliding content
 
-$(function() {
-  "use strict";
-
-  $('#weddings .main-slide a').on('click', function(){
-      $('#weddings .slides-container').addClass('slide-on');
+  $('#weddings .main-slide .gallery-trigger').on('click', function(){
+    $('#weddings .gallery-container').toggleClass('mover-over');
+    $('#weddings .main-background').fadeToggle(1000);
+    $('#weddings .main-title').fadeToggle(1000);
   });
 
-  $('#weddings .back-link a').on('click', function(){
-      $('#weddings .slides-container').removeClass('slide-on');
+  $('#engagements .main-slide .gallery-trigger').on('click', function(){
+    $('#engagements .gallery-container').toggleClass('mover-over');
+    $('#engagements .main-background').fadeToggle(1000);
+    $('#engagements .main-title').fadeToggle(1000);
   });
 
-  $('#engagements .main-slide a').on('click', function(){
-      $('#engagements .slides-container').removeClass('slide-on');
+  $('#families .main-slide .gallery-trigger').on('click', function(){
+    $('#families .gallery-container').toggleClass('mover-over');
+    $('#families .main-background').fadeToggle(1000);
+    $('#families .main-title').fadeToggle(1000);
   });
 
-  $('#engagements .back-link a').on('click', function(){
-      $('#engagements .slides-container').addClass('slide-on');
+  $('#personal .main-slide .gallery-trigger').on('click', function(){
+    $('#personal .gallery-container').toggleClass('mover-over');
+    $('#personal .main-background').fadeToggle(1000);
+    $('#personal .main-title').fadeToggle(1000);
   });
 
-  $('#families .main-slide a').on('click', function(){
-      $('#families .slides-container').addClass('slide-on');
+  // trigger extra fields for contact form
+
+  $('#k-contact-form-19c2105d7fabb39e6dced86cb0563667-k-contact-field-6').parent().addClass( "disappear" );
+  $('#k-contact-form-19c2105d7fabb39e6dced86cb0563667-k-contact-field-7').parent().addClass( "disappear" );
+
+  $('#k-contact-form-19c2105d7fabb39e6dced86cb0563667-k-contact-field-2').change(function(){
+    if($(this).is(":checked")) {
+      $('#k-contact-form-19c2105d7fabb39e6dced86cb0563667-k-contact-field-6').parent().addClass("show");
+      $('#k-contact-form-19c2105d7fabb39e6dced86cb0563667-k-contact-field-7').parent().addClass("show");
+    } else {
+      $('#k-contact-form-19c2105d7fabb39e6dced86cb0563667-k-contact-field-6').parent().removeClass("show");
+      $('#k-contact-form-19c2105d7fabb39e6dced86cb0563667-k-contact-field-7').parent().removeClass("show");
+    }
   });
 
-  $('#families .back-link a').on('click', function(){
-      $('#families .slides-container').removeClass('slide-on');
-  });
-
-  $('#personal .main-slide a').on('click', function(){
-      $('#personal .slides-container').removeClass('slide-on');
-  });
-
-  $('#personal .back-link a').on('click', function(){
-      $('#personal .slides-container').addClass('slide-on');
-  });
-
-});
-
-// Initialize masonry grid
-
-$(window).on('load', function(){
-  "use strict";
-
-  // init Masonry
-  var $grid = $('.grid').masonry({
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-item',
-    percentPosition: true
-  });
-
-  // layout Masonry after each image loads
-  $grid.imagesLoaded().progress( function() {
-    $grid.masonry('layout');
-  });
-
-});
-
-
+})(jQuery);
 	
