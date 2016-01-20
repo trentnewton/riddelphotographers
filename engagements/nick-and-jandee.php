@@ -21,15 +21,15 @@
                 <p>Nick and Jandee Portraits.</p>
                 <p>“The best love is the kind that awakens the soul; that makes us reach for more, that plants the fire in our hearts and brings peace to our minds. That’s what I hope to give you forever.” The Notebook</p>
               </div>
-            </div>
-            <div class="image-items-list">
-              <img src="/riddelphotographers/uploads/engagements/4/IMG_92151.jpg">
-              <img src="/riddelphotographers/uploads/engagements/4/IMG_92351.jpg">
-              <img src="/riddelphotographers/uploads/engagements/4/IMG_94231.jpg">
-              <img src="/riddelphotographers/uploads/engagements/4/IMG_94751.jpg">
-              <img src="/riddelphotographers/uploads/engagements/4/IMG_95001.jpg">
-              <img src="/riddelphotographers/uploads/engagements/4/IMG_95002.jpg">
-              <img src="/riddelphotographers/uploads/engagements/4/IMG_95381.jpg">
+              <div class="image-items-list">
+                <img src="/riddelphotographers/uploads/engagements/4/IMG_92151.jpg">
+                <img src="/riddelphotographers/uploads/engagements/4/IMG_92351.jpg">
+                <img src="/riddelphotographers/uploads/engagements/4/IMG_94231.jpg">
+                <img src="/riddelphotographers/uploads/engagements/4/IMG_94751.jpg">
+                <img src="/riddelphotographers/uploads/engagements/4/IMG_95001.jpg">
+                <img src="/riddelphotographers/uploads/engagements/4/IMG_95002.jpg">
+                <img src="/riddelphotographers/uploads/engagements/4/IMG_95381.jpg">
+              </div>
             </div>
           </main>
     <?php include("../partials/footer.php"); ?>
