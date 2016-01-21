@@ -94,11 +94,21 @@ $slick-opacity-not-active: 0.25 !default;
 .slick-prev {
     left: rem-calc(30);
     transform: translate(0, -50%) rotate(90deg);
+
+    @include breakpoint(small only) {
+        left: rem-calc(10);
+    }
+
 }
 
 .slick-next {
     right: rem-calc(30);
     transform: translate(0, -50%) rotate(-90deg);
+
+    @include breakpoint(small only) {
+        right: rem-calc(10);
+    }
+
 }
 
 // /* Dots */

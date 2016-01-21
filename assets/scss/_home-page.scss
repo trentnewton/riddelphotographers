@@ -21,12 +21,12 @@
 .gallery-container {
 	height: rem-calc(400);
 
-	@include breakpoint(small only) {
-		height: rem-calc(200);
-	}
+	// @media screen and ( max-height: -zf-bp-to-em(500) ){
+	//     height: rem-calc(200);
+	// }
 
-	@media screen and ( max-height: -zf-bp-to-em(500) ){
-	    height: rem-calc(200);
+	@include breakpoint(small only) {
+		height: rem-calc(250);
 	}
 
 }
@@ -91,12 +91,12 @@
 	img {
 		height: rem-calc(400);
 
-		@include breakpoint(small only) {
-			height: rem-calc(200);
-		}
+		// @media screen and ( max-height: -zf-bp-to-em(500) ){
+		//     height: rem-calc(200);
+		// }
 
-		@media screen and ( max-height: -zf-bp-to-em(500) ){
-		    height: rem-calc(200);
+		@include breakpoint(small only) {
+			height: rem-calc(250);
 		}
 
 	}
