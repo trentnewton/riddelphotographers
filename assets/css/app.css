@@ -4637,10 +4637,10 @@ table.hover tr:nth-of-type(even):hover {
 
 .animsition-loading {
   background-color: transparent;
-  border-top: 5px solid rgba(0, 0, 0, 0.2);
-  border-right: 5px solid rgba(0, 0, 0, 0.2);
-  border-bottom: 5px solid rgba(0, 0, 0, 0.2);
-  border-left: 5px solid #eee;
+  border-top: 5px solid rgba(254, 191, 77, 0.2);
+  border-right: 5px solid rgba(254, 191, 77, 0.2);
+  border-bottom: 5px solid rgba(254, 191, 77, 0.2);
+  border-left: 5px solid #febf4d;
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   -webkit-animation-iteration-count: infinite;
