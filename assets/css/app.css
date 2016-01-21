@@ -6198,7 +6198,7 @@ select:focus {
   -webkit-transition: 0.1s transform linear;
   transition: 0.1s transform linear;
   position: absolute;
-  top: 0.75rem;
+  top: 2rem;
   right: 0.75rem;
   height: 2.6875rem;
   width: 3.5rem;
@@ -6427,6 +6427,11 @@ select:focus {
   width: 11.875rem;
   height: 11.875rem; }
 
+.main-page-header {
+  position: relative;
+  height: 8.125rem;
+  padding: 1.25rem 1.25rem 10.625rem; }
+
 .page-header {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -6465,9 +6470,7 @@ select:focus {
           color: #febf4d; }
 
 .top-navigation {
-  position: relative;
-  height: 8.125rem;
-  margin: 1.25rem 1.25rem 3.75rem; }
+  position: relative; }
   .top-navigation .top-navigation-left,
   .top-navigation .top-navigation-right {
     position: absolute; }

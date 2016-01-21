@@ -178,6 +178,12 @@
 	
 }
 
+.main-page-header {
+	position: relative;
+	height: rem-calc(130);
+	padding: rem-calc(20 20 170);
+}
+
 .page-header {
 	padding-top: rem-calc(48);
 	padding-bottom: rem-calc(48);
@@ -233,9 +239,6 @@
 
 .top-navigation {
 	position: relative;
-	height: rem-calc(130);
-	margin: rem-calc(20 20 60);
-
 
 	.top-navigation-left,
 	.top-navigation-right {
