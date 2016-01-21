@@ -9,7 +9,7 @@
   <body>
     <?php include("../partials/svg.php"); ?>
     <!--[if lte IE 9]><p class="old-browser-notice">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> to experience this site.</p><![endif]-->
-    <div id="top" class="off-canvas-wrapper">
+    <div id="top" class="off-canvas-wrapper animsition">
       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <?php include("../partials/page-header.php"); ?>
           <main class="gallery-page">
