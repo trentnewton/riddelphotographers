@@ -12,5 +12,7 @@
         </a>
       </div>
     </div>
-    <button type="button" class="hamburger" data-toggle="offCanvasRight"></button>
+    <button class="hamburger" type="button" data-toggle="offCanvasRight">
+      <span class="bar"></span>
+    </button>
   </header>
