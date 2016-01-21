@@ -83,7 +83,7 @@
               <a class="gallery-trigger" href="#click">
                 <div class="main-title">
                     <h2>
-                      <img src="/riddelphotographers/assets/images/engagements-title.png" alt="Weddings">
+                      <img src="/riddelphotographers/assets/images/engagements-title.png" alt="Engagements">
                       <svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg>
                     </h2>
                 </div>
@@ -141,7 +141,7 @@
               <a class="gallery-trigger" href="#click">
                 <div class="main-title">
                     <h2>
-                      <img src="/riddelphotographers/assets/images/families-title.png" alt="Weddings">
+                      <img src="/riddelphotographers/assets/images/families-title.png" alt="Families">
                       <svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg>
                     </h2>
                 </div>
@@ -191,7 +191,7 @@
               <a class="gallery-trigger" href="#click">
                 <div class="main-title">
                     <h2>
-                      <img src="/riddelphotographers/assets/images/personal-title.png" alt="Weddings">
+                      <img src="/riddelphotographers/assets/images/personal-title.png" alt="Personal">
                       <svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg>
                     </h2>
                 </div>

@@ -6768,7 +6768,7 @@ select:focus {
 .split-box-right {
   position: relative;
   z-index: 1;
-  min-height: 39.6875rem; }
+  min-height: 40.3125rem; }
 
 .split-box-left .row-split {
   float: right; }
