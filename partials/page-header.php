@@ -1,6 +1,6 @@
 <?php include("side-navigation.php"); ?>
 <div class="off-canvas-content gallery-page-header-background" data-off-canvas-content>
-	<header class="main-page-header">
+	<header class="main-page-header" itemscope itemtype="http://schema.org/WPHeader">
 		<div class="top-navigation">
 			<div class="top-navigation-left">
 				<a class="logo-link" title="Home" href="/riddelphotographers/">

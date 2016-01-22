@@ -1,4 +1,4 @@
-      <footer class="main-footer">
+      <footer class="main-footer" itemscope itemtype="http://schema.org/WPFooter">
         <p>&copy; 2016 Riddel Photographers</p>
         <nav class="footer-nav">
           <a href="#" target="_blank"><svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg></a>

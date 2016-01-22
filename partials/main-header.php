@@ -1,6 +1,6 @@
 <?php include("side-navigation.php"); ?>
 <div class="off-canvas-content" data-off-canvas-content>
-  <header class="main-header vh_height100">
+  <header class="main-header vh_height100" itemscope itemtype="http://schema.org/WPHeader">
     <div class="main-elements">
       <a href="/riddelphotographers/">
         <img class="main-logo" src="/riddelphotographers/assets/images/logo.png" alt="Riddel Photographers">

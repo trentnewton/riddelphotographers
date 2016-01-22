@@ -1,5 +1,5 @@
 <nav class="off-canvas position-right" id="offCanvasRight" data-off-canvas="" data-position="right" aria-hidden="false">
-	<ul class="menu vertical side-nav">
+	<ul class="menu vertical side-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
 		<li><a href="/riddelphotographers/who-we-are.php" class="animsition-link">Who We Are</a></li>
 		<li><a href="/riddelphotographers/weddings/" class="animsition-link">Weddings</a></li>
 		<li><a href="/riddelphotographers/engagements/" class="animsition-link">Engagements</a></li>

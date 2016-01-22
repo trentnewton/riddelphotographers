@@ -12,7 +12,7 @@
     <div id="top" class="off-canvas-wrapper animsition">
       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <?php include("partials/page-header.php"); ?>
-          <main class="regular-page">
+          <main class="regular-page" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
             <div class="row column">
               <header class="gallery-page-header-container">
                 <h1 class="gallery-page-header">Who We Are</h1>

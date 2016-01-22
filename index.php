@@ -6,7 +6,7 @@
     <title>Riddel Photographers</title>
     <link rel="stylesheet" href="/riddelphotographers/assets/css/app.css" />
   </head>
-	<body>
+	<body itemscope itemtype="http://schema.org/WebPage">
 		<?php include("partials/svg.php"); ?>
     <!--[if lte IE 9]><p class="old-browser-notice">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> to experience this site.</p><![endif]-->
     <div id="top" class="off-canvas-wrapper animsition">
