@@ -61,7 +61,7 @@ new vUnit({
 
     $('.gallery-main').slick({
       dots: false,
-      infinite: false,
+      infinite: true,
       speed: 300,
       slidesToShow: 1,
       variableWidth: true

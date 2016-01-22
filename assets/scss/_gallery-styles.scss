@@ -141,14 +141,21 @@
 .image-items-list {
 
 	img {
+		margin-bottom: rem-calc(8);
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 		
 		&.portrait {
 			width: 50%;
 			float: left;
 		}
-
+		
+		&[alt*="landscape"],
 		&.landscape {
 			width: 100%;
+			float: none;
 		}
 
 	}
