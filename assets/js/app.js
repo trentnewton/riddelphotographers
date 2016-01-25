@@ -126,11 +126,11 @@ new vUnit({
 
   $('#k-contact-form-19c2105d7fabb39e6dced86cb0563667-k-contact-field-2').change(function(){
     if($(this).is(":checked")) {
-      $('#k-contact-form-19c2105d7fabb39e6dced86cb0563667-k-contact-field-6').parent().addClass("show");
-      $('#k-contact-form-19c2105d7fabb39e6dced86cb0563667-k-contact-field-7').parent().addClass("show");
+      $('#k-contact-form-19c2105d7fabb39e6dced86cb0563667-k-contact-field-6').parent().fadeIn('fast');
+      $('#k-contact-form-19c2105d7fabb39e6dced86cb0563667-k-contact-field-7').parent().fadeIn('fast');
     } else {
-      $('#k-contact-form-19c2105d7fabb39e6dced86cb0563667-k-contact-field-6').parent().removeClass("show");
-      $('#k-contact-form-19c2105d7fabb39e6dced86cb0563667-k-contact-field-7').parent().removeClass("show");
+      $('#k-contact-form-19c2105d7fabb39e6dced86cb0563667-k-contact-field-6').parent().fadeOut('fast');
+      $('#k-contact-form-19c2105d7fabb39e6dced86cb0563667-k-contact-field-7').parent().fadeOut('fast');
     }
   });
 

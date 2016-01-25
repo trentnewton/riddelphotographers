@@ -4,7 +4,7 @@
 	transition: 0.1s transform linear;
 	position: absolute;
 	top: rem-calc(32);
-	right: rem-calc(12);
+	right: rem-calc($grid-column-gutter / 2);
 	height: rem-calc(43);
 	width: rem-calc(56);
 	z-index: 99999;

@@ -19,7 +19,7 @@
               </header>
             </div>
             <section class="split-boxes">
-              <div class="columns medium-6 collapse split-box-left">
+              <div class="columns medium-6 split-box-left">
                 <div class="content">
                   <p>We love to tell stories!</p>
                   <p>Nick and I both strongly believe that your wedding day should be just that and nothing else! It is a day that you get to share with friends and family as you celebrate just how in love you are and we never want to get in the way of that! When we shoot a wedding, we take more of a documentary type of approach where we aim to capture your special moments in their truest form.</p>
@@ -27,7 +27,7 @@
                   <p>Family shoots, portraits, engagement shoots and newborns all start at $250.</p>
                 </div>
               </div>
-              <div class="columns medium-6 collapse split-box-right">
+              <div class="columns medium-6 split-box-right">
               </div>
             </section>
           </main>

@@ -19,7 +19,7 @@
               </header>
             </div>
             <section class="split-boxes">
-              <div class="columns medium-6 collapse split-box-left">
+              <div class="columns medium-6 split-box-left">
                 <div class="content">
                   <h2>SAY HELLO!</h2>
                   <p>For more information don't hesitate to get in touch.</p>
@@ -27,7 +27,7 @@
                   <p>Looking forward to hearing from you!</p>
                 </div>
               </div>
-              <div class="columns medium-6 collapse split-box-right">
+              <div class="columns column-collapse medium-6 split-box-right">
                 <div class="content">
                   <form>
                     <div class="row">

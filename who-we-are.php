@@ -19,7 +19,7 @@
               </header>
             </div>
             <section class="split-boxes">
-              <div class="columns medium-6 collapse split-box-left">
+              <div class="columns medium-6 split-box-left">
                 <div class="content">
                   <p>Helllooo I’m Paula.</p>
                   <p>At the age of 10 I remember walking past a photography studio in the city. A particular black and white image that hung in the window caught my attention and the desire to capture lives through a lens was birthed. My eagerness to pursue this as a career however soon took a backseat as I was determined to be different to my older sister who had chosen a similar path leaving school.</p>                  
@@ -27,7 +27,7 @@
                   <p>I get to share this with my husband Nick, who shoots with me which I think is pretty cool too!</p>
                 </div>
               </div>
-              <div class="columns medium-6 collapse split-box-right">
+              <div class="columns medium-6 split-box-right">
               </div>
             </section>
           </main>
