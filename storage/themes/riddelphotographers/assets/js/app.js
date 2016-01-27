@@ -12,6 +12,15 @@ new vUnit({
   },
 }).init(); // call the public init() method
 
+// for links that don't go anywhere
+
+addEventListener('click', function (ev) {
+  if (ev.target.classList.contains('no-link')) {
+    ev.preventDefault();
+    loadWithAjax(ev.target.href);
+  }   
+});
+
 (function($) {
 
   "use strict";
