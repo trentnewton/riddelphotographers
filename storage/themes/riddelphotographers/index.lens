@@ -26,7 +26,7 @@
 	<koken:loop>
 	<section id="{{ album.title }}" class="slides-container vh_height100">
         <div class="main-slide">
-          	<a class="gallery-trigger no-link" href="slide-over">
+          	<a class="gallery-trigger no-link" href="#move-over">
             	<div class="main-title">
                 	<h2>
                 		<img src="{{ location.theme_path }}/assets/images/{{ album.title }}-title.png" alt="{{ album.title }}">
