@@ -1,4 +1,4 @@
-// creat class for viewport measurements
+// create class for viewport measurements
 
 new vUnit({
   CSSMap: {
@@ -172,7 +172,7 @@ addEventListener('click', function (ev) {
   $('.k-contact-form-submit').addClass('row column');
   $('button[type="submit"]').addClass( 'button' );
 
-  // change social media tet links to icons
+  // change social media text links to icons
 
   $('.footer-nav a[title*="Facebook"]').html('<svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>');
   $('.footer-nav a[title*="Instagram"]').html('<svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>');
