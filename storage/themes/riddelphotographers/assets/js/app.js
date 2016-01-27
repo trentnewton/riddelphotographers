@@ -113,24 +113,28 @@ addEventListener('click', function (ev) {
     $('#Weddings .gallery-container').toggleClass('mover-over');
     $('#Weddings .main-background').fadeToggle(1000);
     $('#Weddings .main-title').fadeToggle(1000);
+    return false;
   });
 
   $('#Engagements .main-slide .gallery-trigger').on('click', function(){
     $('#Engagements .gallery-container').toggleClass('mover-over');
     $('#Engagements .main-background').fadeToggle(1000);
     $('#Engagements .main-title').fadeToggle(1000);
+    return false;
   });
 
   $('#Families .main-slide .gallery-trigger').on('click', function(){
     $('#Families .gallery-container').toggleClass('mover-over');
     $('#Families .main-background').fadeToggle(1000);
     $('#Families .main-title').fadeToggle(1000);
+    return false;
   });
 
   $('#Personal .main-slide .gallery-trigger').on('click', function(){
     $('#Personal .gallery-container').toggleClass('mover-over');
     $('#Personal .main-background').fadeToggle(1000);
     $('#Personal .main-title').fadeToggle(1000);
+    return false;
   });
 
   $(function(){
