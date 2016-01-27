@@ -154,13 +154,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/assets\/images\/personal-title.png": {
+	"\/assets\/images\/Personal-title.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 18239,
-		"inputAbbreviatedPath": "\/assets\/images\/personal-title.png",
-		"outputAbbreviatedPath": "\/assets\/images\/personal-title.png",
+		"initialSize": 17603,
+		"inputAbbreviatedPath": "\/assets\/images\/Personal-title.png",
+		"outputAbbreviatedPath": "\/assets\/images\/Personal-title.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
