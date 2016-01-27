@@ -1,7 +1,7 @@
 <koken:include file="partials/login-header.html" />
 		<main class="row">
-			<div class="medium-6 columns small-centered login-form">		
-				<koken:form>
+			<div class="medium-6 columns small-centered">
+				<koken:form class="login-form">
 					<h1><svg class="icon icon-key"><use xlink:href="#icon-key"></use></svg>&nbsp;Login</h1>
 					<koken:not empty="messages.koken_password_error">
 						<p class="error">

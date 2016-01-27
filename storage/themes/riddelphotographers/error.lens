@@ -1,10 +1,12 @@
 <koken:include file="partials/login-header.html" />
 		<main class="row">
-			<div class="medium-6 columns small-centered login-form">		
-				<h1>Error: {{ routed_variables.code }}</h1>
-				<div class="content">
-					<p>Something went wrong!</p>
-					<p><koken:link to="front" title="{{ labels.home.singular }}"><svg class="icon icon-home"><use xlink:href="#icon-home"></use></svg>&nbsp;Home</koken:link></p>
+			<div class="medium-6 columns small-centered login-form">
+				<div class="login-form">
+					<h1>Error: {{ routed_variables.code }}</h1>
+					<div class="content">
+						<p>Something went wrong!</p>
+						<p><koken:link to="front" title="{{ labels.home.singular }}"><svg class="icon icon-home"><use xlink:href="#icon-home"></use></svg>&nbsp;Home</koken:link></p>
+					</div>
 				</div>
 			</div>
 		</main>
