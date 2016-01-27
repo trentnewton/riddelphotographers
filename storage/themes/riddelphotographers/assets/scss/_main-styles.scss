@@ -1,0 +1,82 @@
+// main styles / reset
+
+a {
+	transition: all $transition-time;
+}
+
+::selection {
+	background: $primary-color;
+	color: $white;
+}
+
+figure {
+	margin: 0;
+}
+
+a,
+input,
+select,
+textarea,
+button {
+
+	&:focus {
+		outline: none;
+	}
+
+}
+
+svg {
+	vertical-align: middle;
+}
+
+.responsive-svg-container {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.responsive-svg {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.icon {
+	width: 1em;
+	height: 1em;
+}
+
+.ornament,
+.icon {
+	display: inline-block;
+	fill: currentColor;
+}
+
+.old-browser-notice {
+	text-align: center;
+	font-weight: $global-weight-bold;
+	padding-top: $paragraph-margin-bottom;
+	padding-bottom: $paragraph-margin-bottom;
+	background-color: $white;
+}
+
+.visual-hide {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
+.off-canvas-content {
+	background: inherit;
+}
+
+.disappear {
+	display: none;
+}
+
+.show {
+	opacity: 1;
+}
+
+.error {
+	color: $alert-color;
+}

@@ -1,0 +1,68 @@
+<koken:include file="partials/main-header.html" />
+
+<koken:load source="sets">
+
+	<koken:head>
+		<meta property="og:site_name" content="{{ site.title }}" />
+		<meta property="og:title" content="{{ site.title }}" />
+		<meta property="og:description" content="{{ site.description strip_html='true' }}" />
+		<meta property="og:type" content="website" />
+		<koken:first>
+		<meta property="og:image" content="{{ location.theme_path }}/assets/images/riddel-photographers-og.png" />
+		<meta property="og:image:width" content="250" />
+		<meta property="og:image:height" content="250" />
+		</koken:first>
+		<meta property="og:url" content="{{ location.site_url }}{{ location.here }}" />
+		<koken:not empty="profile.twitter">
+			<meta name="twitter:card" content="gallery" />
+			<meta name="twitter:site" content="@{{ profile.twitter }}" />
+			<meta name="twitter:creator" content="@{{ profile.twitter }}" />
+			<koken:loop limit="4">
+				<meta name="twitter:image{{ index }}" content="{{ content.presets.medium_large.cropped.url }}">
+			</koken:loop>
+		</koken:not>
+	</koken:head>
+
+	<koken:loop>
+	<section id="{{ album.title }}" class="slides-container vh_height100">
+        <div class="main-slide">
+          	<a class="gallery-trigger" href="#click">
+            	<div class="main-title">
+                	<h2>
+                		<img src="{{ location.theme_path }}/assets/images/{{ album.title }}-title.png" alt="{{ album.title }}">
+                  		<svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg>
+                	</h2>
+            	</div>
+          	</a>
+          	<div class="gallery-container">
+            	<button type="button" data-role="none" class="slick-prev slick-arrow gallery-trigger" aria-label="Previous" role="button" aria-disabled="true">Previous</button>
+	            <div class="gallery-main">
+	            <koken:load source="set" filter:id="{{ album.id }}">
+					<koken:loop>
+						<section class="gallery-item">
+							<koken:link title="View {{ album.title }}" class="grid-overlay-link">
+								<koken:img />
+								<div class="grid-overlay">
+			                     	<h3>{{ album.title }}</h3>
+			                    </div>
+							</koken:link>
+						</section>
+					</koken:loop>
+	            </koken:load>
+	            </div>
+          	</div>
+        </div>
+        <koken:background class="main-background"></koken:background>
+	</section>
+	</koken:loop>
+
+	<koken:else>
+
+		<!-- Display fallback message in Site editor only -->
+		<koken:note>
+			No public albums found
+		</koken:note>
+
+</koken:load>
+
+<koken:include file="partials/footer.html" />

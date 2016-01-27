@@ -1,0 +1,97 @@
+label {
+	font-style: italic;
+
+	input,
+	select,
+	textarea {
+		font-style: normal;
+	}
+
+}
+
+input,
+textarea {
+	transition: all ($transition-time / 2) ease-in-out;
+}
+
+select {
+	
+	&:focus {
+		border: $input-border-focus;
+		box-shadow: $input-shadow-focus;
+		transition: $input-transition;
+	}
+
+}
+
+.button {
+	transition: background-color 0.3s, color 0.3s;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	font-weight: $global-weight-bold;
+
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: 1px solid $secondary-color;
+		z-index: -1;
+		opacity: 0;
+		transform: scale3d(0.6, 0.6, 1);
+		transition: transform ($transition-time * 2), opacity ($transition-time * 2);
+		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+	}
+	
+	&:focus,
+	&:hover {
+		color: $primary-color;
+
+		&:before {
+			transform: scale3d(1, 1, 1);
+			opacity: 1;
+		}
+
+	}
+
+	&[disabled="disabled"] {
+		background: $primary-color-50-lighter;
+		color: $primary-color-75-lighter;
+
+		&:focus,
+		&:hover {
+
+			&:before {
+				opacity: 0;
+			}
+
+		}
+
+	}
+
+}
+
+.k-contact-form-error {
+
+	label {
+		color: $alert-color;
+	}
+
+	input,
+	textarea {
+		border-color: $alert-color;
+	}
+
+}
+
+.k-contact-form-success {
+	color: $success-color;
+	background: $white;
+	border: 1px solid $success-color;
+	padding: rem-calc(30);
+	text-align: center
+}

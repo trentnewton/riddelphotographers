@@ -1,0 +1,67 @@
+<koken:include file="partials/page-header.html" />
+
+<koken:load limit="0">
+
+	<koken:head>
+		<meta property="og:site_name" content="{{ site.title }}" />
+		<meta property="og:title" content="{{ album.title strip_html="true" }}" />
+		<meta property="og:description" content="{{ album.summary | album.description strip_html="true" }}" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="{{ album.url }}" />
+		<koken:covers><koken:shift>
+		<meta property="og:image" content="{{ content.presets.medium_large.url }}" />
+		<meta property="og:image:width" content="{{ content.presets.medium_large.width }}" />
+		<meta property="og:image:height" content="{{ content.presets.medium_large.height }}" />
+		</koken:shift></koken:covers>
+		<koken:not empty="profile.twitter">
+			<meta name="twitter:card" content="gallery" />
+			<meta name="twitter:site" content="@{{ profile.twitter }}" />
+			<meta name="twitter:creator" content="@{{ profile.twitter }}" />
+			<koken:covers minimum="4" limit="4">
+				<koken:loop>
+					<meta name="twitter:image{{ index }}" content="{{ content.presets.medium_large.cropped.url }}">
+				</koken:loop>
+			</koken:covers>
+		</koken:not>
+	</koken:head>
+
+	<main class="gallery-page">
+		<div class="row column">
+			<header class="gallery-page-header-container">
+                <h1 class="gallery-page-header">{{ album.title }}</h1>
+            </header>
+            <koken:unlisted>
+				<p class="unlisted">
+					This album is unlisted. Please don't share a link to it.
+				</p>
+			</koken:unlisted>
+            <div class="content">
+				{{ album.description paragraphs="true" }}
+            </div>
+		</div>
+		<div class="gallery-container-page">
+			<div class="gallery-main">
+			<koken:loop>
+				<section class="gallery-item">
+					<koken:link title="View {{ album.title }}" class="grid-overlay-link">
+						<koken:img />
+						<div class="grid-overlay">
+	                     	<h3>{{ album.title }}</h3>
+	                    </div>
+					</koken:link>
+				</section>
+			</koken:loop>
+			</div>
+		</div>
+	</main>
+
+	<koken:else>
+
+		<!-- Display fallback message in Site editor only -->
+		<koken:note>
+			No set found. Create one in the Library.
+		</koken:note>
+
+</koken:load>
+
+<koken:include file="partials/footer.html" />
