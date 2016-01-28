@@ -1,7 +1,5 @@
 <koken:include file="partials/page-header.html" />
 
-<!-- Add Facebook Open Graph and Twitter Cards metadata for nicer sharing -->
-<!-- Using a separate koken:load for this so it doesn't conflict with page data -->
 <koken:load limit="4">
 	<koken:head>
 		<meta property="og:site_name" content="{{ site.title }}" />
@@ -33,156 +31,59 @@
 	</koken:head>
 </koken:load>
 
-<!-- Load this template's source data (sets) and limit for pagination -->
 <koken:load limit="0">
 
-	<main class="gallery-page">
+	<div class="gallery-page">
 		<div class="row column">
 			<header class="gallery-page-header-container">
-                <h1 class="gallery-page-header">Sets</h1>
+                <h1 class="gallery-page-header">{{ page.title }}</h1>
             </header>
             <koken:unlisted>
+            <div class="content">
 				<p class="unlisted">
 					This album is unlisted. Please don't share a link to it.
 				</p>
+            </div>
 			</koken:unlisted>
             <div class="content">
-				{{ album.description paragraphs="true" }}
+				
             </div>
-            <div class="image-items-list">
-			<koken:loop>
-				<koken:content_image>
-					<koken:img />
-				</koken:content_image>
-			</koken:loop>
-			</div>
-
 		</div>
-	</main>
+	</div>
 
-	<div class="lcol">
-
-		<!-- Loop over all sets, render each with the following -->
-		<koken:loop>
-
-			<!-- wrapper used for keyboard navigation targetting -->
-			<section class="item">
-
-				<!-- Display each sets's first cover, link to set.lens -->
-				<koken:link title="View {{ album.title }}">
-					<koken:img />
-				</koken:link>
-
-				<!-- To display all covers, use koken:covers -->
-				<!--
-				<koken:covers>
+	<koken:loop>
+	<section id="{{ album.title }}" class="slides-container vh_height100">
+        <div class="main-slide">
+          	<a class="gallery-trigger" href="#move-over">
+            	<div class="main-title">
+                	<h2 itemprop="headline">
+                		<img src="{{ location.theme_path }}/assets/images/{{ album.title }}-title.png" alt="{{ album.title }}">
+                  		<svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg>
+                	</h2>
+            	</div>
+          	</a>
+          	<div class="gallery-container">
+            	<button type="button" data-role="none" class="slick-prev slick-arrow gallery-trigger" aria-label="Previous" role="button" aria-disabled="true">Previous</button>
+	            <div class="gallery-main">
+	            <koken:load source="set" filter:id="{{ album.id }}">
 					<koken:loop>
-						<koken:link title="View {{ album.title }}">
-							<koken:img size="1:1" />
-						</koken:link>
-					</koken:loop>
-				</koken:covers>
-				-->
-
-				<!-- Display each sets's title, link to set.lens -->
-				<h2><koken:link title="View {{ album.title }}">{{ album.title }}</koken:link></h2>
-
-				<!-- Display the set's summary (shorter than description) -->
-				{{ album.summary paragraphs="true" }}
-
-				<footer>
-
-					<ul class="blank">
-
-						<!-- Display the timestamp -->
-						<li>
-							<strong>Published:</strong>
-							<!-- Link to view all sets published the same month -->
-							<koken:link to="archive" title="View all albums published this month">
-								<koken:time />
+						<section class="gallery-item">
+							<koken:link title="View {{ album.title }}" class="grid-overlay-link">
+								<koken:img />
+								<div class="grid-overlay">
+			                     	<h3 itemprop="headline">{{ album.title }}</h3>
+			                    </div>
 							</koken:link>
-						</li>
-
-						<!-- Display set categories, link each to archive.albums.lens -->
-						<koken:categories>
-							<li>
-								<strong>{{ labels.category.plural }}:</strong>
-								<koken:loop separator=", ">
-									<koken:link title="View all {{ labels.album.plural case='lower' }} in {{ category.title }}">
-										{{ category.title }}
-									</koken:link>
-								</koken:loop>
-							</li>
-						</koken:categories>
-
-						<!-- Display set tags, link each to archive.albums.lens -->
-						<koken:tags>
-							<li>
-								<strong>{{ labels.tag.plural }}:</strong>
-								<koken:loop separator=" ">
-									<koken:link title="View all {{ labels.album.plural case='lower' }} in #{{ tag.title }}">
-										#{{ tag.title }}
-									</koken:link>
-								</koken:loop>
-							</li>
-						</koken:tags>
-
-					</ul>
-
-				</footer>
-
-			</section>
-
-		</koken:loop>
-
-		<!-- Display pagination links -->
-		<koken:include file="inc/pagination.html" />
-
-	</div> <!-- close .lcol -->
-
-	<div class="rcol">
-
-		<aside>
-
-			<section>
-				<!-- Links to view albums by publish date in archive.albums.lens -->
-				<h5>View {{ labels.album.plural case="lower" }} by date</h5>
-				<koken:dates limit_to="albums">
-					<koken:select label="Select month" />
-				</koken:dates>
-			</section>
-
-			<section>
-				<!-- Links to view albums by category in archive.albums.lens -->
-				<koken:categories limit_to="albums" order_by="album_count">
-					<h5>View {{ labels.album.plural case="lower" }} by {{ labels.category.singular case="lower" }}</h5>
-					<koken:loop>
-						<koken:link title="View all {{ labels.album.plural case='lower' }} in {{ category.title }}">
-							{{ category.title }} ({{ category.counts.total }})
-						</koken:link>
-						<br>
+						</section>
 					</koken:loop>
-				</koken:categories>
-			</section>
+	            </koken:load>
+	            </div>
+          	</div>
+        </div>
+        <koken:background class="main-background"></koken:background>
+	</section>
+	</koken:loop>
 
-			<section>
-				<!-- Links to view albums by tag in archive.albums.lens -->
-				<koken:tags limit_to="albums" order_by="album_count">
-					<h5>View {{ labels.album.plural case="lower" }} by {{ labels.tag.singular case="lower" }}</h5>
-					<koken:loop>
-						<koken:link title="View all {{ labels.album.plural case='lower' }} in {{ tag.title }}">
-							{{ tag.title }} ({{ tag.counts.total }})
-						</koken:link>
-						<br>
-					</koken:loop>
-				</koken:tags>
-			</section>
-
-		</aside>
-
-	</div> <!-- close .rcol -->
-
-	<!-- Fallback content if no data was loaded by koken:load -->
 	<koken:else>
 
 		<!-- Display fallback message in Site editor only -->
@@ -191,8 +92,5 @@
 		</koken:note>
 
 </koken:load>
-
-<!-- Turn on keyboard scrolling (left/right arrow keys). Target each set. -->
-<koken:keyboard_scroll element=".item" />
 
 <koken:include file="partials/footer.html" />
