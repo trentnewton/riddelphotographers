@@ -51,7 +51,6 @@
 		a {
 			transition: $transition-time;
 			position: relative;
-			background: rgba($white, 0.8);
 
 			&:before,
 			&:after {
@@ -296,7 +295,7 @@
 
 }
 
-// login / error header
+// login / error page header
 
 .login-header {
 	margin-top: rem-calc(60);
