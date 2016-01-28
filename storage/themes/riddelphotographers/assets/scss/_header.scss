@@ -296,6 +296,8 @@
 
 }
 
+// login / error header
+
 .login-header {
 	margin-top: rem-calc(60);
 	position: relative;
@@ -309,13 +311,13 @@
 		}
 
 		&:before {
-			width: rem-calc(280);
-			height: rem-calc(280);
+			width: rem-calc(270);
+			height: rem-calc(270);
 		}
 
 		&:after {
-			width: rem-calc(290);
-			height: rem-calc(290);
+			width: rem-calc(280);
+			height: rem-calc(280);
 		}
 
 	}
