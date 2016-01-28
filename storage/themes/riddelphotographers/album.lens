@@ -24,11 +24,10 @@
 			</koken:covers>
 		</koken:not>
 	</koken:head>
-
-	<main class="gallery-page">
+	<main class="gallery-page" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 		<div class="row column">
 			<header class="gallery-page-header-container">
-                <h1 class="gallery-page-header">{{ album.title }}</h1>
+                <h1 class="gallery-page-header" itemprop="headline">{{ album.title }}</h1>
             </header>
             <koken:unlisted>
 				<p class="unlisted">
@@ -41,7 +40,7 @@
             <div class="image-items-list">
 			<koken:loop>
 				<koken:content_image>
-					<div class="image-item {{ content.aspect_ratio }}">
+					<figure class="image-item {{ content.aspect_ratio }}">
 						<koken:img lazy="true" />
 						<div class="pin-it-button">
 							<a data-pin-do="buttonPin" data-pin-color="red" data-pin-tall="true" href="https://www.pinterest.com/pin/create/button/?url={{ album.url }}&media={{ content.presets.large.url }}&description={{ content.title }}">
@@ -55,14 +54,12 @@
 							</div>
 						</koken:link>
 						</koken:max_download>
-					</div>
+					</figure>
 				</koken:content_image>
 			</koken:loop>
 			</div>
-
 		</div>
 	</main>
-
 	<koken:else>
 
 		<!-- Display fallback message in Site editor only -->
@@ -71,7 +68,4 @@
 		</koken:note>
 
 </koken:load>
-
-<koken:keyboard_scroll element=".item" />
-
 <koken:include file="partials/footer.html" />

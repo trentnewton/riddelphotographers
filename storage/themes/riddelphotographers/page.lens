@@ -26,12 +26,11 @@
 	<main class="regular-page" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 		<div class="row column">
 			<header class="gallery-page-header-container">
-				<h1 class="gallery-page-header">{{ page.title }}</h1>
+				<h1 class="gallery-page-header" itemprop="headline">{{ page.title }}</h1>
 			</header>
 		</div>
 		{{ page.content }}
 	</main>
-
 </koken:load>
 
 <koken:include file="partials/footer.html" />

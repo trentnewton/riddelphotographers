@@ -24,11 +24,10 @@
 			</koken:covers>
 		</koken:not>
 	</koken:head>
-
-	<main class="gallery-page">
+	<main class="gallery-page" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 		<div class="row column">
 			<header class="gallery-page-header-container">
-                <h1 class="gallery-page-header">{{ album.title }}</h1>
+                <h1 class="gallery-page-header" itemprop="headline">{{ album.title }}</h1>
             </header>
             <koken:unlisted>
 				<p class="unlisted">
@@ -46,7 +45,7 @@
 					<koken:link title="View {{ album.title }}" class="grid-overlay-link">
 						<koken:img />
 						<div class="grid-overlay">
-	                     	<h3>{{ album.title }}</h3>
+	                     	<h3 itemprop="headline">{{ album.title }}</h3>
 	                    </div>
 					</koken:link>
 				</section>

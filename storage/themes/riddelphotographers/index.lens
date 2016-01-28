@@ -22,13 +22,12 @@
 			</koken:loop>
 		</koken:not>
 	</koken:head>
-
 	<koken:loop>
 	<section id="{{ album.title }}" class="slides-container vh_height100">
         <div class="main-slide">
           	<a class="gallery-trigger" href="#move-over">
             	<div class="main-title">
-                	<h2>
+                	<h2 itemprop="headline">
                 		<img src="{{ location.theme_path }}/assets/images/{{ album.title }}-title.png" alt="{{ album.title }}">
                   		<svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg>
                 	</h2>
@@ -43,7 +42,7 @@
 							<koken:link title="View {{ album.title }}" class="grid-overlay-link">
 								<koken:img />
 								<div class="grid-overlay">
-			                     	<h3>{{ album.title }}</h3>
+			                     	<h3 itemprop="headline">{{ album.title }}</h3>
 			                    </div>
 							</koken:link>
 						</section>
@@ -55,7 +54,6 @@
         <koken:background class="main-background"></koken:background>
 	</section>
 	</koken:loop>
-
 	<koken:else>
 
 		<!-- Display fallback message in Site editor only -->
@@ -64,5 +62,4 @@
 		</koken:note>
 
 </koken:load>
-
 <koken:include file="partials/footer.html" />
