@@ -9,7 +9,7 @@
 						</p>
 					</koken:not>
 					<p>
-						<input type="password" name="password" autofocus placeholder="Enter password" />
+						<input type="password" name="password" autofocus placeholder="Enter password">
 					</p>
 					<button type="submit" class="large button" disabled="disabled">Go</button>
 				</koken:form>

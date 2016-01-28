@@ -3,20 +3,20 @@
 <koken:load source="sets">
 
 	<koken:head>
-		<meta property="og:site_name" content="{{ site.title }}" />
-		<meta property="og:title" content="{{ site.title }}" />
-		<meta property="og:description" content="{{ site.description strip_html='true' }}" />
-		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="{{ site.title }}">
+		<meta property="og:title" content="{{ site.title }}">
+		<meta property="og:description" content="{{ site.description strip_html='true' }}">
+		<meta property="og:type" content="website">
 		<koken:first>
-		<meta property="og:image" content="{{ location.theme_path }}/assets/images/riddel-photographers-og.png" />
-		<meta property="og:image:width" content="250" />
-		<meta property="og:image:height" content="250" />
+		<meta property="og:image" content="{{ location.theme_path }}/assets/images/riddel-photographers-og.png">
+		<meta property="og:image:width" content="250">
+		<meta property="og:image:height" content="250">
 		</koken:first>
-		<meta property="og:url" content="{{ location.site_url }}{{ location.here }}" />
+		<meta property="og:url" content="{{ location.site_url }}{{ location.here }}">
 		<koken:not empty="profile.twitter">
-			<meta name="twitter:card" content="gallery" />
-			<meta name="twitter:site" content="@{{ profile.twitter }}" />
-			<meta name="twitter:creator" content="@{{ profile.twitter }}" />
+			<meta name="twitter:card" content="gallery">
+			<meta name="twitter:site" content="@{{ profile.twitter }}">
+			<meta name="twitter:creator" content="@{{ profile.twitter }}">
 			<koken:loop limit="4">
 				<meta name="twitter:image{{ index }}" content="{{ content.presets.medium_large.cropped.url }}">
 			</koken:loop>
