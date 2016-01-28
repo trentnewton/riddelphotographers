@@ -44,7 +44,7 @@
 					<div class="image-item {{ content.aspect_ratio }}">
 						<koken:img lazy="true" />
 						<div class="pin-it-button">
-							<a data-pin-do="buttonPin" data-pin-color="red" data-pin-tall="true" href="https://www.pinterest.com/pin/create/button/?url={{ content.presets.large.url }}&description={{ content.title }}">
+							<a data-pin-do="buttonPin" data-pin-color="red" data-pin-tall="true" href="https://www.pinterest.com/pin/create/button/?url={{ album.url }}&media={{ content.presets.large.url }}&description={{ content.title }}">
 								<img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png" />
 							</a>
 						</div>
