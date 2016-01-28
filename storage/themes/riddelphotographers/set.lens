@@ -41,18 +41,7 @@
             </div>
 		</div>
 		<div class="gallery-container-page">
-			<div class="gallery-main">
-			<koken:loop>
-				<section class="gallery-item">
-					<koken:link title="View {{ album.title }}" class="grid-overlay-link">
-						<koken:img />
-						<div class="grid-overlay">
-	                     	<h3 itemprop="headline">{{ album.title }}</h3>
-	                    </div>
-					</koken:link>
-				</section>
-			</koken:loop>
-			</div>
+			<koken:include file="partials/album-slider.html" />
 		</div>
 	</main>
 

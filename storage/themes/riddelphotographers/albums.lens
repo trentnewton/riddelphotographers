@@ -63,20 +63,7 @@
           	</a>
           	<div class="gallery-container">
             	<button type="button" data-role="none" class="slick-prev slick-arrow gallery-trigger" aria-label="Previous" role="button" aria-disabled="true">Previous</button>
-	            <div class="gallery-main">
-	            <koken:load source="set" filter:id="{{ album.id }}">
-					<koken:loop>
-						<section class="gallery-item">
-							<koken:link title="View {{ album.title }}" class="grid-overlay-link">
-								<koken:img />
-								<div class="grid-overlay">
-			                     	<h3 itemprop="headline">{{ album.title }}</h3>
-			                    </div>
-							</koken:link>
-						</section>
-					</koken:loop>
-	            </koken:load>
-	            </div>
+	            <koken:include file="partials/album-slider.html" />
           	</div>
         </div>
         <koken:background class="main-background"></koken:background>
