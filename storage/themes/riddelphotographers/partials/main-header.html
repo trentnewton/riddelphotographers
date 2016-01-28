@@ -28,7 +28,10 @@
           <header class="main-header vh_height100" itemscope itemtype="http://schema.org/WPHeader">
             <div class="main-elements">
               <koken:link to="front" title="{{ labels.home.singular }}" class="">
-                <koken:asset file="assets/images/logo.png" class="main-logo" alt="{{ site.title }}" />
+                <h1 itemprop="headline">
+                  {{ site.title }}
+                  <koken:asset file="assets/images/logo.png" class="main-logo" alt="{{ site.title }}" />
+                </h1>
               </koken:link>
               <koken:include file="partials/navigation.html" />
               <div class="scroll-down-container">

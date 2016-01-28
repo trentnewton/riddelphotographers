@@ -39,6 +39,7 @@
 		@include vertical-center;
 		right: $grid-column-gutter;
 		margin: 0;
+		font-size: 0;
 
 		@include breakpoint(small only) {
 			right: 0;

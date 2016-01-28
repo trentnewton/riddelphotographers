@@ -4,6 +4,11 @@
 .page-header {
 	position: relative;
 
+	h1 {
+		margin: 0;
+		font-size: 0;
+	}
+
 	.icon-scroll-down {
 		width: rem-calc(60);
 		height: rem-calc(25);

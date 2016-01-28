@@ -29,7 +29,10 @@
 						<div class="top-navigation">
 							<div class="top-navigation-left">
 								<koken:link to="front" title="{{ labels.home.singular }}" class="logo-link">
-									<koken:asset file="assets/images/logo.png" class="main-logo" alt="{{ site.title }}" />
+									<h1 itemprop="headline">
+										{{ site.title }}
+										<koken:asset file="assets/images/logo.png" class="main-logo" alt="{{ site.title }}" />
+									</h1>
 						        </koken:link>
 							</div>
 							<div class="top-navigation-right">

@@ -28,6 +28,7 @@
           	<a class="gallery-trigger" href="#move-over">
             	<div class="main-title">
                 	<h2 itemprop="headline">
+                		{{ album.title }}
                 		<img src="{{ location.theme_path }}/assets/images/{{ album.title }}-title.png" alt="{{ album.title }}">
                   		<svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg>
                 	</h2>
