@@ -120,14 +120,7 @@
 .image-items-list {
 
 	img {
-		margin-bottom: rem-calc(8);
 		width: 100%;
-		float: none;
-
-		&:last-child {
-			margin-bottom: 0;
-		}
-
 	}
 
 }
@@ -135,6 +128,7 @@
 .image-item {
 	position: relative;
 	width: 100%;
+	margin-bottom: rem-calc(8);
 	float: left;
 	@include clearfix;
 
@@ -155,6 +149,10 @@
 		background: rgba($white, 0.8) none repeat scroll 0% 0%;
 		padding: rem-calc(5 15 10);
 		font-size: rem-calc(30);
+	}
+
+	&:last-child {
+		margin-bottom: 0;
 	}
 
 	&:hover,

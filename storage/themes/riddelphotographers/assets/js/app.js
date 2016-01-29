@@ -174,4 +174,3 @@ new vUnit({
   $('.footer-nav a[title*="Instagram"]').html('<svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>');
 
 })(jQuery);
-	

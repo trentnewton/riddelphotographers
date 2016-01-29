@@ -13,13 +13,6 @@
 					</p>
 					<button type="submit" class="large button" disabled="disabled">Go</button>
 				</koken:form>
-				<script>
-					$(document).ready(function() {
-					    $('input[type="password"]').keyup(function() {
-							$('button[type="submit"]').attr('disabled', !$(this).val().length);
-					    }).trigger('keyup');
-				 	});
-				</script>
 			</div>
 		</main>
 		<div class="bg-overlay"></div>
