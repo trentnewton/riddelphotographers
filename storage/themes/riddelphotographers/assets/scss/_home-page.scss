@@ -35,11 +35,10 @@
 
 	h2 {
 		color: $black;
-		font-size: rem-calc(50);
+		font-size: 0;
 		@include vertical-center;
 		right: $grid-column-gutter;
 		margin: 0;
-		font-size: 0;
 
 		@include breakpoint(small only) {
 			right: 0;
@@ -61,6 +60,7 @@
 	.icon-scroll-down {
 		transform: rotate(-90deg);
 		color: $black;
+		font-size: rem-calc(50);
 	}
 
 }
