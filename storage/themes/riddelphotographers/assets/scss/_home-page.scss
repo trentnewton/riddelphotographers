@@ -58,8 +58,9 @@
 	}
 
 	.icon-scroll-down {
-		transform: rotate(-90deg);
 		font-size: rem-calc(50);
+		@include pointer;
+		@include loop;
 	}
 
 }

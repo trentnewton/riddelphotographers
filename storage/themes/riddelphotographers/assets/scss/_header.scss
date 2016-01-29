@@ -48,6 +48,56 @@
 
 }
 
+.side-nav.active,
+.main-header .menu {
+
+	> li {
+		@include fadeInUp;
+
+		&:nth-child(1) {
+			animation-delay: 1s;
+		}
+
+		&:nth-child(2) {
+			animation-delay: 1.25s;
+		}
+
+		&:nth-child(3) {
+			animation-delay: 1.5s;
+		}
+
+		&:nth-child(4) {
+			animation-delay: 1.75s;
+		}
+
+		&:nth-child(5) {
+			animation-delay: 2s;
+		}
+
+		&:nth-child(6) {
+			animation-delay: 2.25s;
+		}
+
+		&:nth-child(7) {
+			animation-delay: 2.5s;
+		}
+
+		&:nth-child(8) {
+			animation-delay: 2.75s;
+		}
+
+		&:nth-child(9) {
+			animation-delay: 3s;
+		}
+
+		&:nth-child(10) {
+			animation-delay: 3.25s;
+		}
+
+	}
+	
+}
+
 .main-nav {
 	margin-top: rem-calc(30);
 	white-space: nowrap;
@@ -162,8 +212,7 @@
 }
 
 .scroll-down {
-	@include flash;
-	@include loop;
+	@extend .flash;
 
 	&:hover,
 	&:focus {
@@ -198,27 +247,68 @@
 	height: rem-calc(130);
 	padding: rem-calc(20 20 170);
 
-	.main-nav {
+	.menu {
 
-		.menu {
+		// > li {
+		// 	@include fadeInDown;
 
-			a {
-				color: $primary-color-50-lighter;
+		// 	&:nth-child(1) {
+		// 		animation-delay: 0.125s;
+		// 	}
+
+		// 	&:nth-child(2) {
+		// 		animation-delay: 0.25s;
+		// 	}
+
+		// 	&:nth-child(3) {
+		// 		animation-delay: 0.375s;
+		// 	}
+
+		// 	&:nth-child(4) {
+		// 		animation-delay: 0.5s;
+		// 	}
+
+		// 	&:nth-child(5) {
+		// 		animation-delay: 0.625s;
+		// 	}
+
+		// 	&:nth-child(6) {
+		// 		animation-delay: 0.75s;
+		// 	}
+
+		// 	&:nth-child(7) {
+		// 		animation-delay: 0.875s;
+		// 	}
+
+		// 	&:nth-child(8) {
+		// 		animation-delay: 1s;
+		// 	}
+
+		// 	&:nth-child(9) {
+		// 		animation-delay: 1.125s;
+		// 	}
+
+		// 	&:nth-child(10) {
+		// 		animation-delay: 1.25s;
+		// 	}
+
+		// }
+
+		a {
+			color: $primary-color-50-lighter;
+
+			&:hover,
+			&:focus {
+				color: $anchor-color-hover;
+			}
+
+
+			&.k-nav-current {
+				color: $anchor-color;
 
 				&:hover,
 				&:focus {
 					color: $anchor-color-hover;
-				}
-
-
-				&.k-nav-current {
-					color: $anchor-color;
-
-					&:hover,
-					&:focus {
-						color: $anchor-color-hover;
-					}
-
 				}
 
 			}

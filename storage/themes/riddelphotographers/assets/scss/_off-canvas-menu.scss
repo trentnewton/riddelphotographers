@@ -92,7 +92,7 @@
 			font-size: header-size(medium, h3);
 		}
 
-		.active,
+		&.k-nav-current,
 		&:hover {
 			color: $primary-color-50-lighter;
 		}

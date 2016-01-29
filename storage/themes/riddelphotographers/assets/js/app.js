@@ -55,6 +55,8 @@ new vUnit({
       variableWidth: true
     });
 
+    // disable sumbit button on login form until something is entered
+
     $('input[type="password"]').keyup(function() {
       $('button[type="submit"]').attr('disabled', !$(this).val().length);
     }).trigger('keyup');
@@ -65,15 +67,18 @@ new vUnit({
 
   $('.hamburger').on('click', function() {
     $(this).toggleClass('active');
+    $('.side-nav').toggleClass('active');
   });
 
   $('.js-off-canvas-exit').on('click', function() {
     $('.hamburger').toggleClass('active');
+    $('.side-nav').toggleClass('active');
   });
 
-  // detect portrait photos and add class
 
   $(window).bind("load", function() {
+
+    // detect portrait photos and add class
 
     $('.image-items-list .image-item > img[data-presets*="tiny,40,60"]').parent().addClass('half');
     $('.image-items-list .image-item.0.667').addClass('half');
