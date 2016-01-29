@@ -63,6 +63,10 @@ new vUnit({
 
   });
 
+  $('.content p').viewportChecker({
+    classToAdd: 'moveInUp', // Class to add to the elements when they are visible,
+  });
+
   // hamburger icon animation
 
   $('.hamburger').on('click', function() {
@@ -74,7 +78,6 @@ new vUnit({
     $('.hamburger').toggleClass('active');
     $('.side-nav').toggleClass('active');
   });
-
 
   $(window).bind("load", function() {
 

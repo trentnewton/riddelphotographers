@@ -19,7 +19,9 @@
     "imagesloaded": "~4.1.0",
     "smoothstate": "~0.7.2",
     "animsition": "~4.0.1",
-    "waitForImages": "~2.1.0"
+    "waitForImages": "~2.1.0",
+    "onScreen": "*",
+    "inView jQuery Plugin": "inview-jquery-plugin#*"
   },
   "ignore": [
     "**/.*",

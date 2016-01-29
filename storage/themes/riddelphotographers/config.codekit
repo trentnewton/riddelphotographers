@@ -2529,6 +2529,91 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
+	"\/bower_components\/jQuery-viewport-checker\/bower.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/bower.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/bower-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/bower_components\/jQuery-viewport-checker\/demo\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/demo\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/jQuery-viewport-checker\/dist\/jquery.viewportchecker.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/dist\/jquery.viewportchecker.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/dist\/min\/jquery.viewportchecker.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/jQuery-viewport-checker\/Gruntfile.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/Gruntfile.js",
+		"outputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/min\/Gruntfile-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/bower_components\/jQuery-viewport-checker\/package.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/package.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/package-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
+	"\/bower_components\/jQuery-viewport-checker\/README.md": {
+		"criticStyle": 0,
+		"enableFootnotes": 1,
+		"enableLabels": 1,
+		"enableSmartQuotes": 1,
+		"escapeLineBreaks": 0,
+		"fileType": 4096,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/README.md",
+		"maskEmailAddresses": 1,
+		"outputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/README.html",
+		"outputFormat": 0,
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"parseMetadata": 1,
+		"processHTML": 0,
+		"randomFootnoteNumbers": 0,
+		"useCompatibilityMode": 0
+		},
+	"\/bower_components\/jQuery-viewport-checker\/src\/jquery.viewportchecker.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/src\/jquery.viewportchecker.js",
+		"outputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/src\/min\/jquery.viewportchecker-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/bower_components\/motion-ui\/bower.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -3575,62 +3660,68 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.core.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/dist\/jquery.viewportchecker.min.js",
 			"position": 4,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.offcanvas.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.core.js",
 			"position": 5,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.box.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.offcanvas.js",
 			"position": 6,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.keyboard.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.box.js",
 			"position": 7,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.mediaQuery.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.keyboard.js",
 			"position": 8,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.motion.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.mediaQuery.js",
 			"position": 9,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.nest.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.motion.js",
 			"position": 10,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.timerAndImageLoader.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.nest.js",
 			"position": 11,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.touch.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.timerAndImageLoader.js",
 			"position": 12,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.triggers.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.touch.js",
 			"position": 13,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.triggers.js",
+			"position": 14,
 			"type": 0
 			}
 		]

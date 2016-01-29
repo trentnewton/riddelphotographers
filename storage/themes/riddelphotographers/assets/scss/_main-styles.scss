@@ -86,3 +86,7 @@ svg {
 	@include flash;
 	@include loop;
 }
+
+.moveInUp {
+	@include moveInUp;
+}

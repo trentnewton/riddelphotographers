@@ -69,10 +69,12 @@
 @keyframes moveInUp {
 
 	from {
-		transform: translate3d(0, 30px, 0);
+		opacity: 0;
+		transform: translate3d(0, rem-calc(20), 0);
 	}
 
 	to {
+		opacity: 1;
 		transform: none;
 	}
 
