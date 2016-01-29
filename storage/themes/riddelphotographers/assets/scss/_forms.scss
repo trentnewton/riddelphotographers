@@ -58,20 +58,20 @@ select {
 
 	}
 
-	&[disabled="disabled"] {
-		background: $primary-color-50-lighter;
-		color: $primary-color-75-lighter;
+	// &[disabled="disabled"] {
+	// 	background: $primary-color-50-lighter;
+	// 	color: $primary-color-75-lighter;
 
-		&:focus,
-		&:hover {
+	// 	&:focus,
+	// 	&:hover {
 
-			&:before {
-				opacity: 0;
-			}
+	// 		&:before {
+	// 			opacity: 0;
+	// 		}
 
-		}
+	// 	}
 
-	}
+	// }
 
 }
 

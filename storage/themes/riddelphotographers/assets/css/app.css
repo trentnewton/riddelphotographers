@@ -3876,11 +3876,6 @@ select:focus {
       -webkit-transform: scale3d(1, 1, 1);
               transform: scale3d(1, 1, 1);
       opacity: 1; }
-  .button[disabled="disabled"] {
-    background: #a1acb4;
-    color: #d0d5d9; }
-    .button[disabled="disabled"]:focus:before, .button[disabled="disabled"]:hover:before {
-      opacity: 0; }
 
 .k-contact-form-error label {
   color: #ec5840; }
