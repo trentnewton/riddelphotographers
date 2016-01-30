@@ -63,6 +63,12 @@ new vUnit({
 
   });
 
+  // add animation class when in viewport
+
+  $('.main-header .menu').viewportChecker({
+    classToAdd: 'active', // Class to add to the elements when they are visible,
+  });
+
   $('.content p').viewportChecker({
     classToAdd: 'moveInUp', // Class to add to the elements when they are visible,
   });

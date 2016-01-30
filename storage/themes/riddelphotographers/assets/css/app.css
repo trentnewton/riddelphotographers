@@ -4062,43 +4062,43 @@ select:focus {
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both; }
 
-.main-header .menu > li:nth-child(1) {
+.main-header .menu.active > li:nth-child(1) {
   -webkit-animation-delay: 1s;
           animation-delay: 1s; }
 
-.main-header .menu > li:nth-child(2) {
+.main-header .menu.active > li:nth-child(2) {
   -webkit-animation-delay: 1.25s;
           animation-delay: 1.25s; }
 
-.main-header .menu > li:nth-child(3) {
+.main-header .menu.active > li:nth-child(3) {
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s; }
 
-.main-header .menu > li:nth-child(4) {
+.main-header .menu.active > li:nth-child(4) {
   -webkit-animation-delay: 1.75s;
           animation-delay: 1.75s; }
 
-.main-header .menu > li:nth-child(5) {
+.main-header .menu.active > li:nth-child(5) {
   -webkit-animation-delay: 2s;
           animation-delay: 2s; }
 
-.main-header .menu > li:nth-child(6) {
+.main-header .menu.active > li:nth-child(6) {
   -webkit-animation-delay: 2.25s;
           animation-delay: 2.25s; }
 
-.main-header .menu > li:nth-child(7) {
+.main-header .menu.active > li:nth-child(7) {
   -webkit-animation-delay: 2.5s;
           animation-delay: 2.5s; }
 
-.main-header .menu > li:nth-child(8) {
+.main-header .menu.active > li:nth-child(8) {
   -webkit-animation-delay: 2.75s;
           animation-delay: 2.75s; }
 
-.main-header .menu > li:nth-child(9) {
+.main-header .menu.active > li:nth-child(9) {
   -webkit-animation-delay: 3s;
           animation-delay: 3s; }
 
-.main-header .menu > li:nth-child(10) {
+.main-header .menu.active > li:nth-child(10) {
   -webkit-animation-delay: 3.25s;
           animation-delay: 3.25s; }
 
