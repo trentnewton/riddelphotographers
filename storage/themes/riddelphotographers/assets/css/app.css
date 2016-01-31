@@ -4752,7 +4752,7 @@ img.k-lazy-loading {
 
 .main-footer {
   text-align: center;
-  padding: 2.5rem 0 2.8125rem; }
+  padding: 2.5rem 0; }
   .main-footer a {
     color: #febf4d; }
     .main-footer a:hover, .main-footer a:focus {
