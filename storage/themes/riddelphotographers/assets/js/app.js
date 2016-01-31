@@ -22,7 +22,7 @@ new vUnit({
 
   $(document).ready(function() {
 
-    $(".animsition").animsition({
+    $('.animsition').animsition({
       inClass: 'fade-in',
       outClass: 'fade-out',
       inDuration: 1500,
@@ -61,28 +61,6 @@ new vUnit({
       $('button[type="submit"]').attr('disabled', !$(this).val().length);
     }).trigger('keyup');
 
-    // add animation class when in viewport
-
-    $('.main-header .menu').bind('inview', function (event, visible) {
-      if (visible === true) {
-        // element is now visible in the viewport
-        $(this).addClass('active');
-        $(this).removeClass('inactive');
-      } else {
-        // element has gone out of viewport
-        $(this).addClass('inactive');
-      }
-    });
-
-    $('.content').bind('inview', function (event, visible) {
-      if (visible === true) {
-        // element is now visible in the viewport
-        $('p').addClass('moveInUp');
-      } else {
-        // element has gone out of viewport
-      }
-    });
-
   });
 
   // hamburger icon animation
@@ -98,6 +76,33 @@ new vUnit({
   });
 
   $(window).bind("load", function() {
+
+    // add animation class when in viewport
+
+    // $('.animsition').find('[style*="opacity: 1"]', function() {
+    //   $('.main-header .menu').addClass('active');
+    // }
+
+    // $('.animsition').each(function() {
+    //   if ($(this).css('opacity') == '1') {
+    //     $('.main-header .menu').addClass('active');
+    //   }
+    // });
+
+    // $('.animsition').css('opacity') === '1' {
+    //   $('.main-header .menu').addClass('active');
+    // };
+
+    $('.main-header .menu').addClass( 'active' );
+
+    $('.content p').bind('inview', function (event, visible) {
+      if (visible === true) {
+        // element is now visible in the viewport
+        $(this).addClass('moveInUp');
+      } else {
+        // element has gone out of viewport
+      }
+    });
 
     // detect portrait photos and add class
 
