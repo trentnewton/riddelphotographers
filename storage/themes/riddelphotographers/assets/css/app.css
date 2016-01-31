@@ -4341,6 +4341,9 @@ select:focus {
   top: 0;
   z-index: -1;
   background-attachment: fixed; }
+  @media screen and (max-width: 63.9375em) {
+    .main-background {
+      background-attachment: scroll; } }
 
 .main-title,
 .gallery-container {
