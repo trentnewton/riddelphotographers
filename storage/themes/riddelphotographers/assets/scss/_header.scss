@@ -179,6 +179,10 @@
 	transform: translateX(-50%);
 	width: rem-calc(60);
 	height: rem-calc(25);
+
+	@include small-landscape {
+		top: rem-calc(40);
+	}
 	
 	@include small-landscape {
 		top: 0;
