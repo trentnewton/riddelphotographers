@@ -14,7 +14,7 @@ new vUnit({
 
 (function($) {
 
-  "use strict";
+  'use strict';
 
   // start foundation
 
@@ -75,23 +75,9 @@ new vUnit({
     $('.side-nav').toggleClass('active');
   });
 
-  $(window).bind("load", function() {
+  $(window).bind('load', function() {
 
     // add animation class when in viewport
-
-    // $('.animsition').find('[style*="opacity: 1"]', function() {
-    //   $('.main-header .menu').addClass('active');
-    // }
-
-    // $('.animsition').each(function() {
-    //   if ($(this).css('opacity') == '1') {
-    //     $('.main-header .menu').addClass('active');
-    //   }
-    // });
-
-    // $('.animsition').css('opacity') === '1' {
-    //   $('.main-header .menu').addClass('active');
-    // };
 
     $('.main-header .menu').addClass( 'active' );
 
@@ -163,16 +149,16 @@ new vUnit({
   $(function(){
     var dataBase = $('.split-boxes .k-content-embed .k-content img').attr('data-base');
     var dataExtension = $('.split-boxes .k-content-embed .k-content > img').attr('data-extension');
-    $('div.split-page-bg').css("background-image", "url(" + dataBase + "xlarge." + dataExtension + ")");
+    $('div.split-page-bg').css('background-image', 'url(' + dataBase + 'xlarge.' + dataExtension + ')');
     $('.split-boxes .k-content-embed .k-content img').parent().parent().remove();
   });
 
   // trigger extra fields for contact form
 
-  $('[name*="k-contact-field-6"]').parent().addClass( "disappear" );
-  $('[name*="k-contact-field-7"]').parent().addClass( "disappear" );
+  $('[name*="k-contact-field-6"]').parent().addClass( 'disappear' );
+  $('[name*="k-contact-field-7"]').parent().addClass( 'disappear' );
   $('[name*="k-contact-field-2"]').change(function(){
-    if($(this).is(":checked")) {
+    if($(this).is(':checked')) {
       $('[name*="k-contact-field-6"]').parent().fadeIn('fast');
       $('[name*="k-contact-field-7"]').parent().fadeIn('fast');
     } else {
@@ -183,18 +169,18 @@ new vUnit({
 
   // format contact form
 
-  $('.form-columns').prependTo("form.k-contact-form");
-  $('[name*="k-contact-field-7"]').parent().prependTo(".first-column");
-  $('[name*="k-contact-field-6"]').parent().prependTo(".first-column");
-  $('[name*="k-contact-field-5"]').parent().prependTo(".first-column");
-  $('[name*="k-contact-field-4"]').parent().prependTo(".first-column");
-  $('[name*="k-contact-field-3"]').parent().prependTo(".first-column");
-  $('[name*="k-contact-field-2"]').parent().prependTo(".first-column");
-  $('[name*="k-contact-field-1"]').parent().prependTo(".first-column");
-  $('[name*="k-contact-field-0"]').parent().prependTo(".first-column");
-  $('[name*="k-contact-field-10"]').parent().prependTo(".second-column");
-  $('[name*="k-contact-field-9"]').parent().prependTo(".second-column");
-  $('[name*="k-contact-field-8"]').parent().prependTo(".second-column");
+  $('.form-columns').prependTo('form.k-contact-form');
+  $('[name*="k-contact-field-7"]').parent().prependTo('.first-column');
+  $('[name*="k-contact-field-6"]').parent().prependTo('.first-column');
+  $('[name*="k-contact-field-5"]').parent().prependTo('.first-column');
+  $('[name*="k-contact-field-4"]').parent().prependTo('.first-column');
+  $('[name*="k-contact-field-3"]').parent().prependTo('.first-column');
+  $('[name*="k-contact-field-2"]').parent().prependTo('.first-column');
+  $('[name*="k-contact-field-1"]').parent().prependTo('.first-column');
+  $('[name*="k-contact-field-0"]').parent().prependTo('.first-column');
+  $('[name*="k-contact-field-10"]').parent().prependTo('.second-column');
+  $('[name*="k-contact-field-9"]').parent().prependTo('.second-column');
+  $('[name*="k-contact-field-8"]').parent().prependTo('.second-column');
   $('p.k-contact-form-success').wrap('<div class="row column" />');
   $('.k-contact-form-submit').addClass('row column');
   $('button[type="submit"]').addClass( 'button' );
