@@ -67,7 +67,7 @@
     }
 
     &.slick-loading img {
-        display: none;
+        @extend .disappear;
     }
 
     display: none;
@@ -93,5 +93,5 @@
 }
 
 .slick-arrow.slick-hidden {
-    display: none;
+     @extend .disappear;
 }
