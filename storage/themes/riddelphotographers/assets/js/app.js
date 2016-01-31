@@ -61,16 +61,28 @@ new vUnit({
       $('button[type="submit"]').attr('disabled', !$(this).val().length);
     }).trigger('keyup');
 
-  });
+    // add animation class when in viewport
 
-  // add animation class when in viewport
+    $('.main-header .menu').bind('inview', function (event, visible) {
+      if (visible === true) {
+        // element is now visible in the viewport
+        $(this).addClass('active');
+        $(this).removeClass('inactive');
+      } else {
+        // element has gone out of viewport
+        $(this).addClass('inactive');
+      }
+    });
 
-  $('.main-header .menu').viewportChecker({
-    classToAdd: 'active', // Class to add to the elements when they are visible,
-  });
+    $('.content').bind('inview', function (event, visible) {
+      if (visible === true) {
+        // element is now visible in the viewport
+        $('p').addClass('moveInUp');
+      } else {
+        // element has gone out of viewport
+      }
+    });
 
-  $('.content p').viewportChecker({
-    classToAdd: 'moveInUp', // Class to add to the elements when they are visible,
   });
 
   // hamburger icon animation

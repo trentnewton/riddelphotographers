@@ -2529,60 +2529,78 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
-	"\/bower_components\/jQuery-viewport-checker\/bower.json": {
+	"\/bower_components\/jquery.inview\/bower.json": {
 		"fileType": 524288,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/bower.json",
+		"inputAbbreviatedPath": "\/bower_components\/jquery.inview\/bower.json",
 		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/bower-min.json",
+		"outputAbbreviatedPath": "\/bower_components\/jquery.inview\/bower-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
-	"\/bower_components\/jQuery-viewport-checker\/demo\/index.html": {
+	"\/bower_components\/jquery.inview\/example\/advanced.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/demo\/index.html",
+		"inputAbbreviatedPath": "\/bower_components\/jquery.inview\/example\/advanced.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/bower_components\/jQuery-viewport-checker\/dist\/jquery.viewportchecker.min.js": {
+	"\/bower_components\/jquery.inview\/example\/live_event.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jquery.inview\/example\/live_event.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/jquery.inview\/example\/simple_example.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jquery.inview\/example\/simple_example.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/jquery.inview\/jquery.inview.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/dist\/jquery.viewportchecker.min.js",
-		"outputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/dist\/min\/jquery.viewportchecker.min-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/jquery.inview\/jquery.inview.js",
+		"outputAbbreviatedPath": "\/bower_components\/jquery.inview\/min\/jquery.inview-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/jQuery-viewport-checker\/Gruntfile.js": {
+	"\/bower_components\/jquery.inview\/jquery.inview.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/Gruntfile.js",
-		"outputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/min\/Gruntfile-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/jquery.inview\/jquery.inview.min.js",
+		"outputAbbreviatedPath": "\/bower_components\/jquery.inview\/min\/jquery.inview.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/bower_components\/jQuery-viewport-checker\/package.json": {
+	"\/bower_components\/jquery.inview\/package.json": {
 		"fileType": 524288,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/package.json",
+		"inputAbbreviatedPath": "\/bower_components\/jquery.inview\/package.json",
 		"orderOutput": 0,
-		"outputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/package-min.json",
+		"outputAbbreviatedPath": "\/bower_components\/jquery.inview\/package-min.json",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1
 		},
-	"\/bower_components\/jQuery-viewport-checker\/README.md": {
+	"\/bower_components\/jquery.inview\/README.md": {
 		"criticStyle": 0,
 		"enableFootnotes": 1,
 		"enableLabels": 1,
@@ -2591,9 +2609,9 @@
 		"fileType": 4096,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/README.md",
+		"inputAbbreviatedPath": "\/bower_components\/jquery.inview\/README.md",
 		"maskEmailAddresses": 1,
-		"outputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/README.html",
+		"outputAbbreviatedPath": "\/bower_components\/jquery.inview\/README.html",
 		"outputFormat": 0,
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
@@ -2603,12 +2621,21 @@
 		"randomFootnoteNumbers": 0,
 		"useCompatibilityMode": 0
 		},
-	"\/bower_components\/jQuery-viewport-checker\/src\/jquery.viewportchecker.js": {
+	"\/bower_components\/jquery.inview\/test\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/bower_components\/jquery.inview\/test\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/bower_components\/jquery.inview\/test\/test.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/src\/jquery.viewportchecker.js",
-		"outputAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/src\/min\/jquery.viewportchecker-min.js",
+		"inputAbbreviatedPath": "\/bower_components\/jquery.inview\/test\/test.js",
+		"outputAbbreviatedPath": "\/bower_components\/jquery.inview\/test\/min\/test-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -3660,7 +3687,7 @@
 			},
 		{
 			"followForSyntaxChecking": 1,
-			"linkedFileAbbreviatedPath": "\/bower_components\/jQuery-viewport-checker\/dist\/jquery.viewportchecker.min.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/jquery.inview\/jquery.inview.js",
 			"position": 4,
 			"type": 0
 			},
