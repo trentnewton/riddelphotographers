@@ -180,7 +180,7 @@
 	width: rem-calc(60);
 	height: rem-calc(25);
 
-	@include small-landscape {
+	@include small-portrait {
 		top: rem-calc(40);
 	}
 	
