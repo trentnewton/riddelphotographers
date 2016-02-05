@@ -65,6 +65,10 @@ svg {
 	left: -9999px;
 }
 
+.off-canvas-wrapper {
+	-ms-overflow-style: none;
+}
+
 .off-canvas-content {
 	background: inherit;
 }
