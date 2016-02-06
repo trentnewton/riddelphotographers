@@ -128,7 +128,7 @@
 				border-top: 1px solid $anchor-color-hover;
 				background: transparent;
 				transition-delay: $transition-time;
-				transform: translateY( calc(100% - 2px) );
+				transform: translateY( 95% );
 			}
 
 			&:after {
