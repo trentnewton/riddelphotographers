@@ -24,13 +24,11 @@
 		</koken:not>
 	</koken:head>
 	<main class="regular-page" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
-		<div class="row column">
-			<header class="gallery-page-header-container">
-				<h1 class="gallery-page-header" itemprop="headline">{{ page.title }}</h1>
-			</header>
-		</div>
+		<header class="page-title-container">
+			<h1 class="page-title" itemprop="headline">&#x99B4;{{ page.title }}&#x99C2;</h1>
+		</header>
 		{{ page.content }}
 	</main>
 </koken:load>
 
-<koken:include file="partials/footer.html" />
+<koken:include file="partials/alt-footer.html" />

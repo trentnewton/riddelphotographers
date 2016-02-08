@@ -25,10 +25,13 @@
 		</koken:not>
 	</koken:head>
 	<main class="gallery-page" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+		<header class="set-title-container">
+			<h1 itemprop="headline">
+				{{ album.title }}
+				<img src="{{ location.theme_path }}/assets/images/{{ album.title }}-title.png" alt="{{ album.title }}">
+			</h1>
+		</header>
 		<div class="row column">
-			<header class="gallery-page-header-container">
-                <h1 class="gallery-page-header" itemprop="headline">{{ album.title }}</h1>
-            </header>
             <koken:unlisted>
             <div class="content">
 				<p class="unlisted">

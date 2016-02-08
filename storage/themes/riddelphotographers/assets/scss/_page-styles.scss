@@ -1,14 +1,72 @@
 // general page styles
 
-.page-title {
-	text-align: center;
-	margin-bottom: rem-calc(30);
+.page-title-background {
+
 }
 
-.title-flourish {
-	width: rem-calc(100);
-	height: rem-calc(20);
-	fill: $header-small-font-color;
+.page-title-container {
+	text-align: center;
+	background-image: url('#{$asset-path}/images/splatter.png');
+	background-position: center 50%;
+	background-repeat: no-repeat;
+	background-size: rem-calc(275);
+
+	@include breakpoint(small only) {
+		background-size: 50vw;
+	}
+
+	svg {
+		height: 8em;
+		width: 100%;
+	}
+
+	text {
+		text-anchor: middle;
+	}
+
+}
+
+.page-title-svg,
+.page-title {
+	font-family: pleasures;
+	text-transform: lowercase;
+	font-size: rem-calc(100);
+	white-space: nowrap;
+	
+	@include breakpoint(small only) {
+		font-size: 18vw;
+	}
+
+}
+
+.page-title {
+	color: $black;
+	-webkit-text-fill-color: transparent;
+	background: url(#{$asset-path}/images/inkbg.jpg) repeat;
+  	-webkit-background-clip: text;
+  	background-size: 50%;
+}
+
+.set-title-container {
+	@extend .text-center;
+
+	h1 {
+		font-size: 0;
+	}
+
+	img {
+		width: auto;
+		height: rem-calc(110);
+		margin-top: rem-calc(10);
+		margin-bottom: rem-calc(-10);
+
+		@include breakpoint(small only) {
+			width: auto;
+			height: 20vw;
+		}
+
+	}
+
 }
 
 .content {
@@ -203,22 +261,9 @@
 
 }
 
-// who we are page
+// who we are page / pricing pages
 
-.who-we-are-page {
-
-	.split-box-left {
-	 	background-color: $primary-color-90-lighter;
-	}
-
-	.split-box-right {
-		@include full-bg-img;
-	}
-
-}
-
-// pricing page
-
+.who-we-are-page,
 .pricing-page {
 
 	.split-box-left {

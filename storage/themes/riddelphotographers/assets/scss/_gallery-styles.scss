@@ -78,28 +78,6 @@
 
 }
 
-.gallery-page-header-background {
-	position: relative;
-
-	&:before {
-		content: '';
-		background-image: url('#{$asset-path}/images/paint-splatter.png');
-		background-position: center rem-calc(-55);
-		background-repeat: no-repeat;
-		background-size: rem-calc(960);
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		z-index: -999;
-		left: rem-calc(15);
-	}
-
-}
-
-.gallery-container-page {
-	margin-top: rem-calc(75);
-}
-
 .gallery-main {
 
 

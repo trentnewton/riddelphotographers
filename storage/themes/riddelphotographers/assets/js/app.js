@@ -12,6 +12,8 @@ new vUnit({
   },
 }).init(); // call the public init() method
 
+// jquery functions
+
 (function($) {
 
   'use strict';

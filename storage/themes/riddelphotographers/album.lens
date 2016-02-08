@@ -25,10 +25,10 @@
 		</koken:not>
 	</koken:head>
 	<main class="gallery-page" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+		<header class="page-title-container">
+			<h1 class="page-title" itemprop="headline">&#x99B4;{{ album.title }}&#x99C2;</h1>
+		</header>
 		<div class="row column">
-			<header class="gallery-page-header-container">
-                <h1 class="gallery-page-header" itemprop="headline">{{ album.title }}</h1>
-            </header>
             <koken:unlisted>
 				<p class="unlisted">
 					This album is unlisted. Please don't share a link to it.
@@ -62,10 +62,9 @@
 	</main>
 	<koken:else>
 
-		<!-- Display fallback message in Site editor only -->
 		<koken:note>
 			No album loaded
 		</koken:note>
 
 </koken:load>
-<koken:include file="partials/footer.html" />
+<koken:include file="partials/alt-footer.html" />
