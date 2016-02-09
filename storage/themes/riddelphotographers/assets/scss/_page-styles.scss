@@ -221,7 +221,7 @@
 .split-box-left,
 .split-box-right {
 	position: relative;
-	z-index: 1;
+	z-index: 0;
 	min-height: rem-calc(645);
 }
 
