@@ -25,7 +25,7 @@
 	</koken:head>
 	<main class="regular-page" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 		<header class="page-title-container">
-			<h1 class="page-title" itemprop="headline">&#x99B4;{{ page.title }}&#x99C2;</h1>
+			<h1 class="page-title" itemprop="headline">&#xe00c;{{ page.title }}&#xe013;</h1>
 		</header>
 		{{ page.content }}
 	</main>

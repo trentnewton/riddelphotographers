@@ -26,7 +26,7 @@
 	</koken:head>
 	<main class="gallery-page" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 		<header class="page-title-container">
-			<h1 class="page-title" itemprop="headline">&#x99B4;{{ album.title }}&#x99C2;</h1>
+			<h1 class="page-title" itemprop="headline">&#xe00c;{{ album.title }}&#xe013;</h1>
 		</header>
 		<div class="row column">
             <koken:unlisted>
