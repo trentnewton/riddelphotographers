@@ -50,7 +50,6 @@
 
 	<koken:else>
 
-		<!-- Display fallback message in Site editor only -->
 		<koken:note>
 			No set found. Create one in the Library.
 		</koken:note>

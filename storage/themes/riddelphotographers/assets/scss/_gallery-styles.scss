@@ -49,34 +49,34 @@
 .gallery-page {
 
 	.content {
-		text-align: center;
+		@extend .text-center;
 	}
 	
 }
 
-.gallery-page-header-container {
-	margin: 0 auto;
-	width: rem-calc(238);
-	height: rem-calc(238);
-	position: relative;
-}
+// .gallery-page-header-container {
+// 	margin: 0 auto;
+// 	width: rem-calc(238);
+// 	height: rem-calc(238);
+// 	position: relative;
+// }
 
-.gallery-page-header {
-	text-align: center;
-	text-transform: uppercase;
-	color: $white;
-	font-size: header-size(medium, h3);
-	word-spacing: rem-calc(238);
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+// .gallery-page-header {
+// 	text-align: center;
+// 	text-transform: uppercase;
+// 	color: $white;
+// 	font-size: header-size(medium, h3);
+// 	word-spacing: rem-calc(238);
+// 	position: absolute;
+// 	top: 50%;
+// 	left: 50%;
+// 	transform: translate(-50%, -50%);
 
-	@include small-portrait {
-		margin-top: 0;
-	}
+// 	@include small-portrait {
+// 		margin-top: 0;
+// 	}
 
-}
+// }
 
 .gallery-main {
 

@@ -37,7 +37,6 @@
             	</div>
           	</a>
           	<div class="gallery-container">
-            	<button type="button" data-role="none" class="slick-prev slick-arrow gallery-trigger" aria-label="Previous" role="button" aria-disabled="true">Previous</button>
 	            <koken:include file="partials/album-slider.html" />
           	</div>
         </div>
@@ -46,7 +45,6 @@
 	</koken:loop>
 	<koken:else>
 
-		<!-- Display fallback message in Site editor only -->
 		<koken:note>
 			No public albums found
 		</koken:note>
