@@ -80,13 +80,3 @@ svg {
 .error {
 	color: $alert-color;
 }
-
-.flash {
-	display: inline;
-	@include flash;
-	@include loop;
-}
-
-.moveInUp {
-	@include moveInUp;
-}

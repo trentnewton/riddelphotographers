@@ -124,3 +124,13 @@
 	animation-duration: 2s;
 	animation-fill-mode: both;
 }
+
+.flash {
+	display: inline;
+	@include flash;
+	@include loop;
+}
+
+.moveInUp {
+	@include moveInUp;
+}

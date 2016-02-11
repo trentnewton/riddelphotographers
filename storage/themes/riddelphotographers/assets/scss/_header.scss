@@ -23,6 +23,7 @@
 	
 .main-elements {
 	@include absolute-center;
+	filter: blur(0);
 }
 
 .main-logo {
@@ -31,6 +32,7 @@
 	width: rem-calc(717);
 	height: auto;
 	left: 42%;
+	filter: blur(0);
 
 	@include breakpoint(small only) {
 		max-width: initial;
@@ -179,6 +181,7 @@
 	transform: translateX(-50%);
 	width: rem-calc(60);
 	height: rem-calc(25);
+	filter: blur(0);
 
 	@include small-portrait {
 		top: rem-calc(40);
