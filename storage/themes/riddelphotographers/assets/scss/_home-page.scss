@@ -16,7 +16,7 @@
 	z-index: -999;
 	background-attachment: fixed;
 
-	@include breakpoint(medium down) {
+	@include breakpoint(small down) {
 		background-attachment: scroll;
 	}
 
