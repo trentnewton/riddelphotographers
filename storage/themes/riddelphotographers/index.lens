@@ -28,7 +28,7 @@
           	<a class="gallery-trigger" href="#move-over">
             	<div class="main-title">
                 	<h2 itemprop="headline">
-                		{{ album.title }}
+                		<span class="visual-hide">{{ album.title }}</span>
                 		<img src="{{ location.theme_path }}/assets/images/{{ album.title }}-title.png" alt="{{ album.title }}">
                 		<div class="flash">
                 			<svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg>

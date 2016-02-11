@@ -57,8 +57,13 @@ svg {
 
 .visual-hide {
 	position: absolute;
-	top: -9999px;
-	left: -9999px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
 }
 
 .off-canvas-wrapper {

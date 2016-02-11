@@ -58,6 +58,7 @@
     float: left;
     height: 100%;
     min-height: 1px;
+    
     [dir="rtl"] & {
         float: right;
     }

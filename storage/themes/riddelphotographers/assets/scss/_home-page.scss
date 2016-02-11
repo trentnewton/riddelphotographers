@@ -42,7 +42,6 @@
 
 	h2 {
 		color: $black;
-		font-size: 0;
 		@include vertical-center;
 		right: $grid-column-gutter;
 		margin: 0;
@@ -76,7 +75,7 @@
 
 	&:hover,
 	&:focus {
-		
+
 		.main-title {
 			background: rgba($white, 0.6);
 		}

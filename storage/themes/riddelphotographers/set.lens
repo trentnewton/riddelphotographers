@@ -27,7 +27,7 @@
 	<main class="gallery-page" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 		<header class="set-title-container">
 			<h1 itemprop="headline">
-				{{ album.title }}
+				<span class="visual-hide">{{ album.title }}</span>
 				<img src="{{ location.theme_path }}/assets/images/{{ album.title }}-title.png" alt="{{ album.title }}">
 			</h1>
 		</header>
