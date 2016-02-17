@@ -35,13 +35,13 @@
 
 	@include breakpoint(small only) {
 		max-width: initial;
-		width: rem-calc(600);
+		width: rem-calc(400);
 		left: 40.5%;
 	}
 	
-	@include small-landscape {
-		width: rem-calc(400);
-	}
+	// @include small-landscape {
+	// 	width: rem-calc(400);
+	// }
 
 	@include medium-portrait {
 		max-width: initial;
