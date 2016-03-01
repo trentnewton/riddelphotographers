@@ -32,7 +32,7 @@
 </koken:load>
 <koken:load limit="0">
 
-	<div class="gallery-page">
+	<article class="gallery-page">
 		<header class="page-title-container">
 			<h1 class="page-title" itemprop="headline">&#xe00c;Albums&#xe013;</h1>
 		</header>
@@ -48,7 +48,7 @@
 				
             </div>
 		</div>
-	</div>
+	</article>
 
 	<koken:loop>
 	<section id="{{ album.title }}" class="slides-container vh_height100">

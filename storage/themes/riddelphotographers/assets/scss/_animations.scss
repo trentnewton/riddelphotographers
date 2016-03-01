@@ -26,6 +26,26 @@
 	backface-visibility: hidden;
 }
 
+@keyframes fadeInUpVCentre {
+
+	from {
+		opacity: 0;
+		transform: translate3d(-50%, 100%, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate3d(-50%, 0, 0);
+	}
+
+}
+
+@mixin fadeInUpVCentre {
+	animation-name: fadeInUpVCentre;
+	animation-duration: $transition-time;
+	animation-fill-mode: both;
+}
+
 @keyframes fadeInUp {
 
 	from {
@@ -45,7 +65,7 @@
 	animation-duration: 1s;
 	animation-fill-mode: both;
 }
-
+	
 @keyframes fadeInDown {
 
 	from {

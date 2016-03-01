@@ -9,6 +9,19 @@ a {
 	color: $white;
 }
 
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track-piece  {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: $secondary-color;
+}
+
 figure {
 	margin: 0;
 }

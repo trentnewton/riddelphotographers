@@ -31,7 +31,7 @@
 				<img src="{{ location.theme_path }}/assets/images/{{ album.title }}-title.png" alt="{{ album.title }}">
 			</h1>
 		</header>
-		<div class="row column">
+		<article class="row column">
             <koken:unlisted>
             <div class="content">
 				<p class="unlisted">
@@ -42,10 +42,10 @@
             <div class="content">
 				{{ album.description paragraphs="true" }}
             </div>
-		</div>
-		<div class="gallery-container-page">
+		</article>
+		<section class="gallery-container-page">
 			<koken:include file="partials/album-slider.html" />
-		</div>
+		</section>
 	</main>
 
 	<koken:else>

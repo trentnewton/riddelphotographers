@@ -12,6 +12,10 @@
 			opacity: 1;
 		}
 
+		h3 {
+			@include fadeInUpVCentre;
+		}
+
 	}
 
 }
