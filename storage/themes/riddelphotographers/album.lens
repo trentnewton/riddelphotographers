@@ -35,6 +35,11 @@
 				</p>
 			</koken:unlisted>
             <div class="content">
+            	<koken:album_download>
+	  			<p class="text-center">
+	    			<koken:link class="button"><svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg>&nbsp;Download Album</koken:link>
+	  			</p>
+				</koken:album_download>
 				{{ album.description paragraphs="true" }}
             </div>
             <div class="image-items-list">
