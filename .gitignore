@@ -1,87 +1,40 @@
- 
-# ignore everything in the root.
-
-!favicon.ico
- 
-# ignore all files starting with . or ~
-.*
-~*
- 
-# ignore node dependency directories (used by grunt)
-node_modules/
- 
-# ignore OS generated files
-ehthumbs.db
-Thumbs.db
- 
-# ignore Editor files
-*.sublime-project
-*.sublime-workspace
-*.komodoproject
- 
-# ignore log files and databases
-*.log
-*.sql
-*.sqlite
- 
-# ignore compiled files
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
- 
-# ignore packaged files
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
-*.rar
-*.tar
-*.zip
-
-# koken files
-
-admin/*
-app/*
-storage/cache/*
+# Ignore configuration files that may contain sensitive information.
 storage/configuration/*
+
+# Ignore paths that contain generated content.
+storage/cache/*
 storage/custom/*
 storage/originals/*
-storage/plugins/*
-storage/themes/index.html/*
-storage/themes/blueprint/*
-storage/themes/elementary/*
 storage/tmp/*
 storage/wallpaper/*
+
+* Ignore default themes and plugins
+storage/plugins/*
+storage/themes/index.html/*
+storage/themes/elementary/*
+
+# Ignore default text files
+robots.txt
+
+# Ignore everything but the "storage" folder ( for non core developer )
+.htaccess
 a.php
 api.php
 dl.php
 i.php
 index.php
 preview.php
- 
-# -------------------------
-# BEGIN Whitelisted Files
-# -------------------------
- 
-# track these files, if they exist
-!.gitignore
-!.editorconfig
-!README.md
-!CHANGELOG.md
-!composer.json
-!storage/themes/riddelphotographers
- 
-# track these mu-plugins, plugins, and themes
-# add your own entries here
+/admin
+/app
+/includes
+/misc
+/modules
+/profiles
+/scripts
+/themes
 
+# Ignore project and log files
 
-# -------------------------
-# BEGIN Blacklisted Files
-# -------------------------
-
-# disallow these
-
+*.sublime-project
+*.sublime-workspace
+*.log
