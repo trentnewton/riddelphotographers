@@ -1,4 +1,0 @@
-User-agent: *
-Disallow: /admin/
-
-Sitemap: http://www.riddelphotographers.com.au/sitemap.xml
