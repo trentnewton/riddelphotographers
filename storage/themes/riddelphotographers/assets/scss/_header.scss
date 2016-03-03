@@ -423,14 +423,14 @@
 // login / error page header
 
 .login-header {
-	margin-top: rem-calc(60);
+	padding-top: rem-calc(60);
 	position: relative;
 
 	.logo-link {
 
 		&:before,
 		&:after {
-			top: 48%;
+			top: 60%;
 			left: 50.1%
 		}
 
