@@ -3335,7 +3335,8 @@ img.k-lazy-loading {
   position: relative; }
   .split-page-bg .bg-overlay {
     background: -webkit-linear-gradient(left, rgba(10, 10, 10, 0.3) 0%, rgba(10, 10, 10, 0.3) 100%);
-    background: linear-gradient(to right, rgba(10, 10, 10, 0.3) 0%, rgba(10, 10, 10, 0.3) 100%); }
+    background: linear-gradient(to right, rgba(10, 10, 10, 0.3) 0%, rgba(10, 10, 10, 0.3) 100%);
+    position: absolute; }
 
 .who-we-are-page .split-box-left,
 .pricing-page .split-box-left {
