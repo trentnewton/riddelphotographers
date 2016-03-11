@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="{{ location.theme_path }}/assets/images/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="{{ location.theme_path }}/assets/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ location.theme_path }}/assets/images/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ location.theme_path }}/assets/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ location.theme_path }}/assets/images/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ location.theme_path }}/assets/images/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ location.theme_path }}/assets/images/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ location.theme_path }}/assets/images/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ location.theme_path }}/assets/images/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ location.theme_path }}/assets/images/apple-touch-icon-180x180.png">
-    <koken:meta />
-    <koken:title />
-    <koken:asset file="assets/css/app.css" />
-    <!-- <koken:settings /> -->
-  </head>
-  <body itemscope itemtype="http://schema.org/WebPage">
-    <koken:include file="partials/svg.html" />
-    <!--[if lte IE 9]><p class="old-browser-notice">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> to experience this site.</p><![endif]-->
-    <div id="top" class="off-canvas-wrapper animsition">
-      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-        <koken:include file="partials/side-navigation.html" />
-        <div class="off-canvas-content" data-off-canvas-content itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
-          <header class="main-header vh_height100" itemscope itemtype="http://schema.org/WPHeader">
-            <div class="main-elements">
-              <koken:link to="front" title="{{ labels.home.singular }}" class="">
-                <h1 itemprop="headline">
-                  <span class="visual-hide">{{ site.title }}</span>
-                  <koken:asset file="assets/images/logo.png" class="main-logo" alt="{{ site.title }}" width="1434" height="676" />
-                </h1>
-              </koken:link>
-              <koken:include file="partials/navigation.html" />
-              <div class="scroll-down-container">
-                <a class="scroll-down" href="#Weddings">
-                  <svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg>
-                </a>
-              </div>
-            </div>
-            <button class="hamburger" type="button" data-toggle="offCanvasRight">
-              <span class="bar"></span>
-            </button>
-          </header>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="{{ location.theme_path }}/assets/images/favicon.ico" type="image/x-icon">
+        <link rel="apple-touch-icon" href="{{ location.theme_path }}/assets/images/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="{{ location.theme_path }}/assets/images/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ location.theme_path }}/assets/images/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="{{ location.theme_path }}/assets/images/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ location.theme_path }}/assets/images/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ location.theme_path }}/assets/images/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ location.theme_path }}/assets/images/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ location.theme_path }}/assets/images/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ location.theme_path }}/assets/images/apple-touch-icon-180x180.png">
+        <koken:meta />
+        <koken:title />
+        <koken:asset file="assets/css/app.css" />
+        <!-- <koken:settings /> -->
+    </head>
+    <body itemscope itemtype="http://schema.org/WebPage">
+        <koken:include file="partials/svg.html" />
+        <!--[if lte IE 9]><p class="old-browser-notice">Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> to experience this site.</p><![endif]-->
+        <div id="top" class="off-canvas-wrapper animsition">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+                <koken:include file="partials/side-navigation.html" />
+                <div class="off-canvas-content" data-off-canvas-content itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+                    <header class="main-header vh_height100" itemscope itemtype="http://schema.org/WPHeader">
+                        <div class="main-elements">
+                            <koken:link to="front" title="{{ labels.home.singular }}" class="">
+                                <h1 itemprop="headline">
+                                    <span class="visual-hide">{{ site.title }}</span>
+                                    <koken:asset file="assets/images/logo.png" class="main-logo" alt="{{ site.title }}" width="1434" height="676" />
+                                </h1>
+                            </koken:link>
+                            <koken:include file="partials/navigation.html" />
+                            <div class="scroll-down-container">
+                                <a class="scroll-down" href="#Weddings">
+                                    <svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="hamburger" type="button" data-toggle="offCanvasRight">
+                            <span class="bar"></span>
+                        </button>
+                    </header>

@@ -32,16 +32,16 @@
 			</h1>
 		</header>
 		<article class="row column">
-            <koken:unlisted>
-            <div class="content">
+			<koken:unlisted>
+			<div class="content">
 				<p class="unlisted">
 					This album is unlisted. Please don't share a link to it.
 				</p>
-            </div>
+			</div>
 			</koken:unlisted>
-            <div class="content">
+			<div class="content">
 				{{ album.description paragraphs="true" }}
-            </div>
+			</div>
 		</article>
 		<section class="gallery-container-page">
 			<koken:include file="partials/album-slider.html" />

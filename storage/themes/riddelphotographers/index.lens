@@ -24,23 +24,23 @@
 	</koken:head>
 	<koken:loop>
 	<section id="{{ album.title }}" class="slides-container vh_height100">
-        <div class="main-slide">
-          	<a class="gallery-trigger" href="#move-over">
-            	<div class="main-title">
-                	<h2 itemprop="headline">
-                		<span class="visual-hide">{{ album.title }}</span>
-                		<img src="{{ location.theme_path }}/assets/images/{{ album.title }}-title.png" alt="{{ album.title }}">
-                		<div class="flash">
-                			<svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg>
-                		</div>
-                	</h2>
-            	</div>
-          	</a>
-          	<div class="gallery-container">
-	            <koken:include file="partials/album-slider.html" />
-          	</div>
-        </div>
-        <koken:background class="main-background"></koken:background>
+		<div class="main-slide">
+			<a class="gallery-trigger" href="#move-over">
+				<div class="main-title">
+					<h2 itemprop="headline">
+						<span class="visual-hide">{{ album.title }}</span>
+						<img src="{{ location.theme_path }}/assets/images/{{ album.title }}-title.png" alt="{{ album.title }}">
+						<div class="flash">
+							<svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg>
+						</div>
+					</h2>
+				</div>
+			</a>
+			<div class="gallery-container">
+				<koken:include file="partials/album-slider.html" />
+			</div>
+		</div>
+		<koken:background class="main-background"></koken:background>
 	</section>
 	</koken:loop>
 	<koken:else>

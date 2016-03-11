@@ -29,20 +29,20 @@
 			<h1 class="page-title" itemprop="headline">&#xe00c;{{ album.title }}&#xe013;</h1>
 		</header>
 		<section class="row column">
-            <koken:unlisted>
+			<koken:unlisted>
 				<p class="unlisted">
 					This album is unlisted. Please don't share a link to it.
 				</p>
 			</koken:unlisted>
-            <div class="content">
-            	<koken:album_download>
-	  			<p class="text-center">
-	    			<koken:link class="button"><svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg>&nbsp;Download Album</koken:link>
-	  			</p>
+			<div class="content">
+				<koken:album_download>
+				<p class="text-center">
+					<koken:link class="button"><svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg>&nbsp;Download Album</koken:link>
+				</p>
 				</koken:album_download>
 				{{ album.description paragraphs="true" }}
-            </div>
-            <div class="image-items-list">
+			</div>
+			<div class="image-items-list">
 			<koken:loop>
 				<koken:content_image>
 					<figure class="image-item {{ content.aspect_ratio }}">
