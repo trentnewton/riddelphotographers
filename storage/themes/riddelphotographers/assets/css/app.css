@@ -2680,7 +2680,7 @@ select:focus {
   @media screen and (min-width: 0em) and (max-width: 39.9375em) {
     .side-nav a {
       font-size: 1.9375rem; } }
-  .side-nav a.k-nav-current, .side-nav a:hover {
+  .side-nav a.k-nav-current, .side-nav a:hover, .side-nav a:focus {
     color: #a1acb4; }
 
 .main-header,
@@ -2942,7 +2942,7 @@ select:focus {
       color: #a1acb4; }
       .page-header .main-nav a.active {
         color: #425868; }
-        .page-header .main-nav a.active:hover {
+        .page-header .main-nav a.active:hover, .page-header .main-nav a.active:focus {
           color: #febf4d; }
 
 .top-navigation {
@@ -3062,10 +3062,10 @@ select:focus {
 .gallery-item {
   position: relative; }
 
-.grid-overlay-link:hover .grid-overlay {
+.grid-overlay-link:hover .grid-overlay, .grid-overlay-link:focus .grid-overlay {
   opacity: 1; }
 
-.grid-overlay-link:hover h3 {
+.grid-overlay-link:hover h3, .grid-overlay-link:focus h3 {
   -webkit-animation-name: fadeInUpVCentre;
           animation-name: fadeInUpVCentre;
   -webkit-animation-duration: 0.3s;

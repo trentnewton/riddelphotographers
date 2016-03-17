@@ -385,7 +385,8 @@
 			&.active {
 				color: $primary-color;
 				
-				&:hover {
+				&:hover,
+				&:focus {
 					color: $anchor-color-hover;
 				}
 

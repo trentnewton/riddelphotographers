@@ -137,7 +137,8 @@
 		}
 
 		&.k-nav-current,
-		&:hover {
+		&:hover,
+		&:focus {
 			color: $primary-color-50-lighter;
 		}
 

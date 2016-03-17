@@ -6,7 +6,8 @@
 
 .grid-overlay-link {
 
-	&:hover {
+	&:hover,
+	&:focus {
 
 		.grid-overlay {
 			opacity: 1;
