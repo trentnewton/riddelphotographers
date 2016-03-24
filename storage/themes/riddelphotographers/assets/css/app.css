@@ -2006,7 +2006,7 @@ body {
 
 .off-canvas {
   position: absolute;
-  background: #425868;
+  background: #eceff0;
   z-index: 9999;
   max-height: 100%;
   overflow-y: auto;
