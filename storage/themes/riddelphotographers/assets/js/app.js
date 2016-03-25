@@ -53,7 +53,7 @@ new vUnit({
       dots: false,
       infinite: true,
       speed: 300,
-      slidesToShow: 1,
+      slidesToShow: 4,
       variableWidth: true
     });
 
