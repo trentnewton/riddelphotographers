@@ -3362,13 +3362,11 @@ img.k-lazy-loading {
   padding-right: 0; }
 
 .login {
-  overflow-x: hidden;
-  background: url(../images/login-page.jpg) center no-repeat;
-  background-size: cover; }
+  overflow-x: hidden; }
 
 .login-form {
   margin: 3.75rem 0;
-  background-color: rgba(254, 254, 254, 0.7);
+  background-color: #eceff0;
   padding: 0.9375rem;
   text-align: center;
   position: relative;
