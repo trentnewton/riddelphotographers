@@ -1396,7 +1396,7 @@ kbd {
 .text-right {
   text-align: right; }
 
-.text-center, .gallery-page .content, .set-title-container {
+.text-center, .gallery-page .content, .k-note, .set-title-container {
   text-align: center; }
 
 .text-justify {

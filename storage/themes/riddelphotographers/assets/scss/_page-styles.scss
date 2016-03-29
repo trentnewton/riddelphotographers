@@ -1,5 +1,9 @@
 // general page styles
 
+.k-note {
+	@extend .text-center;
+}
+
 .page-title-container {
 	text-align: center;
 	background-image: url(#{$asset-path}/images/splatter.png);
