@@ -72,11 +72,11 @@
 	</koken:loop>
 
 	<koken:else>
-
+		<div class="row column">
 		<koken:note>
-			No public albums found
+			<p class="error">No public albums found</p>
 		</koken:note>
-
+		</div>
 </koken:load>
 
 <koken:include file="partials/footer.html" />

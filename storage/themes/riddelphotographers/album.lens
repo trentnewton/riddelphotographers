@@ -66,10 +66,10 @@
 		</section>
 	</main>
 	<koken:else>
-
+		<div class="row column">
 		<koken:note>
-			No album loaded
+			<p class="error">No album loaded</p>
 		</koken:note>
-
+		</div>
 </koken:load>
 <koken:include file="partials/alt-footer.html" />

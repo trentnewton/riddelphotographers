@@ -49,11 +49,11 @@
 	</main>
 
 	<koken:else>
-
+		<div class="row column">
 		<koken:note>
-			No set found. Create one in the Library.
+			<p class="error">No set found. Create one in the Library.</p>
 		</koken:note>
-
+		</div>
 </koken:load>
 
 <koken:include file="partials/footer.html" />

@@ -73,11 +73,11 @@
 	</koken:loop>
 
 	<koken:else>
-
+		<div class="row column">
 		<koken:note>
-			No sets found. Create some in the Library.
+			<p class="error">No sets found. Create some in the Library.</p>
 		</koken:note>
-
+		</div>
 </koken:load>
 
 <koken:include file="partials/footer.html" />
