@@ -15,8 +15,8 @@
 }
 
 .bar {
-	&, 
-	&::before, 
+	&,
+	&::before,
 	&::after {
 		transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
 		position: absolute;
@@ -77,7 +77,7 @@
 	height: 100%;
 }
 
-.side-nav { 
+.side-nav {
 
 	&.active {
 

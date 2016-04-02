@@ -19,7 +19,7 @@
 	}
 
 }
-	
+
 .main-elements {
 	@include absolute-center;
 	filter: blur(0);
@@ -38,7 +38,7 @@
 		width: rem-calc(400);
 		left: 40.5%;
 	}
-	
+
 	// @include small-landscape {
 	// 	width: rem-calc(400);
 	// }
@@ -185,7 +185,7 @@
 	@include small-portrait {
 		top: rem-calc(40);
 	}
-	
+
 	@include small-landscape {
 		top: 0;
 	}
@@ -226,7 +226,7 @@
 
 .scroll-down,
 .scroll-up {
-	
+
 	&:before {
 		top: 57%;
 		left: 50%;
@@ -349,7 +349,7 @@
 	padding-bottom: rem-calc(48);
 	position: relative;
 	height: rem-calc(350);
-	
+
 	@include small-landscape {
 		height: rem-calc(250);
 	}
@@ -378,13 +378,13 @@
 	.main-nav {
 		@include horizontal-center-relative;
 		display: inline-block;
-		
+
 		a {
 			color: $primary-color-50-lighter;
 
 			&.active {
 				color: $primary-color;
-				
+
 				&:hover,
 				&:focus {
 					color: $anchor-color-hover;

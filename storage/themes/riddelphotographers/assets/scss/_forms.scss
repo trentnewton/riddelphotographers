@@ -15,7 +15,7 @@ textarea {
 }
 
 select {
-	
+
 	&:focus {
 		border: $input-border-focus;
 		box-shadow: $input-shadow-focus;
@@ -46,7 +46,7 @@ select {
 		transition: transform ($transition-time * 2), opacity ($transition-time * 2);
 		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 	}
-	
+
 	&:focus,
 	&:hover {
 		color: $primary-color;
