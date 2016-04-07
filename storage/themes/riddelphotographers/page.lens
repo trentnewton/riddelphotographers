@@ -23,7 +23,7 @@
 			</koken:featured_image>
 		</koken:not>
 	</koken:head>
-	<main class="regular-page" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+	<main class="regular-page page-{{ page.id }} page-{{ page.slug }}" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 		<header class="page-title-container">
 			<h1 class="page-title" itemprop="headline">&#xe00c;{{ page.title }}&#xe013;</h1>
 		</header>

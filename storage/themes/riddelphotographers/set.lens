@@ -24,7 +24,7 @@
 			</koken:covers>
 		</koken:not>
 	</koken:head>
-	<main class="gallery-page" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+	<main class="gallery-page set-{{ album.id }} set-{{ album.slug }}" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 		<header class="set-title-container">
 			<h1 itemprop="headline">
 				<span class="visual-hide">{{ album.title }}</span>
