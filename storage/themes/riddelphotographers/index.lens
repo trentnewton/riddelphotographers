@@ -8,7 +8,7 @@
 		<meta property="og:description" content="{{ site.description strip_html='true' }}">
 		<meta property="og:type" content="website">
 		<koken:first>
-		<meta property="og:image" content="{{ location.theme_path }}/assets/images/riddel-photographers-og.png">
+		<meta property="og:image" content="{{ location.site_url }}{{ location.theme_path }}/assets/images/riddel-photographers-og.png">
 		<meta property="og:image:width" content="250">
 		<meta property="og:image:height" content="250">
 		</koken:first>
