@@ -1,18 +1,10 @@
-<koken:include file="partials/login-header.html" />
+<koken:include file="partials/coming-soon-header.html" />
 		<main class="row">
 			<div class="medium-6 columns small-centered">
-				<koken:form class="login-form">
-					<h1><svg class="icon icon-key"><use xlink:href="#icon-key"></use></svg>&nbsp;Login</h1>
-					<koken:not empty="messages.koken_password_error">
-						<p class="error">
-							{{ messages.koken_password_error }}
-						</p>
-					</koken:not>
-					<p>
-						<input type="password" name="password" autofocus placeholder="Enter password">
-					</p>
-					<button type="submit" class="large button" disabled="disabled">Go</button>
-				</koken:form>
+				<div class="login-form">
+					<h1>Coming Soon</h1>
+					<p>We are launching soon, we'll keep you posted!</p>
+				</div>
 			</div>
 		</main>
 		<koken:asset file="assets/js/min/app-min.js" />

@@ -1,0 +1,20 @@
+<koken:include file="partials/login-header.html" />
+		<main class="row">
+			<div class="medium-6 columns small-centered">
+				<koken:form class="login-form">
+					<h1><svg class="icon icon-key"><use xlink:href="#icon-key"></use></svg>&nbsp;Login</h1>
+					<koken:not empty="messages.koken_password_error">
+						<p class="error">
+							{{ messages.koken_password_error }}
+						</p>
+					</koken:not>
+					<p>
+						<input type="password" name="password" autofocus placeholder="Enter password">
+					</p>
+					<button type="submit" class="large button" disabled="disabled">Go</button>
+				</koken:form>
+			</div>
+		</main>
+		<koken:asset file="assets/js/min/app-min.js" />
+	</body>
+</html>
