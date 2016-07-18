@@ -94,12 +94,12 @@ new vUnit({
 
     // detect portrait photos and add class
 
-    $('.image-items-list .image-item > img[data-presets*="tiny,40,60"]').parent().addClass('half');
-    $('.image-items-list .image-item.0.667').addClass('half');
-    $('.image-items-list .image-item > img[alt*="portrait"]').addClass('half');
-    $('.image-items-list .image-item > img[alt*="landscape"][data-presets*="tiny,40,60"]').parent().removeClass('half');
-    $('.image-items-list .image-item > img[alt*="landscape"][data-presets*="tiny,24,60"]').parent().removeClass('half');
-    $('.image-items-list .image-item.0.667 > img[alt*="landscape"]').parent().removeClass('half');
+    // $('.image-items-list .image-item > img[data-presets*="tiny,40,60"]').parent().addClass('half');
+    $('.image-items-list .image-item.0\\.667').addClass('half');
+    $('.image-items-list .image-item > img[alt*="portrait"]').parent().addClass('half');
+    // $('.image-items-list .image-item > img[alt*="landscape"][data-presets*="tiny,40,60"]').parent().removeClass('half');
+    $('.image-items-list .image-item > img[alt*="landscape"]').parent().removeClass('half');
+    $('.image-items-list .image-item.0\\.667 > img[alt*="landscape"]').parent().removeClass('half');
 
   });
 
