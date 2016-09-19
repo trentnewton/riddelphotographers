@@ -45,7 +45,7 @@
 			<div class="image-items-list">
 			<koken:loop>
 				<koken:content_image>
-					<figure class="image-item {{ content.aspect_ratio }}">
+					<div class="image-item {{ content.aspect_ratio }}">
 						<koken:img preset="large" />
 						<div class="pin-it-button">
 							<a data-pin-do="buttonPin" data-pin-color="red" data-pin-tall="true" href="https://www.pinterest.com/pin/create/button/?url={{ album.url }}&media={{ content.presets.large.url }}&description={{ content.title }}">
@@ -59,7 +59,7 @@
 							</div>
 						</koken:link>
 						</koken:max_download>
-					</figure>
+					</div>
 				</koken:content_image>
 			</koken:loop>
 			</div>
