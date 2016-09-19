@@ -1,4 +1,4 @@
-module.exports = (function() {
+window.whatInput = (function() {
 
   'use strict';
 
@@ -20,12 +20,15 @@ module.exports = (function() {
   // the last used input type
   var currentInput = null;
 
-  // form input types
-  var formInputs = [
+  // `input` types that don't accept text
+  var nonTypingInputs = [
     'button',
-    'input',
-    'select',
-    'textarea'
+    'checkbox',
+    'file',
+    'image',
+    'radio',
+    'reset',
+    'submit'
   ];
 
   // detect version of mouse wheel event to use
@@ -92,7 +95,7 @@ module.exports = (function() {
   */
 
   // allows events that are also triggered to be filtered out for `touchstart`
-  function eventBuffer(event) {
+  function eventBuffer() {
     clearTimer();
     setInput(event);
 
@@ -106,6 +109,11 @@ module.exports = (function() {
     if (!buffer) setInput(event);
   }
 
+  function unBufferedEvent(event) {
+    clearTimer();
+    setInput(event);
+  }
+
   function clearTimer() {
     window.clearTimeout(timer);
   }
@@ -117,27 +125,34 @@ module.exports = (function() {
 
     // don't do anything if the value matches the input type already set
     if (currentInput !== value) {
-      var activeElement = document.activeElement.nodeName.toLowerCase();
+      var eventTarget = target(event);
+      var eventTargetNode = eventTarget.nodeName.toLowerCase();
+      var eventTargetType = (eventTargetNode === 'input') ? eventTarget.getAttribute('type') : null;
 
       if (
+        (// only if the user flag to allow typing in form fields isn't set
+        !body.hasAttribute('data-whatinput-formtyping') &&
+
+        // only if currentInput has a value
+        currentInput &&
+
+        // only if the input is `keyboard`
+        value === 'keyboard' &&
+
+        // not if the key is `TAB`
+        keyMap[eventKey] !== 'tab' &&
+
+        // only if the target is a form input that accepts text
         (
-          // only if the user flag to allow input switching
-          // while interacting with form fields isn't set
-          !body.hasAttribute('data-whatinput-formswitching') &&
-
-          // support for legacy keyword
-          !body.hasAttribute('data-whatinput-formtyping') &&
-
-          // only if currentInput has a value
-          currentInput &&
-
-          formInputs.indexOf(activeElement) > -1
-        ) || (
+           eventTargetNode === 'textarea' ||
+           eventTargetNode === 'select' ||
+           (eventTargetNode === 'input' && nonTypingInputs.indexOf(eventTargetType) < 0)
+        )) || (
           // ignore modifier keys
           ignoreMap.indexOf(eventKey) > -1
         )
       ) {
-        // ignore keyboard typing and do nothing
+        // ignore keyboard typing
       } else {
         switchInput(value);
       }
@@ -207,8 +222,8 @@ module.exports = (function() {
     body.addEventListener(mouseWheel, bufferedEvent);
 
     // keyboard events
-    body.addEventListener('keydown', eventBuffer);
-    body.addEventListener('keyup', eventBuffer);
+    body.addEventListener('keydown', unBufferedEvent);
+    body.addEventListener('keyup', unBufferedEvent);
     document.addEventListener('keyup', unLogKeys);
   }
 
