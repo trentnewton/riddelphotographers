@@ -12,6 +12,24 @@ new vUnit({
   },
 }).init(); // call the public init() method
 
+colorify({
+  id: 1,
+  attr: 'colorify',
+  container: 'image-item',
+  images: false,
+  accuracy: 10,
+  gradient: true,
+  gradientDirection: 'to bottom right',
+  padding: 4,
+  lazyReveal: {
+    transition: 2,
+    delay: 3,
+    steps: true
+  },
+  giveTo: false,
+  revealOn: false
+});
+
 // jquery functions
 
 (function($) {
