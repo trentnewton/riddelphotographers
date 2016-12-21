@@ -18,7 +18,10 @@
 	&,
 	&::before,
 	&::after {
-		transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
+		transition:
+			0.2s background linear 0.1s,
+			0.2s top linear 0.2s,
+			0.2s transform linear;
 		position: absolute;
 		background: $primary-color;
 		margin: auto;
