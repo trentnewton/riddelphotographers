@@ -2923,9 +2923,6 @@ a {
 ::-webkit-scrollbar-thumb {
   background-color: #febf4d; }
 
-figure {
-  margin: 0; }
-
 a:focus,
 input:focus,
 select:focus,
