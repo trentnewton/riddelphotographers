@@ -539,8 +539,8 @@ button {
   -ms-flex-flow: row wrap;
       flex-flow: row wrap; }
   .row .row {
-    margin-right: -0.9375rem;
-    margin-left: -0.9375rem; }
+    margin-right: -0.625rem;
+    margin-left: -0.625rem; }
     @media print, screen and (min-width: 40em) {
       .row .row {
         margin-right: -0.9375rem;
@@ -564,9 +564,13 @@ button {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 0px;
           flex: 1 1 0px;
-  padding-right: 0.9375rem;
-  padding-left: 0.9375rem;
+  padding-right: 0.625rem;
+  padding-left: 0.625rem;
   min-width: initial; }
+  @media print, screen and (min-width: 40em) {
+    .column, .columns {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
 
 .column.row.row, .row.row.columns {
   display: -webkit-box;
@@ -838,8 +842,8 @@ button {
   padding-left: 0; }
 
 .small-uncollapse > .column, .small-uncollapse > .columns {
-  padding-right: 0.9375rem;
-  padding-left: 0.9375rem; }
+  padding-right: 0.625rem;
+  padding-left: 0.625rem; }
 
 @media print, screen and (min-width: 40em) {
   .medium-1 {
@@ -3685,7 +3689,7 @@ select:focus {
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    right: 30px;
+    right: 1.875rem;
     margin: 0; }
     @media screen and (max-width: 39.9375em) {
       .main-title h2 {
@@ -3772,8 +3776,8 @@ select:focus {
       height: 15.625rem; } }
 
 .row.image-items-list {
-  margin-right: 0.9375rem;
-  margin-left: 0.9375rem; }
+  margin-right: 15px;
+  margin-left: 15px; }
 
 .image-item {
   position: relative;

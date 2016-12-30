@@ -220,7 +220,7 @@
 .login-form {
 	margin: rem-calc(60 0);
 	background-color: $primary-color-90-lighter;
-	padding: rem-calc($grid-column-gutter / 2);
+	padding: rem-calc(map-deep-get($grid-column-gutter, 'medium') / 2);
 	text-align: center;
 	position: relative;
 	z-index: 1;
