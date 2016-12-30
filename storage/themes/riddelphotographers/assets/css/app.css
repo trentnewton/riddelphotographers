@@ -3102,6 +3102,13 @@ textarea:focus,
 button:focus {
   outline: none; }
 
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: Titillium, Helvetica, Roboto, Arial, sans-serif; }
+
 svg {
   vertical-align: middle; }
 
