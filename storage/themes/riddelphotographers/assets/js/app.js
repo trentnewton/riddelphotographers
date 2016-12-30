@@ -65,6 +65,24 @@ new vUnit({
       $('body').addClass('iOS')
     }
 
+    // detect album parent set and add acitve class to corresonding link
+
+    if ($('.gallery-page').is('.set-Weddings')) {
+      $('.k-nav-root a[title="Weddings"]').addClass('k-nav-current');
+    }
+
+    if ($('.gallery-page').is('.set-Engagements')) {
+      $('.k-nav-root a[title="Engagements"]').addClass('k-nav-current');
+    }
+
+    if ($('.gallery-page').is('.set-Families')) {
+      $('.k-nav-root a[title="Families"]').addClass('k-nav-current');
+    }
+
+    if ($('.gallery-page').is('.set-Personal')) {
+      $('.k-nav-root a[title="Personal"]').addClass('k-nav-current');
+    }
+
     // disable sumbit button on login form until something is entered
 
     $('input[type="password"]').keyup(function () {
