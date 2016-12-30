@@ -29,7 +29,7 @@ select {
 	vertical-align: middle;
 	position: relative;
 	z-index: 1;
-	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
 	font-weight: $global-weight-bold;
 
 	&:before {

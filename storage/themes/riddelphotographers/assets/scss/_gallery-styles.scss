@@ -76,20 +76,19 @@
 
 // grid
 
-.image-items-list {
-
-	img {
-		width: 100%;
-	}
-
+.row.image-items-list {
+	margin-right: 0.9375rem;
+	margin-left: 0.9375rem;
 }
 
 .image-item {
 	position: relative;
 	width: 100%;
 	margin-bottom: rem-calc(8);
-	float: left;
-	@include clearfix;
+
+	img {
+		width: 100%;
+	}
 
 	.pin-it-button,
 	.download {

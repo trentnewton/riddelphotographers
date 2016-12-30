@@ -28,13 +28,13 @@
 		<header class="page-title-container">
 			<h1 class="page-title" itemprop="headline">&#xe00c;{{ album.title }}&#xe013;</h1>
 		</header>
-		<section class="row column">
+		<section class="row">
 			<koken:unlisted>
 				<p class="unlisted">
 					This album is unlisted. Please don't share a link to it.
 				</p>
 			</koken:unlisted>
-			<div class="content">
+			<div class="content small-12 column">
 				<koken:album_download>
 				<p class="text-center">
 					<koken:link class="button"><svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg>&nbsp;Download Album</koken:link>
@@ -42,26 +42,26 @@
 				</koken:album_download>
 				{{ album.description paragraphs="true" }}
 			</div>
-			<div class="image-items-list">
-			<koken:loop>
-				<koken:content_image>
-					<figure class="image-item {{ content.aspect_ratio }}">
-						<koken:img preset="large" lazy="true" />
-						<div class="pin-it-button">
-							<a data-pin-do="buttonPin" data-pin-color="red" data-pin-tall="true" href="https://www.pinterest.com/pin/create/button/?url={{ album.url }}&media={{ content.presets.large.url }}&description={{ content.title }}">
-								<img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png">
-							</a>
-						</div>
-						<koken:max_download>
-						<koken:link title="Download">
-							<div class="download">
-								<svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg>
+			<div class="row image-items-list small-collapse">
+				<koken:loop>
+					<koken:content_image>
+						<figure class="image-item {{ content.aspect_ratio }} column small-12">
+							<koken:img preset="large" lazy="true" />
+							<div class="pin-it-button">
+								<a data-pin-do="buttonPin" data-pin-color="red" data-pin-tall="true" href="https://www.pinterest.com/pin/create/button/?url={{ album.url }}&media={{ content.presets.large.url }}&description={{ content.title }}">
+									<img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png">
+								</a>
 							</div>
-						</koken:link>
-						</koken:max_download>
-					</figure>
-				</koken:content_image>
-			</koken:loop>
+							<koken:max_download>
+							<koken:link title="Download">
+								<div class="download">
+									<svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg>
+								</div>
+							</koken:link>
+							</koken:max_download>
+						</figure>
+					</koken:content_image>
+				</koken:loop>
 			</div>
 		</section>
 	</main>
