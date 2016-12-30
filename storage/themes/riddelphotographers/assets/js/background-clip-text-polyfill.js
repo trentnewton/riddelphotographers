@@ -2,19 +2,19 @@
  * A SVG polyfill for "-webkit-brackground-clip: text;".
  *
  * How to use:
- * 
+ *
  * 1. Add the polyfill to your page.
  *
  * 2. Call the polyfill
 
-  var element = document.querySelector('.myelement'); 
+  var element = document.querySelector('.myelement');
   element.backgroundClipPolyfill({
     'patternID' : 'mypattern',
     'patternURL' : 'url/to/background/pattern',
     'class' : 'myelement'
   });
-  
- * 
+
+ *
  * Variables:
  *
  * patternID : the unique ID of the SVG pattern
@@ -26,9 +26,12 @@
  * timpietrusky.com
  */
 Element.prototype.backgroundClipPolyfill = function () {
-  var a = arguments[0],
-      d = document,
-      b = d.body,
+
+  'use strict';
+
+  var a = arguments[0];
+      d = document;
+      b = d.body;
       el = this;
 
   function hasBackgroundClip() {
@@ -93,7 +96,7 @@ Element.prototype.backgroundClipPolyfill = function () {
    */
   if (!hasBackgroundClip()) {
     var img = new Image();
-    img.onload = function() {
+    img.onload = function () {
       var svg = createSVG({
         'id' : a.patternID,
         'url' : a.patternURL,

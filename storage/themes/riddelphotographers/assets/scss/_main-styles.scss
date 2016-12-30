@@ -1,5 +1,9 @@
 // main styles / reset
 
+body {
+	scroll-behavior: smooth;
+}
+
 a {
 	transition: all $transition-time;
 }
@@ -77,6 +81,22 @@ svg {
 	margin: -1px;
 	padding: 0;
 	border: 0;
+}
+
+.iOS {
+
+	::-webkit-scrollbar {
+		all: unset;
+	}
+
+	::-webkit-scrollbar-track-piece  {
+		all: unset;
+	}
+
+	::-webkit-scrollbar-thumb {
+	    all: unset;
+	}
+
 }
 
 .off-canvas-wrapper {

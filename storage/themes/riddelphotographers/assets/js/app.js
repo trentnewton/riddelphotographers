@@ -9,12 +9,12 @@ new vUnit({
       // What to base the value on (vh, vw, vmin or vmax)
       reference: 'vh'
     }
-  },
+  }
 }).init(); // call the public init() method
 
 // jquery functions
 
-(function($) {
+(function ($) {
 
   'use strict';
 
@@ -22,7 +22,7 @@ new vUnit({
 
   $(document).foundation();
 
-  $(document).ready(function() {
+  $(document).ready(function () {
 
     $('.animsition').animsition({
       inClass: 'fade-in',
@@ -41,10 +41,10 @@ new vUnit({
       browser: ['animation-duration', '-webkit-animation-duration'],
       // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
       // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-      overlay : false,
-      overlayClass : 'animsition-overlay-slide',
-      overlayParentElement : 'body',
-      transition: function(url){ window.location.href = url; }
+      overlay: false,
+      overlayClass: 'animsition-overlay-slide',
+      overlayParentElement: 'body',
+      transition: function (url) { window.location.href = url;}
     });
 
     // slick slider for home page & sets pages
@@ -57,9 +57,17 @@ new vUnit({
       variableWidth: true
     });
 
+    // detect iOS and add class to body
+
+    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+    if (iOS) {
+      $('body').addClass('iOS')
+    }
+
     // disable sumbit button on login form until something is entered
 
-    $('input[type="password"]').keyup(function() {
+    $('input[type="password"]').keyup(function () {
       $('button[type="submit"]').attr('disabled', !$(this).val().length);
     }).trigger('keyup');
 
@@ -67,28 +75,21 @@ new vUnit({
 
   // hamburger icon animation
 
-  $('.hamburger').on('click', function() {
-    $(this).toggleClass('active');
-    $('.side-nav').toggleClass('active');
-  });
-
-  $('.js-off-canvas-exit').on('click', function() {
+  $('#offCanvasRight').bind('opened.zf.offcanvas closed.zf.offcanvas', function () {
     $('.hamburger').toggleClass('active');
     $('.side-nav').toggleClass('active');
   });
 
-  $(window).bind('load', function() {
+  $(window).bind('load', function () {
 
     // add animation class when in viewport
 
-    $('.main-header .menu').addClass( 'active' );
+    $('.main-header .menu').addClass('active');
 
     $('.content p').bind('inview', function (event, visible) {
       if (visible === true) {
         // element is now visible in the viewport
         $(this).addClass('moveInUp');
-      } else {
-        // element has gone out of viewport
       }
     });
 
@@ -107,7 +108,7 @@ new vUnit({
 
   // scroll to sections
 
-  $('a[href*=\\#]:not([href=\\#])').click(function() {
+  $('a[href*=\\#]:not([href=\\#])').click(function () {
     if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -122,35 +123,35 @@ new vUnit({
 
   // home page sliding content
 
-  $('#Weddings .main-slide .gallery-trigger').on('click', function(){
+  $('#Weddings .main-slide .gallery-trigger').on('click', function () {
     $('#Weddings .gallery-container').toggleClass('mover-over');
     $('#Weddings .main-background').fadeToggle(1000);
     $('#Weddings .main-title').fadeToggle(1000);
     return false;
   });
 
-  $('#Engagements .main-slide .gallery-trigger').on('click', function(){
+  $('#Engagements .main-slide .gallery-trigger').on('click', function () {
     $('#Engagements .gallery-container').toggleClass('mover-over');
     $('#Engagements .main-background').fadeToggle(1000);
     $('#Engagements .main-title').fadeToggle(1000);
     return false;
   });
 
-  $('#Families .main-slide .gallery-trigger').on('click', function(){
+  $('#Families .main-slide .gallery-trigger').on('click', function () {
     $('#Families .gallery-container').toggleClass('mover-over');
     $('#Families .main-background').fadeToggle(1000);
     $('#Families .main-title').fadeToggle(1000);
     return false;
   });
 
-  $('#Personal .main-slide .gallery-trigger').on('click', function(){
+  $('#Personal .main-slide .gallery-trigger').on('click', function () {
     $('#Personal .gallery-container').toggleClass('mover-over');
     $('#Personal .main-background').fadeToggle(1000);
     $('#Personal .main-title').fadeToggle(1000);
     return false;
   });
 
-  $(function(){
+  $(function () {
     var dataBase = $('.split-boxes .k-content-embed .k-content img').attr('data-base');
     var dataExtension = $('.split-boxes .k-content-embed .k-content > img').attr('data-extension');
     $('div.split-page-bg').css('background-image', 'url(' + dataBase + 'xlarge.' + dataExtension + ')');
@@ -159,10 +160,10 @@ new vUnit({
 
   // trigger extra fields for contact form
 
-  $('[name*="k-contact-field-6"]').parent().addClass( 'disappear' );
-  $('[name*="k-contact-field-7"]').parent().addClass( 'disappear' );
-  $('[name*="k-contact-field-2"]').change(function(){
-    if($(this).is(':checked')) {
+  $('[name*="k-contact-field-6"]').parent().addClass('disappear');
+  $('[name*="k-contact-field-7"]').parent().addClass('disappear');
+  $('[name*="k-contact-field-2"]').change(function () {
+    if ($(this).is(':checked')) {
       $('[name*="k-contact-field-6"]').parent().fadeIn('fast');
       $('[name*="k-contact-field-7"]').parent().fadeIn('fast');
     } else {
@@ -187,7 +188,7 @@ new vUnit({
   $('[name*="k-contact-field-8"]').parent().prependTo('.second-column');
   $('p.k-contact-form-success').wrap('<div class="row column" />');
   $('.k-contact-form-submit').addClass('row column');
-  $('button[type="submit"]').addClass( 'button' );
+  $('button[type="submit"]').addClass('button');
 
   // change social media text links to icons
 

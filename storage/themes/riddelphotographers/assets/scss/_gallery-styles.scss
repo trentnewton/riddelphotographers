@@ -132,6 +132,7 @@
 
 img.k-lazy-loading {
 	@include spinner;
+	background-color: $secondary-color-75-lighter;
 }
 
 .k-password-protected {
