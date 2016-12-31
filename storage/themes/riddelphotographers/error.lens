@@ -1,6 +1,6 @@
 <koken:include file="partials/login-header.html" />
 		<main class="row align-center">
-			<div class="medium-6 column">
+			<div class="medium-6 columns">
 				<div class="login-form">
 					<h1>Error: {{ routed_variables.code }}</h1>
 					<div class="content">
