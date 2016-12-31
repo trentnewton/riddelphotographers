@@ -1,18 +1,19 @@
 <koken:include file="partials/page-header.html" />
 
 <koken:load limit="0">
-
 	<koken:head>
 		<meta property="og:site_name" content="{{ site.title }}">
 		<meta property="og:title" content="{{ album.title strip_html="true" }}">
 		<meta property="og:description" content="{{ album.summary | album.description strip_html="true" }}">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="{{ album.url }}">
-		<koken:covers><koken:shift>
-		<meta property="og:image" content="{{ content.presets.medium_large.url }}">
-		<meta property="og:image:width" content="{{ content.presets.medium_large.width }}">
-		<meta property="og:image:height" content="{{ content.presets.medium_large.height }}">
-		</koken:shift></koken:covers>
+		<koken:covers>
+			<koken:shift>
+				<meta property="og:image" content="{{ content.presets.medium_large.url }}">
+				<meta property="og:image:width" content="{{ content.presets.medium_large.width }}">
+				<meta property="og:image:height" content="{{ content.presets.medium_large.height }}">
+			</koken:shift>
+		</koken:covers>
 		<koken:not empty="profile.twitter">
 			<meta name="twitter:card" content="gallery">
 			<meta name="twitter:site" content="@{{ profile.twitter }}">
@@ -33,13 +34,13 @@
 		</header>
 		<article class="row column">
 			<koken:unlisted>
-			<div class="content">
-				<p class="unlisted">
-					This album is unlisted. Please don't share a link to it.
-				</p>
-			</div>
+				<div class="content">
+					<p class="unlisted">
+						This album is unlisted. Please don't share a link to it.
+					</p>
+				</div>
 			</koken:unlisted>
-			<div class="content">
+			<div class="content" itemprop="text">
 				{{ album.description paragraphs="true" }}
 			</div>
 		</article>
@@ -47,12 +48,11 @@
 			<koken:include file="partials/album-slider.html" />
 		</section>
 	</main>
-
 	<koken:else>
 		<div class="row column">
-		<koken:note>
-			<p class="error">No set found. Create one in the Library.</p>
-		</koken:note>
+			<koken:note>
+				<p class="error">No set found. Create one in the Library.</p>
+			</koken:note>
 		</div>
 </koken:load>
 
