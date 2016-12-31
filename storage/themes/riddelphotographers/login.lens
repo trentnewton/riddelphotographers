@@ -1,6 +1,6 @@
 <koken:include file="partials/coming-soon-header.html" />
-		<main class="row">
-			<div class="medium-6 columns small-centered">
+		<main class="row align-center">
+			<div class="medium-6 columns">
 				<div class="login-form content">
 					<h1>Coming Soon</h1>
 					<p>We are launching soon, we'll keep you posted!</p>
