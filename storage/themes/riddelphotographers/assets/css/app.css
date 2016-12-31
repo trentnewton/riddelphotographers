@@ -4042,6 +4042,9 @@ img.k-lazy-loading {
   background: linear-gradient(to right, rgba(10, 10, 10, 0.3) 0%, rgba(10, 10, 10, 0.3) 100%);
   position: absolute; }
 
+.reveal {
+  outline: none; }
+
 .main-footer {
   text-align: center;
   padding: 2.5rem 0; }
