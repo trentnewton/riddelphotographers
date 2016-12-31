@@ -1804,7 +1804,7 @@ textarea {
     outline: none;
     border: 1px solid #febf4d;
     background-color: #fefefe;
-    box-shadow: 0;
+    box-shadow: inset 0px 0px 0px rgba(66, 88, 104, 0.1);
     -webkit-transition: box-shadow 0.3s, border-color 0.15s ease-in-out;
     transition: box-shadow 0.3s, border-color 0.15s ease-in-out; }
 
@@ -1987,7 +1987,7 @@ select {
     outline: none;
     border: 1px solid #febf4d;
     background-color: #fefefe;
-    box-shadow: 0;
+    box-shadow: inset 0px 0px 0px rgba(66, 88, 104, 0.1);
     -webkit-transition: box-shadow 0.3s, border-color 0.15s ease-in-out;
     transition: box-shadow 0.3s, border-color 0.15s ease-in-out; }
   select:disabled {
@@ -3182,7 +3182,7 @@ textarea {
 
 select:focus {
   border: 1px solid #febf4d;
-  box-shadow: 0;
+  box-shadow: inset 0px 0px 0px rgba(66, 88, 104, 0.1);
   -webkit-transition: box-shadow 0.3s, border-color 0.15s ease-in-out;
   transition: box-shadow 0.3s, border-color 0.15s ease-in-out; }
 
