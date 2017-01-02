@@ -180,8 +180,8 @@ new vUnit({
   // format contact form
 
   $('.form-columns').prependTo('form.k-contact-form');
-  $('[name*="k-contact-field-7"], [name*="k-contact-field-6"], [name*="k-contact-field-5"], [name*="k-contact-field-4"], [name*="k-contact-field-3"], [name*="k-contact-field-2"], [name*="k-contact-field-1"], [name*="k-contact-field-0"]').parent().prependTo('.first-column');
-  $('[name*="k-contact-field-9"], [name*="k-contact-field-8"], [name*="k-contact-field-10"]').parent().prependTo('.second-column');
+  $('[name="k-contact-field-7"], [name="k-contact-field-6"], [name="k-contact-field-5"], [name="k-contact-field-4"], [name="k-contact-field-3"], [name="k-contact-field-2"], [name="k-contact-field-1"], [name="k-contact-field-0"]').parent().prependTo('.first-column');
+  $('[name="k-contact-field-10"], [name="k-contact-field-9"], [name="k-contact-field-8"]').parent().prependTo('.second-column');
   $('p.k-contact-form-success').wrap('<div class="row column" />');
   $('.k-contact-form-submit').addClass('row column');
   $('button[type="submit"]').addClass('button');
