@@ -193,14 +193,14 @@
 .contact-page {
 
 	.split-box-left {
+		background-color: $primary-color-90-lighter;
+	}
+
+	.split-box-right {
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
 		color: $white;
-	}
-
-	.split-box-right {
-		background-color: $primary-color-90-lighter;
 	}
 
 }
@@ -208,6 +208,16 @@
 .column-collapse,
 .columns-collapse {
 	padding-left: 0;
+	padding-right: 0;
+}
+
+.first-column {
+	padding-left: 0;
+	padding-right: rem-calc(map-deep-get($grid-column-gutter, 'medium') / 2);
+}
+
+.second-column {
+	padding-left: rem-calc(map-deep-get($grid-column-gutter, 'medium') / 2);
 	padding-right: 0;
 }
 

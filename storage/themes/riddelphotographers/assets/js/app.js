@@ -104,7 +104,7 @@ new vUnit({
 
     $('.main-header .menu').addClass('active');
 
-    $('.content p').bind('inview', function (event, visible) {
+    $('.content p, form fieldset').bind('inview', function (event, visible) {
       if (visible === true) {
         // element is now visible in the viewport
         $(this).addClass('moveInUp');
