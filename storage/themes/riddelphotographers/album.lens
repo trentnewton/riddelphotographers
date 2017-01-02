@@ -1,6 +1,6 @@
 <koken:include file="partials/page-header.html" />
 
-<koken:load limit="0">
+<koken:load infinite="true">
 	<koken:head>
 		<meta property="og:site_name" content="{{ site.title }}">
 		<meta property="og:title" content="{{ album.title strip_html="true" }}">
