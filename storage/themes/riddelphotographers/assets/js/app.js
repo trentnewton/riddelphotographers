@@ -65,7 +65,7 @@ new vUnit({
       $('body').addClass('iOS')
     }
 
-    // detect album parent set and add acitve class to corresonding link
+    // detect album parent set and add active class to corresonding link
 
     if ($('.gallery-page').is('.set-Weddings')) {
       $('.k-nav-root a[title="Weddings"]').addClass('k-nav-current');
@@ -94,8 +94,7 @@ new vUnit({
   // hamburger icon animation
 
   $('#offCanvasRight').bind('opened.zf.offcanvas closed.zf.offcanvas', function () {
-    $('.hamburger').toggleClass('active');
-    $('.side-nav').toggleClass('active');
+    $('.hamburger, .side-nav').toggleClass('active');
   });
 
   $(window).bind('load', function () {
@@ -114,13 +113,8 @@ new vUnit({
     // detect portrait photos and add class
 
     // $('.image-items-list .image-item > img[data-presets*="tiny,40,60"]').parent().addClass('half');
-    $('.image-items-list .image-item.0\\.666').removeClass('small-12').addClass('small-6');
-    $('.image-items-list .image-item.0\\.667').removeClass('small-12').addClass('small-6');
-    $('.image-items-list .image-item > img[alt*="portrait"]').parent().removeClass('small-12').addClass('small-6');
-    // $('.image-items-list .image-item > img[alt*="landscape"][data-presets*="tiny,40,60"]').parent().removeClass('half');
-    $('.image-items-list .image-item > img[alt*="landscape"]').parent().removeClass('small-6').addClass('small-12');
-    $('.image-items-list .image-item.0\\.666 > img[alt*="landscape"]').parent().removeClass('small-6').addClass('small-12');
-    $('.image-items-list .image-item.0\\.667 > img[alt*="landscape"]').parent().removeClass('small-6').addClass('small-12');
+    $('.image-items-list .image-item.0\\.666, .image-items-list .image-item.0\\.667').removeClass('small-12').addClass('small-6');
+    $('.image-items-list .image-item > img[alt*="portrait"], .image-items-list .image-item > img[alt*="landscape"], .image-items-list .image-item.0\\.666 > img[alt*="landscape"], .image-items-list .image-item.0\\.667 > img[alt*="landscape"]').parent().removeClass('small-12').addClass('small-6');
 
   });
 
@@ -143,29 +137,25 @@ new vUnit({
 
   $('#Weddings .main-slide .gallery-trigger').on('click', function () {
     $('#Weddings .gallery-container').toggleClass('mover-over');
-    $('#Weddings .main-background').fadeToggle(1000);
-    $('#Weddings .main-title').fadeToggle(1000);
+    $('#Weddings .main-background, #Weddings .main-title').fadeToggle(1000);
     return false;
   });
 
   $('#Engagements .main-slide .gallery-trigger').on('click', function () {
     $('#Engagements .gallery-container').toggleClass('mover-over');
-    $('#Engagements .main-background').fadeToggle(1000);
-    $('#Engagements .main-title').fadeToggle(1000);
+    $('#Engagements .main-background, #Engagements .main-title').fadeToggle(1000);
     return false;
   });
 
   $('#Families .main-slide .gallery-trigger').on('click', function () {
     $('#Families .gallery-container').toggleClass('mover-over');
-    $('#Families .main-background').fadeToggle(1000);
-    $('#Families .main-title').fadeToggle(1000);
+    $('#Families .main-background, #Families .main-title').fadeToggle(1000);
     return false;
   });
 
   $('#Personal .main-slide .gallery-trigger').on('click', function () {
     $('#Personal .gallery-container').toggleClass('mover-over');
-    $('#Personal .main-background').fadeToggle(1000);
-    $('#Personal .main-title').fadeToggle(1000);
+    $('#Personal .main-background, #Personal .main-title').fadeToggle(1000);
     return false;
   });
 
@@ -178,32 +168,20 @@ new vUnit({
 
   // trigger extra fields for contact form
 
-  $('[name*="k-contact-field-6"]').parent().addClass('disappear');
-  $('[name*="k-contact-field-7"]').parent().addClass('disappear');
+  $('[name*="k-contact-field-6"], [name*="k-contact-field-7"]').parent().addClass('disappear');
   $('[name*="k-contact-field-2"]').change(function () {
     if ($(this).is(':checked')) {
-      $('[name*="k-contact-field-6"]').parent().fadeIn('fast');
-      $('[name*="k-contact-field-7"]').parent().fadeIn('fast');
+      $('[name*="k-contact-field-6"], [name*="k-contact-field-7"]').parent().fadeIn('fast');
     } else {
-      $('[name*="k-contact-field-6"]').parent().fadeOut('fast');
-      $('[name*="k-contact-field-7"]').parent().fadeOut('fast');
+      $('[name*="k-contact-field-6"], [name*="k-contact-field-7"]').parent().fadeOut('fast');
     }
   });
 
   // format contact form
 
   $('.form-columns').prependTo('form.k-contact-form');
-  $('[name*="k-contact-field-7"]').parent().prependTo('.first-column');
-  $('[name*="k-contact-field-6"]').parent().prependTo('.first-column');
-  $('[name*="k-contact-field-5"]').parent().prependTo('.first-column');
-  $('[name*="k-contact-field-4"]').parent().prependTo('.first-column');
-  $('[name*="k-contact-field-3"]').parent().prependTo('.first-column');
-  $('[name*="k-contact-field-2"]').parent().prependTo('.first-column');
-  $('[name*="k-contact-field-1"]').parent().prependTo('.first-column');
-  $('[name*="k-contact-field-0"]').parent().prependTo('.first-column');
-  $('[name*="k-contact-field-10"]').parent().prependTo('.second-column');
-  $('[name*="k-contact-field-9"]').parent().prependTo('.second-column');
-  $('[name*="k-contact-field-8"]').parent().prependTo('.second-column');
+  $('[name*="k-contact-field-7"], [name*="k-contact-field-6"], [name*="k-contact-field-5"], [name*="k-contact-field-4"], [name*="k-contact-field-3"], [name*="k-contact-field-2"], [name*="k-contact-field-1"], [name*="k-contact-field-0"]').parent().prependTo('.first-column');
+  $('[name*="k-contact-field-10"], [name*="k-contact-field-9"], [name*="k-contact-field-8"]').parent().prependTo('.second-column');
   $('p.k-contact-form-success').wrap('<div class="row column" />');
   $('.k-contact-form-submit').addClass('row column');
   $('button[type="submit"]').addClass('button');
