@@ -54,11 +54,11 @@
 								</a>
 							</div>
 							<koken:max_download>
-							<koken:link title="Download">
-								<div class="download">
-									<svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg>
-								</div>
-							</koken:link>
+								<koken:link title="Download">
+									<div class="download">
+										<svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg>
+									</div>
+								</koken:link>
 							</koken:max_download>
 						</figure>
 					</koken:content_image>
