@@ -176,7 +176,8 @@
 // who we are page / pricing pages
 
 .who-we-are-page,
-.pricing-page {
+.pricing-page,
+.contact-page {
 
 	.split-box-left {
 	 	background-color: $primary-color-90-lighter;
@@ -188,22 +189,32 @@
 
 }
 
-// contact page
-
-.contact-page {
-
-	.split-box-left {
-		background-color: $primary-color-90-lighter;
-	}
+.who-we-are-page {
 
 	.split-box-right {
-		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-		color: $white;
+		background-position: 31% 50%;
 	}
 
 }
+
+// contact page
+
+// .contact-page {
+
+// 	.split-box-left {
+// 		background-color: $primary-color-90-lighter;
+// 	}
+
+// 	.split-box-right {
+// 		background-position: center;
+// 		background-size: cover;
+// 		background-repeat: no-repeat;
+// 		color: $white;
+// 	}
+
+// }
 
 .column-collapse,
 .columns-collapse,
