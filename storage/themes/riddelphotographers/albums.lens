@@ -35,15 +35,15 @@
 		<header class="page-title-container">
 			<h1 class="page-title" itemprop="headline">&#xe00c;Albums&#xe013;</h1>
 		</header>
-		<div class="row column">
+		<div class="row">
 			<koken:unlisted>
-			<div class="content">
+				<div class="content small-12 column" itemprop="text">
+				</div>
+			</koken:unlisted>
+			<div class="content small-12 column" itemprop="text">
 				<p class="unlisted">
 					This album is unlisted. Please don't share a link to it.
 				</p>
-			</div>
-			</koken:unlisted>
-			<div class="content">
 			</div>
 		</div>
 	</article>
@@ -69,9 +69,11 @@
 		</section>
 	</koken:loop>
 	<koken:else>
-		<div class="row column">
+		<div class="row">
 			<koken:note>
-				<p class="error">No public albums found</p>
+				<div class="content small-12 column" itemprop="text">
+					<p class="error">No public albums found</p>
+				</div>
 			</koken:note>
 		</div>
 </koken:load>

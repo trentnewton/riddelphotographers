@@ -68,11 +68,12 @@
 			<koken:background class="main-background"></koken:background>
 		</section>
 	</koken:loop>
-
 	<koken:else>
-		<div class="row column">
+		<div class="row">
 		<koken:note>
-			<p class="error">No sets found. Create some in the Library.</p>
+			<div class="content small-12 column" itemprop="text">
+					<p class="error">No sets found. Create some in the Library.</p>
+				</div>
 		</koken:note>
 		</div>
 </koken:load>

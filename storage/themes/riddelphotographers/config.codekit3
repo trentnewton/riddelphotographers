@@ -9,6 +9,12 @@
 	],
 "creatorBuild": "25479",
 "files": {
+	"\/album.lens": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/album.lens",
+		"oF": 0
+		},
 	"\/albums.lens": {
 		"ft": 8192,
 		"oA": 2,
