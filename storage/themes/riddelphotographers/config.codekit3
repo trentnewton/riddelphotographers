@@ -79,7 +79,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/android-chrome-192x192.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/assets\/images\/android-chrome-512x512.png": {
 		"ft": 32768,
@@ -87,7 +87,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/android-chrome-512x512.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/assets\/images\/apple-touch-icon.png": {
 		"ft": 32768,
@@ -95,7 +95,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/apple-touch-icon.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/assets\/images\/browserconfig.xml": {
 		"ft": 8192,
@@ -125,7 +125,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/favicon-16x16.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/assets\/images\/favicon-32x32.png": {
 		"ft": 32768,
@@ -133,7 +133,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/favicon-32x32.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/assets\/images\/favicon-64x64.png": {
 		"ft": 32768,
@@ -141,7 +141,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/favicon-64x64.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/assets\/images\/favicon.ico": {
 		"ft": 8192,
@@ -179,7 +179,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/mstile-150x150.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/assets\/images\/Personal-title.png": {
 		"ft": 32768,
@@ -195,7 +195,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/riddel-photographers-og.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 1
 		},
 	"\/assets\/images\/safari-pinned-tab.svg": {
 		"ft": 2097152,
