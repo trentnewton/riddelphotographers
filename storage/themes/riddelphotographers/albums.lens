@@ -38,12 +38,12 @@
 		<div class="row">
 			<koken:unlisted>
 				<div class="content small-12 column" itemprop="text">
+					<p class="unlisted">
+						This album is unlisted. Please don't share a link to it.
+					</p>
 				</div>
 			</koken:unlisted>
 			<div class="content small-12 column" itemprop="text">
-				<p class="unlisted">
-					This album is unlisted. Please don't share a link to it.
-				</p>
 			</div>
 		</div>
 	</article>

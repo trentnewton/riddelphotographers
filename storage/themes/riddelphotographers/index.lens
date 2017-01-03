@@ -42,7 +42,6 @@
 				</div>
 				<koken:background class="main-background"></koken:background>
 			</section>
-			<koken:background></koken:background>
 		</koken:loop>
 	</div>
 	<koken:else>

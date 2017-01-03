@@ -35,15 +35,15 @@
 		<header class="page-title-container">
 			<h1 class="page-title" itemprop="headline">&#xe00c;Sets&#xe013;</h1>
 		</header>
-		<div class="row column">
+		<div class="row">
 			<koken:unlisted>
-			<div class="content">
-				<p class="unlisted">
-					This album is unlisted. Please don't share a link to it.
-				</p>
-			</div>
+				<div class="content small-12 column" itemprop="text">
+					<p class="unlisted">
+						This album is unlisted. Please don't share a link to it.
+					</p>
+				</div>
 			</koken:unlisted>
-			<div class="content" itemprop="text">
+			<div class="content small-12 column" itemprop="text">
 			</div>
 		</div>
 	</article>
