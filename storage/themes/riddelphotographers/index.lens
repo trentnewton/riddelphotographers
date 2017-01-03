@@ -46,10 +46,12 @@
 		</koken:loop>
 	</div>
 	<koken:else>
-		<div class="row column">
-			<koken:note>
-				<p class="error">No public albums found</p>
-			</koken:note>
+		<div class="row">
+			<div class="content small-12 column" itemprop="text">
+				<koken:note>
+					<p class="error">No public albums found</p>
+				</koken:note>
+			</div>
 		</div>
 </koken:load>
 <koken:include file="partials/footer.html" />

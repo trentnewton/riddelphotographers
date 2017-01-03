@@ -70,11 +70,11 @@
 	</koken:loop>
 	<koken:else>
 		<div class="row">
-			<koken:note>
-				<div class="content small-12 column" itemprop="text">
+			<div class="content small-12 column" itemprop="text">
+				<koken:note>
 					<p class="error">No public albums found</p>
-				</div>
-			</koken:note>
+				</koken:note>
+			</div>
 		</div>
 </koken:load>
 

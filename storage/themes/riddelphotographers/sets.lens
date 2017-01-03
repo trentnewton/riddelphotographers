@@ -70,11 +70,11 @@
 	</koken:loop>
 	<koken:else>
 		<div class="row">
-		<koken:note>
 			<div class="content small-12 column" itemprop="text">
+				<koken:note>
 					<p class="error">No sets found. Create some in the Library.</p>
-				</div>
-		</koken:note>
+				</koken:note>
+			</div>
 		</div>
 </koken:load>
 
