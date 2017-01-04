@@ -10,6 +10,7 @@
 				</div>
 			</div>
 		</main>
+		<div class="bg-overlay"></div>
 		<koken:asset file="assets/js/min/app-min.js" />
 	</body>
 </html>
