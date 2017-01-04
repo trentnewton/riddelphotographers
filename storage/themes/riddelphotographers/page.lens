@@ -26,7 +26,7 @@
 		<header class="page-title-container">
 			<h1 class="page-title" itemprop="headline">&#xe00c;{{ page.title }}&#xe013;</h1>
 		</header>
-		{{ page.content paragraphs="true" }}
+		{{ page.content paragraphs="false" }}
 	</main>
 </koken:load>
 
