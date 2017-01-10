@@ -114,7 +114,7 @@ new vUnit({
 
     // $('.image-items-list .image-item > img[data-presets*="tiny,40,60"]').parent().addClass('half');
     $('.image-items-list .image-item.0\\.666, .image-items-list .image-item.0\\.667').removeClass('small-12').addClass('small-6');
-    $('.image-items-list .image-item.0\\.666 > img[alt*="landscape"]').parent().removeClass('small-6').addClass('small-12');
+    $('.image-items-list .image-item.0\\.666 > img[alt*="landscape"], .image-items-list .image-item.0\\.667 > img[alt*="landscape"]').parent().removeClass('small-6').addClass('small-12');
     $('.image-items-list .image-item > img[alt*="portrait"], .image-items-list .image-item > img[alt*="landscape"], .image-items-list .image-item.0\\.666 > img[alt*="landscape"], .image-items-list .image-item.0\\.667 > img[alt*="landscape"]').parent().removeClass('small-12').addClass('small-6');
 
   });
