@@ -42,8 +42,10 @@
 .page-title {
 	color: $black;
 	-webkit-text-fill-color: transparent;
+	text-fill-color: transparent;
 	background: url(#{$asset-path}/images/inkbg.jpg) repeat;
   	-webkit-background-clip: text;
+  	background-clip: text;
   	background-size: 50%;
 }
 
