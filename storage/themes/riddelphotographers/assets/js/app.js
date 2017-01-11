@@ -124,11 +124,27 @@ new vUnit({
 
   // home page sliding content
 
-  var sectionId = $('.slides-container').attr('id');
+  $('#Weddings .main-slide .gallery-trigger').on('click', function () {
+    $('#Weddings .gallery-container').toggleClass('mover-over');
+    $('#Weddings .main-background, #Weddings .main-title').fadeToggle(1000);
+    return false;
+  });
 
-  $('#' + sectionId + ' .main-slide .gallery-trigger').on('click', function () {
-    $('#' + sectionId + ' .gallery-container').toggleClass('mover-over');
-    $('#' + sectionId + ' .main-background, #' + sectionId + ' .main-title').fadeToggle(1000);
+  $('#Engagements .main-slide .gallery-trigger').on('click', function () {
+    $('#Engagements .gallery-container').toggleClass('mover-over');
+    $('#Engagements .main-background, #Engagements .main-title').fadeToggle(1000);
+    return false;
+  });
+
+  $('#Families .main-slide .gallery-trigger').on('click', function () {
+    $('#Families .gallery-container').toggleClass('mover-over');
+    $('#Families .main-background, #Families .main-title').fadeToggle(1000);
+    return false;
+  });
+
+  $('#Personal .main-slide .gallery-trigger').on('click', function () {
+    $('#Personal .gallery-container').toggleClass('mover-over');
+    $('#Personal .main-background, #Personal .main-title').fadeToggle(1000);
     return false;
   });
 
