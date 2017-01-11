@@ -67,20 +67,10 @@ new vUnit({
 
     // detect album parent set and add active class to corresonding link
 
-    if ($('.gallery-page').is('.set-Weddings')) {
-      $('.k-nav-root a[title="Weddings"]').addClass('k-nav-current');
-    }
+    var setId = $('.gallery-page').attr('id');
 
-    if ($('.gallery-page').is('.set-Engagements')) {
-      $('.k-nav-root a[title="Engagements"]').addClass('k-nav-current');
-    }
-
-    if ($('.gallery-page').is('.set-Families')) {
-      $('.k-nav-root a[title="Families"]').addClass('k-nav-current');
-    }
-
-    if ($('.gallery-page').is('.set-Personal')) {
-      $('.k-nav-root a[title="Personal"]').addClass('k-nav-current');
+    if (setId) {
+      $('.k-nav-root a[title="' + setId + '"]').addClass('k-nav-current');
     }
 
     // disable sumbit button on login form until something is entered
@@ -112,7 +102,6 @@ new vUnit({
 
     // detect portrait photos and add class
 
-    // $('.image-items-list .image-item > img[data-presets*="tiny,40,60"]').parent().addClass('half');
     $('.image-items-list .image-item.0\\.666, .image-items-list .image-item.0\\.667, .image-items-list .image-item > img[alt*="portrait"]').removeClass('small-12').addClass('small-6');
     $('.image-items-list .image-item.0\\.666 > img[alt*="landscape"], .image-items-list .image-item.0\\.667 > img[alt*="landscape"], .image-items-list .image-item > img[alt*="landscape"]').parent().removeClass('small-6').addClass('small-12');
 
@@ -135,29 +124,15 @@ new vUnit({
 
   // home page sliding content
 
-  $('#Weddings .main-slide .gallery-trigger').on('click', function () {
-    $('#Weddings .gallery-container').toggleClass('mover-over');
-    $('#Weddings .main-background, #Weddings .main-title').fadeToggle(1000);
+  var sectionId = $('.slides-container').attr('id');
+
+  $('#' + sectionId + ' .main-slide .gallery-trigger').on('click', function () {
+    $('#' + sectionId + ' .gallery-container').toggleClass('mover-over');
+    $('#' + sectionId + ' .main-background, #' + sectionId + ' .main-title').fadeToggle(1000);
     return false;
   });
 
-  $('#Engagements .main-slide .gallery-trigger').on('click', function () {
-    $('#Engagements .gallery-container').toggleClass('mover-over');
-    $('#Engagements .main-background, #Engagements .main-title').fadeToggle(1000);
-    return false;
-  });
-
-  $('#Families .main-slide .gallery-trigger').on('click', function () {
-    $('#Families .gallery-container').toggleClass('mover-over');
-    $('#Families .main-background, #Families .main-title').fadeToggle(1000);
-    return false;
-  });
-
-  $('#Personal .main-slide .gallery-trigger').on('click', function () {
-    $('#Personal .gallery-container').toggleClass('mover-over');
-    $('#Personal .main-background, #Personal .main-title').fadeToggle(1000);
-    return false;
-  });
+  // get url from image in page content and use as a background
 
   $(function () {
     var dataBase = $('.split-boxes .k-content-embed .k-content img').attr('data-base');
