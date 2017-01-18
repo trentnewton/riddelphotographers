@@ -77,8 +77,8 @@
 // grid
 
 .row.image-items-list {
-	margin-right: (map-deep-get($grid-column-gutter, 'medium') / 2);
-	margin-left: (map-deep-get($grid-column-gutter, 'medium') / 2);
+	margin-right: rem-calc(map-deep-get($grid-column-gutter, 'medium') / 2);
+	margin-left: rem-calc(map-deep-get($grid-column-gutter, 'medium') / 2);
 }
 
 .image-item {

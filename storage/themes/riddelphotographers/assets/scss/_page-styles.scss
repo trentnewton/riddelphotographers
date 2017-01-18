@@ -145,7 +145,6 @@
 // split sections
 
 .split-boxes {
-	@include clearfix;
 	margin-top: rem-calc(75);
 	display: flex;
 	flex-direction: row;
@@ -200,21 +199,6 @@
 }
 
 // contact page
-
-// .contact-page {
-
-// 	.split-box-left {
-// 		background-color: $primary-color-90-lighter;
-// 	}
-
-// 	.split-box-right {
-// 		background-position: center;
-// 		background-size: cover;
-// 		background-repeat: no-repeat;
-// 		color: $white;
-// 	}
-
-// }
 
 .column-collapse,
 .columns-collapse,

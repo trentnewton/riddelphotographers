@@ -34,11 +34,13 @@
 	}
 
 	.login & {
-			&,
-			&::before,
-			&::after {
-				background: $primary-color-50-lighter;
-			}
+
+		&,
+		&::before,
+		&::after {
+			background: $primary-color-50-lighter;
+		}
+
 	}
 
 	& {
@@ -131,7 +133,8 @@
 		}
 
 		&.k-nav-current,
-		&:hover {
+		&:hover,
+		&:focus {
 			color: $primary-color-50-lighter;
 		}
 
