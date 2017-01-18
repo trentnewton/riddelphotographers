@@ -27,9 +27,9 @@ new vUnit({
     // redirect if paulakern.com.au
 
     if (document.location.href.indexOf('paulakern') > -1) {
-        // indexOf will return the position of the first occurence of this string in the url
-        // or -1 it it's not there.
-        document.location.href = 'http://www.riddelphotographers.com.au';
+      // indexOf will return the position of the first occurence of this string in the url
+      // or -1 it it's not there.
+      document.location.href = 'http://www.riddelphotographers.com.au';
     }
 
     // get album name for login page
@@ -39,13 +39,13 @@ new vUnit({
     albumName = albumName.replace(/%2F&album=.*$/i, '').replace(/\-/g, ' ');
 
     function toTitleCase(str) {
-      return str.replace(/(?:^|\s)\w/g, function(match) {
-          return match.toUpperCase();
+      return str.replace(/(?:^|\s)\w/g, function (match) {
+        return match.toUpperCase();
       });
     }
 
     if (loginUrl) {
-        $('.login .page-title-container').append('<h1 class="page-title" itemprop="headline">&#xe00c;' + toTitleCase(albumName) + '&#xe013;</h1>');
+      $('.login .page-title-container').append('<h1 class="page-title" itemprop="headline">&#xe00c;' + toTitleCase(albumName) + '&#xe013;</h1>');
     }
 
     // load animsition
