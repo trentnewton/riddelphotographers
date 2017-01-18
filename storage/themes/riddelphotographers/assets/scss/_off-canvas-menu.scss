@@ -120,14 +120,14 @@
 	a {
 		font-weight: 300;
 		font-style: normal;
-		font-size: (map-deep-get($header-styles, 'medium', 'h1', 'font-size') * 1px);
+		font-size: rem-calc(map-deep-get($header-styles, 'medium', 'h1', 'font-size') * 1px);
 		color: $primary-color;
 		text-transform: capitalize;
 		display: table;
 		white-space: nowrap;
 
 		@include breakpoint(small only) {
-			font-size: (map-deep-get($header-styles, 'medium', 'h3', 'font-size') * 1px);
+			font-size: rem-calc(map-deep-get($header-styles, 'medium', 'h3', 'font-size') * 1px);
 		}
 
 		&.k-nav-current,

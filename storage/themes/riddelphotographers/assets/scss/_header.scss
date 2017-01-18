@@ -81,7 +81,7 @@
 .main-nav {
 	margin-top: rem-calc(30);
 	white-space: nowrap;
-	font-size: (map-deep-get($header-styles, 'medium', 'h5', 'font-size') * 1px);
+	font-size: rem-calc(map-deep-get($header-styles, 'medium', 'h5', 'font-size') * 1px);
 	text-transform: uppercase;
 
 	@extend .show-for-large;
