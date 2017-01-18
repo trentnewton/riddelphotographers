@@ -26,9 +26,29 @@ new vUnit({
 
     // redirect if paulakern.com.au
 
-    if (/http:\/\/(www\.)?paulakern\.com.au/.test(document.referrer)) {
-       window.location = 'http://www.riddelphotographers.com.au';
+    if (document.location.href.indexOf('paulakern.com.au') > -1) {
+        // indexOf will return the position of the first occurence of this string in the url
+        // or -1 it it's not there.
+        document.location.href = 'http://www.riddelphotographers.com.au';
     }
+
+    // get album name for login page
+
+    var loginUrl = document.location.href.indexOf('login/?return_to=%2Falbums') > -1;
+    var albumName = document.location.href.substring(document.location.href.indexOf('login/?return_to=%2Falbums%2F') + 1).replace('ogin/?return_to=%2Falbums%2F', '');
+    albumName = albumName.replace(/%2F&album=.*$/i, '').replace(/\-/g, ' ');
+
+    function toTitleCase(str) {
+      return str.replace(/(?:^|\s)\w/g, function(match) {
+          return match.toUpperCase();
+      });
+    }
+
+    if (loginUrl) {
+        $('.login .page-title-container').append('<h1 class="page-title" itemprop="headline">&#xe00c;' + toTitleCase(albumName) + '&#xe013;</h1>');
+    }
+
+    // load animsition
 
     $('.animsition').animsition({
       inClass: 'fade-in',
