@@ -274,6 +274,7 @@
 
 body.k-lens-error {
 	@include full-bg-img;
+	background-attachment: fixed;
 	background-image: url(#{$asset-path}/images/error-page-bg.jpg);
 
 	.login-form {
