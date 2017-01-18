@@ -269,7 +269,7 @@
 	z-index: -999;
 	background:
   		linear-gradient(to right, rgba($black, 0.5) 0%, rgba($black, 0.6) 100%);
-  	position: absolute;
+  	position: fixed;
 }
 
 body.k-lens-error {

@@ -33,6 +33,14 @@
 		left: 0;
 	}
 
+	.login & {
+			&,
+			&::before,
+			&::after {
+				background: $primary-color-50-lighter;
+			}
+	}
+
 	& {
 		margin-top: rem-calc(-3);
 	}
