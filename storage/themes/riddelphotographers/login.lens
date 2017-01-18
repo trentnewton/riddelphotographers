@@ -1,12 +1,22 @@
-<koken:include file="partials/coming-soon-header.html" />
-		<main class="row align-center" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
-			<div class="medium-6 columns">
-				<div class="login-form content">
-					<h1 itemprop="headline">Coming Soon</h1>
-					<p itemprop="text">We are launching soon, we'll keep you posted!</p>
+<koken:include file="partials/login-header.html" />
+		<main class="gallery-page" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+			<header class="page-title-container">
+			</header>
+			<section class="row">
+				<div class="content small-12 column" itemprop="text">
+					<koken:form class="login-form">
+						<h1 itemprop="headline"><svg class="icon icon-key"><use xlink:href="#icon-key"></use></svg>&nbsp;Login</h1>
+						<koken:not empty="messages.koken_password_error">
+							<p class="error">
+								{{ messages.koken_password_error }}
+							</p>
+						</koken:not>
+						<p itemprop="text">
+							<input type="password" name="password" autofocus placeholder="Enter password">
+						</p>
+						<button type="submit" class="large button" disabled="disabled">Go</button>
+					</koken:form>
 				</div>
-			</div>
+			</section>
 		</main>
-		<koken:asset file="assets/js/min/app-min.js" />
-	</body>
-</html>
+		<koken:include file="partials/alt-footer.html" />

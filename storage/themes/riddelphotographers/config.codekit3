@@ -5398,10 +5398,10 @@
 		"oAP": "\/login.lens",
 		"oF": 0
 		},
-	"\/login.lens.old": {
+	"\/login.lens.comingsoon": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/login.lens.old",
+		"oAP": "\/login.lens.comingsoon",
 		"oF": 0
 		},
 	"\/package.json": {
