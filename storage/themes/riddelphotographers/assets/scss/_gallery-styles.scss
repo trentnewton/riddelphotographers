@@ -70,6 +70,10 @@
 			height: rem-calc(250);
 		}
 
+		@include medium-landscape {
+			height: rem-calc(250);
+		}
+
 	}
 
 }
