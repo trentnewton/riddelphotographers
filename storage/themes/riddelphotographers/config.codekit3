@@ -75,11 +75,11 @@
 		},
 	"\/assets\/images\/android-chrome-192x192.png": {
 		"ft": 32768,
-		"iS": 4820,
+		"iS": 4127,
 		"oA": 0,
 		"oAP": "\/assets\/images\/android-chrome-192x192.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 0
 		},
 	"\/assets\/images\/android-chrome-512x512.png": {
 		"ft": 32768,
@@ -96,12 +96,6 @@
 		"oAP": "\/assets\/images\/apple-touch-icon.png",
 		"oF": 0,
 		"opt": 1
-		},
-	"\/assets\/images\/browserconfig.xml": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/images\/browserconfig.xml",
-		"oF": 0
 		},
 	"\/assets\/images\/Engagements-title.png": {
 		"ft": 32768,
@@ -150,12 +144,6 @@
 		"oAP": "\/assets\/images\/favicon-64x64.png",
 		"oF": 0,
 		"opt": 1
-		},
-	"\/assets\/images\/favicon.ico": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/images\/favicon.ico",
-		"oF": 0
 		},
 	"\/assets\/images\/inkbg.jpg": {
 		"ft": 16384,
