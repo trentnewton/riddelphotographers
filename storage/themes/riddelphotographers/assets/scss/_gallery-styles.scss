@@ -70,6 +70,10 @@
 			height: rem-calc(250);
 		}
 
+		@include breakpoint(medium only portrait) {
+			height: rem-calc(250);
+		}
+
 	}
 
 }
