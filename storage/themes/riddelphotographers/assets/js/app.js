@@ -44,7 +44,7 @@ new vUnit({
 
     var loginUrl = document.location.href.indexOf('login/?return_to=%2Falbums') > -1;
     var albumName = document.location.href.substring(document.location.href.indexOf('login/?return_to=%2Falbums%2F') + 1).replace('ogin/?return_to=%2Falbums%2F', '');
-    albumName = albumName.replace(/%2F&album=.*$/i, '').replace(/\-/g, ' ');
+    albumName = albumName.replace(/%2F&album=.*$/i, '').replace(/\-/g, ' ').replace(/\d+/g, '').replace(/\s*$/, '');
 
     function toTitleCase(str) {
       return str.replace(/(?:^|\s)\w/g, function (match) {
