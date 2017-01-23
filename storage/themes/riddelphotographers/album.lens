@@ -24,6 +24,9 @@
 				</koken:loop>
 			</koken:covers>
 		</koken:not>
+		<koken:unlisted>
+			<meta name="robots" content="noindex">
+		</koken:unlisted>
 	</koken:head>
 	<main class="gallery-page album-{{ album.id }} album-{{ album.slug }}" id="<koken:parent>{{ album.title }}</koken:parent>" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 		<header class="page-title-container">
