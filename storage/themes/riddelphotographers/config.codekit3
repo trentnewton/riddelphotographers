@@ -5392,6 +5392,12 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/lightbox.lens": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/lightbox.lens",
+		"oF": 0
+		},
 	"\/login.lens": {
 		"ft": 8192,
 		"oA": 2,
