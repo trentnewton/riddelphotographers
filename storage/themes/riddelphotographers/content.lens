@@ -57,7 +57,7 @@
 
 						<span class="edge_left share">
 							<span class="wrap last">
-								<koken:include file="layouts/share_content.html" />
+
 							</span>
 						</span>
 
