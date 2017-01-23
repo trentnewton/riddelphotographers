@@ -28,6 +28,9 @@
 				</koken:covers>
 			</koken:loop>
 		</koken:not>
+		<koken:unlisted>
+			<meta name="robots" content="noindex">
+		</koken:unlisted>
 	</koken:head>
 </koken:load>
 <koken:load limit="0">
