@@ -5354,6 +5354,12 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/content.lens": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/content.lens",
+		"oF": 0
+		},
 	"\/css\/settings.css.lens": {
 		"ft": 8192,
 		"oA": 2,
