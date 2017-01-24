@@ -5,7 +5,7 @@
 					<h1 itemprop="headline">{{ language.error }}: {{ routed_variables.code }}</h1>
 					<div class="content" itemprop="text">
 						<p>Something went wrong!</p>
-						<p><koken:link to="front" title="{{ labels.home.singular }}"><svg class="icon icon-home"><use xlink:href="#icon-home"></use></svg>&nbsp;{{ labels.home.singular }}</koken:link></p>
+						<p><koken:link to="front" title="{{ language.go }} {{ labels.home.singular }}"><svg class="icon icon-home"><use xlink:href="#icon-home"></use></svg>&nbsp;{{ labels.home.singular }}</koken:link></p>
 					</div>
 				</div>
 			</section>

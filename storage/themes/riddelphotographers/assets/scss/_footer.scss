@@ -3,7 +3,6 @@
 .main-footer {
 	text-align: center;
 	padding: rem-calc(40 0);
-	background-color: rgba($white, 0.7);
 
 	a {
 		color: $secondary-color;
@@ -63,6 +62,25 @@
 
 	.icon-scroll-down {
 		transform: rotate(180deg);
+	}
+
+}
+
+.k-lens-error {
+
+	.main-footer {
+		color: $white;
+
+		a {
+			color: $primary-color-50-lighter;
+
+			&:hover,
+			&:focus {
+				color: $anchor-color-hover;
+			}
+
+		}
+
 	}
 
 }

@@ -93,8 +93,8 @@
 			transition: $transition-time;
 			position: relative;
 
-			&:before,
-			&:after {
+			&::before,
+			&::after {
 				position: absolute;
 				left: 0;
 				width: 100%;
@@ -106,7 +106,7 @@
 				transform: translateY(-10px);
 			}
 
-			&:before {
+			&::before {
 				top: 0;
 				transform: translateY(-10px);
 			}
@@ -120,8 +120,8 @@
 			&:focus {
 				color: $anchor-color-hover;
 
-				&:before,
-				&:after {
+				&::before,
+				&::after {
 						opacity: 1;
 						transform: translateY(0px);
 				}
@@ -157,8 +157,8 @@
 .scroll-down,
 .scroll-up {
 
-	&:before,
-	&:after {
+	&::before,
+	&::after {
 		position: absolute;
 		border: 1px solid $secondary-color;
 		border-radius: 50%;
@@ -171,13 +171,13 @@
 	&:hover,
 	&:focus {
 
-		&:before,
-		&:after {
+		&::before,
+		&::after {
 			opacity: 1;
 			transform: translateX(-50%) translateY(-50%) scale(1);
 		}
 
-		&:after {
+		&::after {
 			opacity: 0.5;
 		}
 
@@ -188,11 +188,15 @@
 .scroll-down,
 .scroll-up {
 
-	&:before {
+	&::before {
 		top: 57%;
 		left: 50%;
 		width: rem-calc(80);
 		height: rem-calc(80);
+	}
+
+	&::after {
+		border: 0px solid $secondary-color;
 	}
 
 }
