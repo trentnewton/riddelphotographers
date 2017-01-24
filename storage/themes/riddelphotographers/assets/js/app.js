@@ -132,7 +132,7 @@ jQuery(function ($){
 
     // add animation class when in viewport
 
-    $('.main-header .menu').addClass('active');
+    $('.main-front-page-header .menu').addClass('active');
 
     $('.content p, form fieldset').bind('inview', function (event, visible) {
       if (visible === true) {

@@ -49,7 +49,7 @@
 }
 
 .side-nav,
-.main-header .menu {
+.main-front-page-header .menu {
 
 	&.active {
 
@@ -71,7 +71,7 @@
 
 @for $i from 1 through 10 {
 
-	.main-header .menu > li:nth-child(#{$i}) {
+	.main-front-page-header .menu > li:nth-child(#{$i}) {
 		animation-delay:(#{0.75s + $i * 0.25s});
 	}
 
