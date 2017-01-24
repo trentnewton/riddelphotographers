@@ -1,16 +1,14 @@
-<koken:include file="partials/login-header.html" />
-		<main class="row align-center" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+<koken:include file="partials/header.html" />
+		<main class="main-content row align-center" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 			<div class="medium-6 columns">
 				<div class="login-form">
-					<h1 itemprop="headline">Error: {{ routed_variables.code }}</h1>
+					<h1 itemprop="headline">{{ language.error }}: {{ routed_variables.code }}</h1>
 					<div class="content" itemprop="text">
 						<p>Something went wrong!</p>
-						<p><koken:link to="front" title="{{ labels.home.singular }}"><svg class="icon icon-home"><use xlink:href="#icon-home"></use></svg>&nbsp;Home</koken:link></p>
+						<p><koken:link to="front" title="{{ labels.home.singular }}"><svg class="icon icon-home"><use xlink:href="#icon-home"></use></svg>&nbsp;{{ labels.home.singular }}</koken:link></p>
 					</div>
 				</div>
 			</div>
 		</main>
 		<div class="bg-overlay"></div>
-		<koken:asset file="assets/js/min/app-min.js" />
-	</body>
-</html>
+<koken:include file="partials/footer.html" />

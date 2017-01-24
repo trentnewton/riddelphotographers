@@ -5430,12 +5430,6 @@
 		"oAP": "\/partials\/album-slider.html",
 		"oF": 0
 		},
-	"\/partials\/alt-footer.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/partials\/alt-footer.html",
-		"oF": 0
-		},
 	"\/partials\/coming-soon-header.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -5448,34 +5442,16 @@
 		"oAP": "\/partials\/footer.html",
 		"oF": 0
 		},
-	"\/partials\/login-header.html": {
+	"\/partials\/header.html": {
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/partials\/login-header.html",
-		"oF": 0
-		},
-	"\/partials\/main-footer.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/partials\/main-footer.html",
-		"oF": 0
-		},
-	"\/partials\/main-header.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/partials\/main-header.html",
+		"oAP": "\/partials\/header.html",
 		"oF": 0
 		},
 	"\/partials\/navigation.html": {
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/partials\/navigation.html",
-		"oF": 0
-		},
-	"\/partials\/page-header.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/partials\/page-header.html",
 		"oF": 0
 		},
 	"\/partials\/side-navigation.html": {

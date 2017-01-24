@@ -1,4 +1,4 @@
-<koken:include file="partials/page-header.html" />
+<koken:include file="partials/header.html" />
 
 <koken:load limit="4">
 	<koken:head>
@@ -34,51 +34,53 @@
 	</koken:head>
 </koken:load>
 <koken:load limit="0">
-	<article class="gallery-page">
-		<header class="page-title-container">
-			<h1 class="page-title" itemprop="headline">&#xe00c;Sets&#xe013;</h1>
-		</header>
-		<div class="row">
-			<koken:unlisted>
-				<div class="content small-12 column" itemprop="text">
-					<p class="unlisted">
-						This album is unlisted. Please don't share a link to it.
-					</p>
-				</div>
-			</koken:unlisted>
-			<div class="content small-12 column" itemprop="text">
-			</div>
-		</div>
-	</article>
-	<koken:loop>
-		<section id="{{ album.title }}" class="slides-container vh_height100">
-			<div class="main-slide">
-				<a class="gallery-trigger" href="#move-over">
-					<div class="main-title">
-						<h2 itemprop="headline">
-							<span class="visual-hide">{{ album.title }}</span>
-							<img src="{{ location.theme_path }}/assets/images/{{ album.title }}-title.png" alt="{{ album.title }}">
-							<div class="flash">
-								<svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg>
-							</div>
-						</h2>
+	<main class="main-content" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+		<article class="gallery-page">
+			<header class="page-title-container">
+				<h1 class="page-title" itemprop="headline">&#xe00c;{{ labels.set.plural }}&#xe013;</h1>
+			</header>
+			<div class="row">
+				<koken:unlisted>
+					<div class="content small-12 column" itemprop="text">
+						<p class="unlisted">
+							This {{ labels.album.singular }} is unlisted. Please don't share a link to it.
+						</p>
 					</div>
-				</a>
-				<div class="gallery-container">
-					<koken:include file="partials/album-slider.html" />
+				</koken:unlisted>
+				<div class="content small-12 column" itemprop="text">
 				</div>
 			</div>
-			<koken:background class="main-background"></koken:background>
-		</section>
-	</koken:loop>
-	<koken:else>
-		<div class="row">
-			<div class="content small-12 column" itemprop="text">
-				<koken:note>
-					<p class="error">No sets found. Create some in the Library.</p>
-				</koken:note>
+		</article>
+		<koken:loop>
+			<section id="{{ album.title }}" class="slides-container vh_height100">
+				<div class="main-slide">
+					<a class="gallery-trigger" href="#move-over">
+						<div class="main-title">
+							<h2 itemprop="headline">
+								<span class="visual-hide">{{ album.title }}</span>
+								<img src="{{ location.theme_path }}/assets/images/{{ album.title }}-title.png" alt="{{ album.title }}">
+								<div class="flash">
+									<svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg>
+								</div>
+							</h2>
+						</div>
+					</a>
+					<div class="gallery-container">
+						<koken:include file="partials/album-slider.html" />
+					</div>
+				</div>
+				<koken:background class="main-background"></koken:background>
+			</section>
+		</koken:loop>
+		<koken:else>
+			<div class="row">
+				<div class="content small-12 column" itemprop="text">
+					<koken:note>
+						<p class="error">No {{ labels.set.plural }} found. Create some in the Library.</p>
+					</koken:note>
+				</div>
 			</div>
-		</div>
+	</main>
 </koken:load>
 
 <koken:include file="partials/footer.html" />

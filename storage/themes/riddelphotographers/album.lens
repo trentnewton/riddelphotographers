@@ -1,4 +1,4 @@
-<koken:include file="partials/page-header.html" />
+<koken:include file="partials/header.html" />
 
 <koken:load infinite="true">
 	<koken:head>
@@ -28,7 +28,7 @@
 			<meta name="robots" content="noindex">
 		</koken:unlisted>
 	</koken:head>
-	<main class="gallery-page album-{{ album.id }} album-{{ album.slug }}" id="<koken:parent>{{ album.title }}</koken:parent>" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+	<main class="main-content gallery-page album-{{ album.id }} album-{{ album.slug }}" id="<koken:parent>{{ album.title }}</koken:parent>" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 		<header class="page-title-container">
 			<h1 class="page-title" itemprop="headline">&#xe00c;{{ album.title }}&#xe013;</h1>
 		</header>
@@ -36,14 +36,14 @@
 			<koken:unlisted>
 				<div class="content small-12 column" itemprop="text">
 					<p class="unlisted">
-						This album is unlisted. Please don't share a link to it.
+						This {{ labels.album.singular }} is unlisted. Please don't share a link to it.
 					</p>
 				</div>
 			</koken:unlisted>
 			<div class="content small-12 column" itemprop="text">
 				<koken:album_download>
 					<p class="text-center">
-						<koken:link class="button"><svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg>&nbsp;Download Album</koken:link>
+						<koken:link class="button"><svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg>&nbsp;{{ language.download }} {{ labels.album.singular }}</koken:link>
 					</p>
 				</koken:album_download>
 				{{ album.description paragraphs="true" }}
@@ -59,7 +59,7 @@
 								</a>
 							</div>
 							<koken:max_download>
-								<koken:link title="Download">
+								<koken:link title="{{ language.download_image }}">
 									<div class="download">
 										<svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg>
 									</div>
@@ -80,4 +80,4 @@
 			</div>
 		</div>
 </koken:load>
-<koken:include file="partials/alt-footer.html" />
+<koken:include file="partials/footer.html" />

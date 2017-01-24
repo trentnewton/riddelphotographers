@@ -1,13 +1,13 @@
 {
 	"name": "Riddel Photographers",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "Theme for riddelphotographers.com.au",
 	"demo": "",
 	"author": {
 		"name": "Trent Newton",
 		"link": "http://trentnewton.com"
 	},
-	"koken_version_required": "0.21.0",
+	"koken_version_required": "0.22.0",
 
 	"navigation_groups": {
 		"footer": {

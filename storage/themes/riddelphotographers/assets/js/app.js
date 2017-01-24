@@ -8,7 +8,13 @@ new vUnit({
       property: 'height',
       // What to base the value on (vh, vw, vmin or vmax)
       reference: 'vh'
-    }
+    },
+    '.vh_min-height': {
+      // The CSS property (any CSS property that accepts px as units)
+      property: 'min-height',
+      // What to base the value on (vh, vw, vmin or vmax)
+      reference: 'vh'
+    },
   }
 }).init(); // call the public init() method
 
@@ -51,7 +57,7 @@ jQuery(function ($){
   }
 
   if (loginUrl) {
-    $('.login .page-title-container').append('<h1 class="page-title" itemprop="headline">&#xe00c;' + toTitleCase(albumName) + '&#xe013;</h1>');
+    $('.k-lens-login .page-title-container').append('<h1 class="page-title" itemprop="headline">&#xe00c;' + toTitleCase(albumName) + '&#xe013;</h1>');
   }
 
   // load animsition

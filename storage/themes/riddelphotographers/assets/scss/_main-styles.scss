@@ -109,6 +109,12 @@ svg {
 
 .off-canvas-content {
 	background: inherit;
+	display: flex;
+	flex-direction: column;
+}
+
+.main-content {
+	flex: 2;
 }
 
 .disappear {

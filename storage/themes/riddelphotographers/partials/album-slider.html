@@ -2,7 +2,7 @@
 	<koken:load source="set" filter:id="{{ album.id }}">
 		<koken:loop>
 			<div class="gallery-item">
-				<koken:link title="View {{ album.title }}" class="grid-overlay-link">
+				<koken:link title="{{ language.view }} {{ album.title }}" class="grid-overlay-link">
 					<koken:img preset="medium" />
 					<div class="grid-overlay">
 						<h3 itemprop="headline">{{ album.title }}</h3>

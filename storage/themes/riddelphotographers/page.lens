@@ -1,4 +1,4 @@
-<koken:include file="partials/page-header.html" />
+<koken:include file="partials/header.html" />
 
 <koken:load>
 	<koken:head>
@@ -22,7 +22,7 @@
 			</koken:featured_image>
 		</koken:not>
 	</koken:head>
-	<main class="regular-page page-{{ page.id }} page-{{ page.slug }}" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+	<main class="main-content regular-page page-{{ page.id }} page-{{ page.slug }}" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 		<header class="page-title-container">
 			<h1 class="page-title" itemprop="headline">&#xe00c;{{ page.title }}&#xe013;</h1>
 		</header>
@@ -30,4 +30,4 @@
 	</main>
 </koken:load>
 
-<koken:include file="partials/alt-footer.html" />
+<koken:include file="partials/footer.html" />

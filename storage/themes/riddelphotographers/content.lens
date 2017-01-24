@@ -1,4 +1,4 @@
-<koken:include file="partials/page-header.html" />
+<koken:include file="partials/header.html" />
 
 <koken:load>
 

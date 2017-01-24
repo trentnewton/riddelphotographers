@@ -1,4 +1,4 @@
-<koken:include file="partials/main-header.html" />
+<koken:include file="partials/header.html" />
 
 <koken:load source="sets">
 	<koken:head>
@@ -21,7 +21,7 @@
 			</koken:loop>
 		</koken:not>
 	</koken:head>
-	<div id="content">
+	<main id="content" class="main-content" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 		<koken:loop>
 			<section id="{{ album.title }}" class="slides-container vh_height100">
 				<div class="main-slide">
@@ -43,12 +43,12 @@
 				<koken:background class="main-background"></koken:background>
 			</section>
 		</koken:loop>
-	</div>
+	</main>
 	<koken:else>
 		<div class="row">
 			<div class="content small-12 column" itemprop="text">
 				<koken:note>
-					<p class="error">No public albums found</p>
+					<p class="error">No public {{ labels.album.plural }} found</p>
 				</koken:note>
 			</div>
 		</div>

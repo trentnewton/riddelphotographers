@@ -1,4 +1,4 @@
-<koken:include file="partials/page-header.html" />
+<koken:include file="partials/header.html" />
 
 <koken:load limit="0">
 	<koken:head>
@@ -28,7 +28,7 @@
 			<meta name="robots" content="noindex">
 		</koken:unlisted>
 	</koken:head>
-	<main class="gallery-page set-{{ album.id }} set-{{ album.slug }}" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+	<main class="main-content gallery-page set-{{ album.id }} set-{{ album.slug }}" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 		<header class="set-title-container">
 			<h1 itemprop="headline">
 				<span class="visual-hide">{{ album.title }}</span>
@@ -39,7 +39,7 @@
 			<koken:unlisted>
 				<div class="content small-12 column" itemprop="text">
 					<p class="unlisted">
-						This album is unlisted. Please don't share a link to it.
+						This {{ labels.album.singular }} is unlisted. Please don't share a link to it.
 					</p>
 				</div>
 			</koken:unlisted>
@@ -55,7 +55,7 @@
 		<div class="row">
 			<div class="content small-12 column" itemprop="text">
 				<koken:note>
-					<p class="error">No set found. Create one in the Library.</p>
+					<p class="error">No {{ labels.set.singular }} found. Create one in the Library.</p>
 				</koken:note>
 			</div>
 		</div>
