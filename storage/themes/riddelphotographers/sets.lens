@@ -33,8 +33,8 @@
 		</koken:unlisted>
 	</koken:head>
 </koken:load>
-<koken:load limit="0">
-	<main class="main-content" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+<main class="main-content" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+	<koken:load limit="0">
 		<article class="gallery-page">
 			<header class="page-title-container">
 				<h1 class="page-title" itemprop="headline">&#xe00c;{{ labels.set.plural }}&#xe013;</h1>
@@ -80,7 +80,7 @@
 					</koken:note>
 				</div>
 			</div>
-	</main>
-</koken:load>
+	</koken:load>
+</main>
 
 <koken:include file="partials/footer.html" />
