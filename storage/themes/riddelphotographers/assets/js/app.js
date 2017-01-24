@@ -14,7 +14,7 @@ new vUnit({
 
 // jquery functions
 
-jQuery(function($){
+jQuery(function ($){
 
   'use strict';
 
