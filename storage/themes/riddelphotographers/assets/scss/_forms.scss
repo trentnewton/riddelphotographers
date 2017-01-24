@@ -22,16 +22,6 @@ textarea {
 	transition: all ($transition-time / 2) ease-in-out;
 }
 
-select {
-
-	&:focus {
-		border: $input-border-focus;
-		box-shadow: $input-shadow-focus;
-		transition: $input-transition;
-	}
-
-}
-
 .button {
 	transition: background-color 0.3s, color 0.3s;
 	vertical-align: middle;
