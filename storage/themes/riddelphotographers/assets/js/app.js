@@ -22,8 +22,6 @@ jQuery(function($){
 
   $(document).foundation();
 
-  $('a[href="./home.php"]').parent('li').addClass('active');
-
   // redirect this other dodgy site
 
   if (document.location.href.indexOf('showtimefashion') > -1) {
@@ -120,6 +118,11 @@ jQuery(function($){
   });
 
   $(window).bind('load', function () {
+
+    // detect portrait photos and add class
+
+    $('img[alt*="portrait"]').parent('.image-item').addClass('portrait');
+    $('img[alt*="landscape"]').parent('.image-item').removeClass('ratio-0\.666, ratio-0\.667');
 
     // add animation class when in viewport
 
