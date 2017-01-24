@@ -116,8 +116,8 @@
 				transform: translateY(10px);
 			}
 
-			&::hover,
-			&::focus {
+			&:hover,
+			&:focus {
 				color: $anchor-color-hover;
 
 				&::before,
@@ -204,8 +204,8 @@
 .scroll-down {
 	@extend .flash;
 
-	&::hover,
-	&::focus {
+	&:hover,
+	&:focus {
 		animation-name: initial;
 	}
 
@@ -242,8 +242,8 @@
 		a {
 			color: $primary-color-50-lighter;
 
-			&::hover,
-			&::focus {
+			&:hover,
+			&:focus {
 				color: $anchor-color-hover;
 			}
 
@@ -251,8 +251,8 @@
 			&.k-nav-current {
 				color: $anchor-color;
 
-				&::hover,
-				&::focus {
+				&:hover,
+				&:focus {
 					color: $anchor-color-hover;
 				}
 
@@ -305,8 +305,8 @@
 			&.active {
 				color: $primary-color;
 
-				&::hover,
-				&::focus {
+				&:hover,
+				&:focus {
 					color: $anchor-color-hover;
 				}
 

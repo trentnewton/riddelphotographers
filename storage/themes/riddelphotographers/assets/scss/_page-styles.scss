@@ -92,8 +92,8 @@
 		vertical-align: bottom;
 		white-space: nowrap;
 
-		&::hover,
-		&::focus {
+		&:hover,
+		&:focus {
 			color: $primary-color;
 
 			&::before,

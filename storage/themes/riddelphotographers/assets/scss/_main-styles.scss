@@ -32,7 +32,7 @@ select,
 textarea,
 button {
 
-	&::focus {
+	&:focus {
 		outline: none;
 	}
 

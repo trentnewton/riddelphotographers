@@ -7,8 +7,8 @@
 	a {
 		color: $secondary-color;
 
-		&::hover,
-		&::focus {
+		&:hover,
+		&:focus {
 			color: $secondary-color-25-darker;
 		}
 
@@ -54,7 +54,7 @@
 		height: rem-calc(30);
 
 		&:hover,
-		&::focus {
+		&:focus {
 			color: $anchor-color-hover;
 		}
 
@@ -74,8 +74,8 @@
 		a {
 			color: $primary-color-50-lighter;
 
-			&::hover,
-			&::focus {
+			&:hover,
+			&:focus {
 				color: $anchor-color-hover;
 			}
 
