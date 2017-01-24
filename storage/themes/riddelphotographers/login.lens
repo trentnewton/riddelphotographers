@@ -12,9 +12,10 @@
 							</p>
 						</koken:not>
 						<p itemprop="text">
-							<input type="password" name="password" autofocus placeholder="{{ language.enter_password }}">
+							<label class="show-for-sr" for="password">{{ language.enter_password }}</label>
+							<input type="password" id="password" name="password" autofocus placeholder="{{ language.enter_password }}">
 						</p>
-						<button type="submit" class="large button" disabled="disabled">{{ language.go }}</button>
+						<button aria-label="Login" type="submit" class="large button" disabled="disabled">{{ language.go }}</button>
 					</koken:form>
 				</div>
 			</section>

@@ -25,9 +25,9 @@
 				<koken:include file="partials/side-navigation.html" />
 				<div class="off-canvas-content vh_min-height100" data-off-canvas-content>
 					<koken:if data="location.here" equals="/">
-					    <header class="main-header vh_height100" itemscope itemtype="http://schema.org/WPHeader">
+					    <header class="main-front-page-header vh_height100" itemscope itemtype="http://schema.org/WPHeader">
 	                        <div class="main-elements">
-	                            <koken:link to="front" title="{{ labels.home.singular }}" class="">
+	                            <koken:link to="front" aria-label="{{ labels.home.singular }}" title="{{ labels.home.singular }}" class="">
 	                                <h1 itemprop="headline">
 	                                    <span class="visual-hide">{{ site.title }}</span>
 	                                    <koken:asset file="assets/images/logo.png" class="main-logo" alt="{{ site.title }}" width="1434" height="676" />
@@ -35,12 +35,12 @@
 	                            </koken:link>
 	                            <koken:include file="partials/navigation.html" />
 	                            <div class="scroll-down-container">
-	                                <a class="scroll-down" href="#content" title="Scroll Down">
+	                                <a class="scroll-down" href="#content" aria-label="Scroll Down" title="Scroll Down">
 	                                    <svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg>
 	                                </a>
 	                            </div>
 	                        </div>
-	                        <a class="hamburger" title="{{ language.open_mobile_menu }}" data-toggle="offCanvasRight">
+	                        <a class="hamburger" aria-label="{{ language.open_mobile_menu }}" title="{{ language.open_mobile_menu }}" data-toggle="offCanvasRight">
 	                            <span class="bar" aria-hidden="true"></span>
 	                        </a>
 	                    </header>
@@ -59,7 +59,7 @@
 									<koken:include file="partials/navigation.html" />
 								</div>
 							</div>
-							<a class="hamburger" title="{{ language.open_mobile_menu }}" data-toggle="offCanvasRight">
+							<a class="hamburger" aria-label="{{ language.open_mobile_menu }}" title="{{ language.open_mobile_menu }}" data-toggle="offCanvasRight">
 								<span class="bar"></span>
 							</a>
 						</header>

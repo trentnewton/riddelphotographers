@@ -43,7 +43,7 @@
 			<div class="content small-12 column" itemprop="text">
 				<koken:album_download>
 					<p class="text-center">
-						<koken:link class="button"><svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg>&nbsp;{{ language.download }} {{ labels.album.singular }}</koken:link>
+						<koken:link class="button" aria-label="{{ language.download }} {{ labels.album.singular }}" title="{{ language.download }} {{ labels.album.singular }}"><svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg>&nbsp;{{ language.download }} {{ labels.album.singular }}</koken:link>
 					</p>
 				</koken:album_download>
 				{{ album.description paragraphs="true" }}
@@ -59,7 +59,7 @@
 								</a>
 							</div>
 							<koken:max_download>
-								<koken:link title="{{ language.download_image }}">
+								<koken:link aria-label="{{ language.download_image }}" title="{{ language.download_image }}">
 									<div class="download">
 										<svg class="icon icon-download"><use xlink:href="#icon-download"></use></svg>
 									</div>
@@ -75,7 +75,7 @@
 		<div class="row">
 			<div class="content small-12 column" itemprop="text">
 				<koken:note>
-					<p class="error">No album loaded</p>
+					<p class="error">No {{ labels.album.singular }} loaded</p>
 				</koken:note>
 			</div>
 		</div>
