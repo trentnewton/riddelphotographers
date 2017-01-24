@@ -51,7 +51,7 @@
 			<div class="row image-items-list small-collapse">
 				<koken:loop>
 					<koken:content_image>
-						<figure class="image-item {{ content.aspect_ratio }} column small-12">
+						<figure class="image-item ratio-{{ content.aspect_ratio }}">
 							<koken:img preset="large" lazy="true" />
 							<div class="pin-it-button">
 								<a data-pin-do="buttonPin" data-pin-color="red" data-pin-tall="true" href="https://www.pinterest.com/pin/create/button/?url={{ album.url }}&media={{ content.presets.large.url }}&description={{ content.title }}">

@@ -89,6 +89,13 @@
 	position: relative;
 	width: 100%;
 	margin-bottom: rem-calc(8);
+	@include flex-grid-column(12, 0);
+
+	&.ratio-0\.666,
+	&.ratio-0\.667,
+	&.portrait {
+		@include flex-grid-column(6, 0);
+	}
 
 	img {
 		width: 100%;

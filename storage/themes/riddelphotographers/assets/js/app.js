@@ -136,9 +136,8 @@ new vUnit({
 
     // detect portrait photos and add class
 
-    $('.image-items-list .image-item.0\\.666, .image-items-list .image-item.0\\.667').removeClass('small-12').addClass('small-6');
-    $('.image-items-list .image-item > img[alt*="portrait"]').parent().removeClass('small-12').addClass('small-6');
-    $('.image-items-list .image-item > img[alt*="landscape"]').parent().removeClass('small-6').addClass('small-12');
+    $('.image-items-list .image-item > img[alt*="portrait"]').parent().addClass('portrait');
+    $('.image-items-list .image-item > img[alt*="landscape"]').parent().removeClass('ratio-0\.666, ratio-0\.667');
 
   });
 
