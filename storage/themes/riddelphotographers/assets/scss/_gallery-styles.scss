@@ -6,8 +6,8 @@
 
 .grid-overlay-link {
 
-	&:hover,
-	&:focus {
+	&::hover,
+	&::focus {
 
 		.grid-overlay {
 			opacity: 1;
@@ -124,8 +124,8 @@
 		margin-bottom: 0;
 	}
 
-	&:hover,
-	&:focus {
+	&::hover,
+	&::focus {
 
 		.pin-it-button,
 		.download {

@@ -111,13 +111,13 @@
 				transform: translateY(-10px);
 			}
 
-			&:after {
+			&::after {
 				bottom: 0;
 				transform: translateY(10px);
 			}
 
-			&:hover,
-			&:focus {
+			&::hover,
+			&::focus {
 				color: $anchor-color-hover;
 
 				&::before,
@@ -204,8 +204,8 @@
 .scroll-down {
 	@extend .flash;
 
-	&:hover,
-	&:focus {
+	&::hover,
+	&::focus {
 		animation-name: initial;
 	}
 
@@ -213,19 +213,19 @@
 
 .logo-link {
 
-	&:before,
-	&:after {
+	&::before,
+	&::after {
 		left: 51%;
 		top: 45%;
 		z-index: -1;
 	}
 
-	&:before {
+	&::before {
 		width: rem-calc(180);
 		height: rem-calc(180);
 	}
 
-	&:after {
+	&::after {
 		width: rem-calc(190);
 		height: rem-calc(190);
 	}
@@ -242,8 +242,8 @@
 		a {
 			color: $primary-color-50-lighter;
 
-			&:hover,
-			&:focus {
+			&::hover,
+			&::focus {
 				color: $anchor-color-hover;
 			}
 
@@ -251,8 +251,8 @@
 			&.k-nav-current {
 				color: $anchor-color;
 
-				&:hover,
-				&:focus {
+				&::hover,
+				&::focus {
 					color: $anchor-color-hover;
 				}
 
@@ -305,8 +305,8 @@
 			&.active {
 				color: $primary-color;
 
-				&:hover,
-				&:focus {
+				&::hover,
+				&::focus {
 					color: $anchor-color-hover;
 				}
 
@@ -337,40 +337,6 @@
 	.main-nav {
 		font-size: inherit;
 		margin-top: rem-calc(25);
-	}
-
-}
-
-// login / error page header
-
-.login-header {
-	padding-top: rem-calc(60);
-	position: relative;
-
-	.logo-link {
-
-		&:before,
-		&:after {
-			top: 60%;
-			left: 50.1%
-		}
-
-		&:before {
-			width: rem-calc(270);
-			height: rem-calc(270);
-		}
-
-		&:after {
-			width: rem-calc(280);
-			height: rem-calc(280);
-		}
-
-	}
-
-	.main-logo {
-		width: rem-calc(358.5);
-		left: 50%;
-		transform: translateX(-58%);
 	}
 
 }

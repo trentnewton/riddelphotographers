@@ -24,7 +24,7 @@ textarea {
 
 select {
 
-	&:focus {
+	&::focus {
 		border: $input-border-focus;
 		box-shadow: $input-shadow-focus;
 		transition: $input-transition;
@@ -40,7 +40,7 @@ select {
 	backface-visibility: hidden;
 	font-weight: $global-weight-bold;
 
-	&:before {
+	&::before {
 		content: '';
 		position: absolute;
 		top: 0;
@@ -55,11 +55,11 @@ select {
 		transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
 	}
 
-	&:focus,
-	&:hover {
+	&::focus,
+	&::hover {
 		color: $primary-color;
 
-		&:before {
+		&::before {
 			transform: scale3d(1, 1, 1);
 			opacity: 1;
 		}
