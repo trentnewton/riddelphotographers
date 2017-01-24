@@ -51,8 +51,20 @@
 			<div class="row image-items-list small-collapse">
 				<koken:loop>
 					<koken:content_image>
+						<script>
+							jQuery(function($){
+
+								'use strict';
+
+								// detect portrait photos and add class
+
+								$('img[alt*="portrait"]').parent('.image-item').addClass('portrait');
+								$('img[alt*="landscape"]').parent('.image-item').removeClass('ratio-0\.666, ratio-0\.667');
+
+							});
+						</script>
 						<figure class="image-item ratio-{{ content.aspect_ratio }}">
-							<koken:img preset="large" lazy="true" />
+							<koken:img preset="large" />
 							<div class="pin-it-button">
 								<a data-pin-do="buttonPin" data-pin-color="red" data-pin-tall="true" href="https://www.pinterest.com/pin/create/button/?url={{ album.url }}&media={{ content.presets.large.url }}&description={{ content.title }}">
 									<img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_red_28.png">

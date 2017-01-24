@@ -14,7 +14,7 @@ new vUnit({
 
 // jquery functions
 
-(function ($) {
+jQuery(function($){
 
   'use strict';
 
@@ -22,98 +22,96 @@ new vUnit({
 
   $(document).foundation();
 
-  $(document).ready(function () {
+  $('a[href="./home.php"]').parent('li').addClass('active');
 
-    // redirect this other dodgy site
+  // redirect this other dodgy site
 
-    if (document.location.href.indexOf('showtimefashion') > -1) {
-      // indexOf will return the position of the first occurence of this string in the url
-      // or -1 it it's not there.
-      document.location.href = 'http://www.google.com';
-    }
+  if (document.location.href.indexOf('showtimefashion') > -1) {
+    // indexOf will return the position of the first occurence of this string in the url
+    // or -1 it it's not there.
+    document.location.href = 'http://www.google.com';
+  }
 
-    // redirect if paulakern.com.au
+  // redirect if paulakern.com.au
 
-    if (document.location.href.indexOf('paulakern') > -1) {
-      // indexOf will return the position of the first occurence of this string in the url
-      // or -1 it it's not there.
-      document.location.href = 'http://www.riddelphotographers.com.au';
-    }
+  if (document.location.href.indexOf('paulakern') > -1) {
+    // indexOf will return the position of the first occurence of this string in the url
+    // or -1 it it's not there.
+    document.location.href = 'http://www.riddelphotographers.com.au';
+  }
 
-    // get album name for login page
+  // get album name for login page
 
-    var loginUrl = document.location.href.indexOf('login/?return_to=%2Falbums') > -1;
-    var albumName = document.location.href.substring(document.location.href.indexOf('login/?return_to=%2Falbums%2F') + 1).replace('ogin/?return_to=%2Falbums%2F', '');
-    albumName = albumName.replace(/%2F&album=.*$/i, '').replace(/\-/g, ' ').replace(/\d+/g, '').replace(/\s*$/, '');
+  var loginUrl = document.location.href.indexOf('login/?return_to=%2Falbums') > -1;
+  var albumName = document.location.href.substring(document.location.href.indexOf('login/?return_to=%2Falbums%2F') + 1).replace('ogin/?return_to=%2Falbums%2F', '');
+  albumName = albumName.replace(/%2F&album=.*$/i, '').replace(/\-/g, ' ').replace(/\d+/g, '').replace(/\s*$/, '');
 
-    function toTitleCase(str) {
-      return str.replace(/(?:^|\s)\w/g, function (match) {
-        return match.toUpperCase();
-      });
-    }
-
-    if (loginUrl) {
-      $('.login .page-title-container').append('<h1 class="page-title" itemprop="headline">&#xe00c;' + toTitleCase(albumName) + '&#xe013;</h1>');
-    }
-
-    // load animsition
-
-    $('.animsition').animsition({
-      inClass: 'fade-in',
-      outClass: 'fade-out',
-      inDuration: 1500,
-      outDuration: 800,
-      linkElement: '.animsition-link',
-      // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
-      loading: true,
-      loadingParentElement: 'body', //animsition wrapper element
-      loadingClass: 'animsition-loading',
-      loadingInner: '', // e.g '<img src="loading.svg" />'
-      timeout: false,
-      timeoutCountdown: 5000,
-      onLoadEvent: true,
-      browser: ['animation-duration', '-webkit-animation-duration'],
-      // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
-      // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
-      overlay: false,
-      overlayClass: 'animsition-overlay-slide',
-      overlayParentElement: 'body',
-      transition: function (url) { window.location.href = url;}
+  function toTitleCase(str) {
+    return str.replace(/(?:^|\s)\w/g, function (match) {
+      return match.toUpperCase();
     });
+  }
 
-    // slick slider for home page & sets pages
+  if (loginUrl) {
+    $('.login .page-title-container').append('<h1 class="page-title" itemprop="headline">&#xe00c;' + toTitleCase(albumName) + '&#xe013;</h1>');
+  }
 
-    $('.gallery-main').slick({
-      dots: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 3,
-      variableWidth: true
-    });
+  // load animsition
 
-    // detect iOS and add class to body
-
-    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-
-    if (iOS) {
-      $('body').addClass('iOS')
-    }
-
-    // detect album parent set and add active class to corresonding link
-
-    var setId = $('.gallery-page').attr('id');
-
-    if (setId) {
-      $('.k-nav-root a[title="' + setId + '"]').addClass('k-nav-current');
-    }
-
-    // disable sumbit button on login form until something is entered
-
-    $('input[type="password"]').keyup(function () {
-      $('button[type="submit"]').attr('disabled', !$(this).val().length);
-    }).trigger('keyup');
-
+  $('.animsition').animsition({
+    inClass: 'fade-in',
+    outClass: 'fade-out',
+    inDuration: 1500,
+    outDuration: 800,
+    linkElement: '.animsition-link',
+    // e.g. linkElement: 'a:not([target="_blank"]):not([href^=#])'
+    loading: true,
+    loadingParentElement: 'body', //animsition wrapper element
+    loadingClass: 'animsition-loading',
+    loadingInner: '', // e.g '<img src="loading.svg" />'
+    timeout: false,
+    timeoutCountdown: 5000,
+    onLoadEvent: true,
+    browser: ['animation-duration', '-webkit-animation-duration'],
+    // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+    // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+    overlay: false,
+    overlayClass: 'animsition-overlay-slide',
+    overlayParentElement: 'body',
+    transition: function (url) { window.location.href = url;}
   });
+
+  // slick slider for home page & sets pages
+
+  $('.gallery-main').slick({
+    dots: false,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    variableWidth: true
+  });
+
+  // detect iOS and add class to body
+
+  var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+
+  if (iOS) {
+    $('body').addClass('iOS')
+  }
+
+  // detect album parent set and add active class to corresonding link
+
+  var setId = $('.gallery-page').attr('id');
+
+  if (setId) {
+    $('.k-nav-root a[title="' + setId + '"]').addClass('k-nav-current');
+  }
+
+  // disable sumbit button on login form until something is entered
+
+  $('input[type="password"]').keyup(function () {
+    $('button[type="submit"]').attr('disabled', !$(this).val().length);
+  }).trigger('keyup');
 
   // hamburger icon animation
 
@@ -133,11 +131,6 @@ new vUnit({
         $(this).addClass('moveInUp');
       }
     });
-
-    // detect portrait photos and add class
-
-    $('.image-items-list .image-item > img[alt*="portrait"]').parent().addClass('portrait');
-    $('.image-items-list .image-item > img[alt*="landscape"]').parent().removeClass('ratio-0\.666, ratio-0\.667');
 
   });
 
@@ -216,4 +209,4 @@ new vUnit({
   $('.footer-nav a[title*="Facebook"]').html('<svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>');
   $('.footer-nav a[title*="Instagram"]').html('<svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>');
 
-})(jQuery);
+});
