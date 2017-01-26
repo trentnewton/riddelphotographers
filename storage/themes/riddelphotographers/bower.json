@@ -42,11 +42,9 @@
   "dependencies": {
     "slick-carousel": "^1.6.0",
     "jquery-migrate": "^3.0.0",
-    "what-input": "^4.0.4",
+    "what-input": "^4.0.6",
     "jquery": "^3.1.1",
     "foundation-sites": "^6.3.0",
-    "jquery.inview": "^1.1.2",
-    "colorifyjs": "^1.0.1",
-    "adaptive.background": "^1.0.3"
+    "jquery.inview": "^1.1.2"
   }
 }
