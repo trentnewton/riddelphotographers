@@ -128,8 +128,7 @@ jQuery(function ($){
     // detect portrait photos and add class
 
     $('img[alt*="portrait"]').parent('.image-item').addClass('portrait');
-    $('img[alt*="landscape"]').parent('.image-item').removeClass('ratio-0\.666');
-    $('img[alt*="landscape"]').parent('.image-item').removeClass('ratio-0\.667');
+    $('img[alt*="landscape"]').parent('.image-item').removeClass('ratio-0\.666').removeClass('ratio-0\.667');
 
     // add animation class when in viewport
 
