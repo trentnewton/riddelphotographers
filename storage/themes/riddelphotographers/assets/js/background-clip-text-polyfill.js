@@ -1,3 +1,6 @@
+/* global d */
+/* global b */
+/* global el */
 /**
  * A SVG polyfill for "-webkit-brackground-clip: text;".
  *

@@ -1,3 +1,6 @@
+/* global vUnit */
+/* global jQuery */
+
 // create class for viewport measurements
 
 new vUnit({
@@ -14,13 +17,13 @@ new vUnit({
       property: 'min-height',
       // What to base the value on (vh, vw, vmin or vmax)
       reference: 'vh'
-    },
+    }
   }
 }).init(); // call the public init() method
 
 // jquery functions
 
-jQuery(function ($){
+(function ($){
 
   'use strict';
 
@@ -218,4 +221,4 @@ jQuery(function ($){
   $('.footer-nav a[title*="Facebook"]').html('<svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>');
   $('.footer-nav a[title*="Instagram"]').html('<svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>');
 
-});
+})(jQuery);
