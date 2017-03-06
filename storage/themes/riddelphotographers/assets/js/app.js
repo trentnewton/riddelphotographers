@@ -33,19 +33,19 @@ new vUnit({
 
   // redirect this other dodgy site
 
-  if (document.location.href.indexOf('showtimefashion') > -1) {
-    // indexOf will return the position of the first occurence of this string in the url
-    // or -1 it it's not there.
-    document.location.href = 'http://www.google.com';
-  }
+  // if (document.location.href.indexOf('showtimefashion') > -1) {
+  //   // indexOf will return the position of the first occurence of this string in the url
+  //   // or -1 it it's not there.
+  //   document.location.href = 'http://www.google.com';
+  // }
 
   // redirect if paulakern.com.au
 
-  if (document.location.href.indexOf('paulakern') > -1) {
-    // indexOf will return the position of the first occurence of this string in the url
-    // or -1 it it's not there.
-    document.location.href = 'http://www.riddelphotographers.com.au';
-  }
+  // if (document.location.href.indexOf('paulakern') > -1) {
+  //   // indexOf will return the position of the first occurence of this string in the url
+  //   // or -1 it it's not there.
+  //   document.location.href = 'http://www.riddelphotographers.com.au';
+  // }
 
   // get album name for login page
 
