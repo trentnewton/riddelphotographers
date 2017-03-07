@@ -1,6 +1,3 @@
-/* global d */
-/* global b */
-/* global el */
 /**
  * A SVG polyfill for "-webkit-brackground-clip: text;".
  *
@@ -33,9 +30,9 @@ Element.prototype.backgroundClipPolyfill = function () {
   'use strict';
 
   var a = arguments[0];
-      d = document;
-      b = d.body;
-      el = this;
+  var d = document;
+  var b = d.body;
+  var el = this;
 
   function hasBackgroundClip() {
     return b.style.webkitBackgroundClip !== undefined;
