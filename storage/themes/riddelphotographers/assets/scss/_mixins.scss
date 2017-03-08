@@ -68,3 +68,64 @@
     }
 
 }
+
+// animations
+
+@mixin loop {
+    animation-iteration-count: infinite;
+}
+
+@mixin flash {
+    animation-name: flash;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+    backface-visibility: hidden;
+}
+
+@mixin fadeInUpVCentre {
+    animation-name: fadeInUpVCentre;
+    animation-duration: $transition-time;
+    animation-fill-mode: both;
+}
+
+@mixin fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@mixin fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@mixin fadeOutDown {
+    animation-name: fadeOutDown;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@mixin moveInUp {
+    animation-name: moveInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+@mixin pointer {
+    animation-name: pointer;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.flash {
+    display: inline;
+    @include flash;
+    @include loop;
+}
+
+.moveInUp {
+    @include moveInUp;
+}

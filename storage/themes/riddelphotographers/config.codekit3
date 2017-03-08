@@ -37,6 +37,22 @@
 		"oAP": "\/assets\/css\/app.css.map",
 		"oF": 0
 		},
+	"\/assets\/css\/critical.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/assets\/css\/critical-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/css\/critical.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/css\/critical.css.map",
+		"oF": 0
+		},
 	"\/assets\/css\/fonts\/bold-italic.ttf": {
 		"ft": 8192,
 		"oA": 2,
@@ -469,6 +485,19 @@
 		"ma": 1,
 		"oA": 0,
 		"oAP": "\/assets\/css\/app.css",
+		"oF": 0,
+		"oS": 3,
+		"uL": 1
+		},
+	"\/assets\/scss\/critical.scss": {
+		"aP": 1,
+		"bl": 1,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 1,
+		"oA": 0,
+		"oAP": "\/assets\/css\/critical.css",
 		"oF": 0,
 		"oS": 3,
 		"uL": 1
