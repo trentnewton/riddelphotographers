@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
-  	<head>
-  		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="apple-touch-icon" sizes="180x180" href="{{ location.theme_path }}/assets/images/apple-touch-icon.png">
@@ -13,13 +13,11 @@
 		<meta name="theme-color" content="#ffffff">
 		<koken:meta />
 		<koken:title />
-		<style type="text/css">
-			<koken:include file="assets/css/critical.css" />
-		</style>
-		<koken:asset rel="preload" file="assets/css/app.css" media="all" as="style" onload="this.rel='stylesheet'" />
+		<koken:asset rel="preload" file="assets/css/critical.css" media="all" as="style" onload="this.rel='stylesheet'" />
 		<noscript>
-			<koken:asset file="assets/css/app.css" media="all" />
+			<koken:asset file="assets/css/critical.css" media="all" />
 		</noscript>
+		<koken:asset file="assets/css/app.css" media="all" />
 		<!-- <koken:settings /> -->
 		<script>
 			/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
