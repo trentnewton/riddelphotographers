@@ -15,28 +15,6 @@
 		"oAP": "\/album.lens",
 		"oF": 0
 		},
-	"\/albums.lens": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/albums.lens",
-		"oF": 0
-		},
-	"\/assets\/css\/app.css": {
-		"aP": 0,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/assets\/css\/app-min.css",
-		"oF": 0,
-		"oS": 0
-		},
-	"\/assets\/css\/app.css.map": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/assets\/css\/app.css.map",
-		"oF": 0
-		},
 	"\/assets\/css\/critical.css": {
 		"aP": 0,
 		"bl": 0,
@@ -253,15 +231,6 @@
 		"sC": 2,
 		"tS": 0
 		},
-	"\/assets\/js\/min\/app-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/assets\/js\/min\/min\/app-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/assets\/js\/min\/app-min.js.map": {
 		"ft": 8192,
 		"oA": 2,
@@ -342,19 +311,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/css\/_header.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/assets\/scss\/_home-page.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "\/assets\/css\/_home-page.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -5459,12 +5415,6 @@
 		"oAP": "\/error.lens",
 		"oF": 0
 		},
-	"\/index.lens": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/index.lens",
-		"oF": 0
-		},
 	"\/info.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -5509,24 +5459,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/partials\/album-slider.html",
-		"oF": 0
-		},
-	"\/partials\/coming-soon-header.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/partials\/coming-soon-header.html",
-		"oF": 0
-		},
-	"\/partials\/footer.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/partials\/footer.html",
-		"oF": 0
-		},
-	"\/partials\/header.html": {
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/partials\/header.html",
 		"oF": 0
 		},
 	"\/partials\/navigation.html": {
@@ -5589,12 +5521,6 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/set.lens",
-		"oF": 0
-		},
-	"\/sets.lens": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/sets.lens",
 		"oF": 0
 		}
 	},
