@@ -40,7 +40,7 @@
 						<koken:include file="partials/album-slider.html" />
 					</div>
 				</div>
-				<koken:background class="main-background"></koken:background>
+				<koken:background preset="medium" class="main-background"></koken:background>
 			</section>
 		</koken:loop>
 	</main>
