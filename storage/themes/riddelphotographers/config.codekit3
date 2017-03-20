@@ -7,12 +7,34 @@
 		"uuidString": "2D1ED220-0073-4ED6-B025-ED57F2917874"
 		}
 	],
-"creatorBuild": "25568",
+"creatorBuild": "25704",
 "files": {
 	"\/album.lens": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/album.lens",
+		"oF": 0
+		},
+	"\/albums.lens": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/albums.lens",
+		"oF": 0
+		},
+	"\/assets\/css\/app.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/assets\/css\/app-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/assets\/css\/app.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/css\/app.css.map",
 		"oF": 0
 		},
 	"\/assets\/css\/critical.css": {
@@ -70,34 +92,42 @@
 	"\/assets\/images\/android-chrome-192x192.png": {
 		"ft": 32768,
 		"iS": 4127,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/android-chrome-192x192.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"q": 100
 		},
 	"\/assets\/images\/android-chrome-512x512.png": {
 		"ft": 32768,
 		"iS": 13008,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/android-chrome-512x512.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 1,
+		"q": 100
 		},
 	"\/assets\/images\/apple-touch-icon.png": {
 		"ft": 32768,
 		"iS": 4652,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/apple-touch-icon.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 1,
+		"q": 100
 		},
 	"\/assets\/images\/Engagements-title.png": {
 		"ft": 32768,
 		"iS": 23753,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/Engagements-title.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"q": 100
 		},
 	"\/assets\/images\/error-page-bg.jpg": {
 		"ft": 16384,
@@ -105,39 +135,48 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/error-page-bg.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"q": 100
 		},
 	"\/assets\/images\/Families-title.png": {
 		"ft": 32768,
 		"iS": 16152,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/Families-title.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"q": 100
 		},
 	"\/assets\/images\/favicon-16x16.png": {
 		"ft": 32768,
 		"iS": 1009,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/favicon-16x16.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 1,
+		"q": 100
 		},
 	"\/assets\/images\/favicon-32x32.png": {
 		"ft": 32768,
 		"iS": 1648,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/favicon-32x32.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 1,
+		"q": 100
 		},
 	"\/assets\/images\/favicon-64x64.png": {
 		"ft": 32768,
 		"iS": 1943,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/favicon-64x64.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 1,
+		"q": 100
 		},
 	"\/assets\/images\/inkbg.jpg": {
 		"ft": 16384,
@@ -145,15 +184,18 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/inkbg.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"q": 100
 		},
 	"\/assets\/images\/logo.png": {
 		"ft": 32768,
 		"iS": 150160,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/logo.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"q": 100
 		},
 	"\/assets\/images\/manifest.json": {
 		"ft": 524288,
@@ -166,26 +208,32 @@
 	"\/assets\/images\/mstile-150x150.png": {
 		"ft": 32768,
 		"iS": 4407,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/mstile-150x150.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 1,
+		"q": 100
 		},
 	"\/assets\/images\/Personal-title.png": {
 		"ft": 32768,
 		"iS": 17603,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/Personal-title.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"q": 100
 		},
 	"\/assets\/images\/riddel-photographers-og.png": {
 		"ft": 32768,
 		"iS": 13377,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/riddel-photographers-og.png",
 		"oF": 0,
-		"opt": 1
+		"opt": 1,
+		"q": 100
 		},
 	"\/assets\/images\/safari-pinned-tab.svg": {
 		"ft": 2097152,
@@ -200,18 +248,22 @@
 	"\/assets\/images\/splatter.png": {
 		"ft": 32768,
 		"iS": 5391,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/splatter.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"q": 100
 		},
 	"\/assets\/images\/Weddings-title.png": {
 		"ft": 32768,
 		"iS": 17305,
+		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/Weddings-title.png",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"q": 100
 		},
 	"\/assets\/js\/app.js": {
 		"ft": 64,
@@ -229,6 +281,15 @@
 		"oAP": "\/assets\/js\/min\/background-clip-text-polyfill-min.js",
 		"oF": 0,
 		"sC": 2,
+		"tS": 0
+		},
+	"\/assets\/js\/min\/app-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/assets\/js\/min\/min\/app-min-min.js",
+		"oF": 0,
+		"sC": 1,
 		"tS": 0
 		},
 	"\/assets\/js\/min\/app-min.js.map": {
@@ -311,6 +372,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/assets\/css\/_header.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/assets\/scss\/_home-page.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/assets\/css\/_home-page.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -5415,6 +5489,12 @@
 		"oAP": "\/error.lens",
 		"oF": 0
 		},
+	"\/index.lens": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index.lens",
+		"oF": 0
+		},
 	"\/info.json": {
 		"ft": 524288,
 		"oA": 1,
@@ -5461,6 +5541,24 @@
 		"oAP": "\/partials\/album-slider.html",
 		"oF": 0
 		},
+	"\/partials\/coming-soon-header.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/partials\/coming-soon-header.html",
+		"oF": 0
+		},
+	"\/partials\/footer.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/partials\/footer.html",
+		"oF": 0
+		},
+	"\/partials\/header.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/partials\/header.html",
+		"oF": 0
+		},
 	"\/partials\/navigation.html": {
 		"ft": 8192,
 		"oA": 0,
@@ -5485,7 +5583,8 @@
 		"oA": 0,
 		"oAP": "\/preview.jpg",
 		"oF": 0,
-		"opt": 0
+		"opt": 0,
+		"q": 100
 		},
 	"\/README.md": {
 		"cS": 0,
@@ -5521,6 +5620,12 @@
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/set.lens",
+		"oF": 0
+		},
+	"\/sets.lens": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/sets.lens",
 		"oF": 0
 		}
 	},
@@ -6284,6 +6389,10 @@
 			"active": 1,
 			"optionString": ""
 			},
+		"no-compare-neg-zero": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-cond-assign": {
 			"active": 1,
 			"optionString": "'except-parens'"
@@ -6763,6 +6872,10 @@
 		"no-with": {
 			"active": 0,
 			"optionString": ""
+			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
 			},
 		"object-curly-newline": {
 			"active": 0,
@@ -7363,7 +7476,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"quality": 100
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -7456,7 +7570,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"enableLossy": 1,
+		"quality": 100
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,

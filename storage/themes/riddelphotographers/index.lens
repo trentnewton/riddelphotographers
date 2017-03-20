@@ -29,7 +29,7 @@
 						<div class="main-title">
 							<h2 itemprop="headline">
 								<span class="visual-hide">{{ album.title }}</span>
-								<img src="{{ location.theme_path }}/assets/images/{{ album.title }}-title.png" alt="{{ album.title }}">
+								<img src="{{ location.theme_path }}/assets/images/{{ album.title }}-title.png" width="375" height="110" alt="{{ album.title }}">
 								<div class="flash">
 									<svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg>
 								</div>
