@@ -7,7 +7,7 @@
 		"uuidString": "2D1ED220-0073-4ED6-B025-ED57F2917874"
 		}
 	],
-"creatorBuild": "25704",
+"creatorBuild": "25813",
 "files": {
 	"\/album.lens": {
 		"ft": 8192,
@@ -92,41 +92,45 @@
 	"\/assets\/images\/android-chrome-192x192.png": {
 		"ft": 32768,
 		"iS": 4127,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/android-chrome-192x192.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/images\/android-chrome-512x512.png": {
 		"ft": 32768,
 		"iS": 13008,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/android-chrome-512x512.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/images\/apple-touch-icon.png": {
 		"ft": 32768,
 		"iS": 4652,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/apple-touch-icon.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/images\/Engagements-title.png": {
 		"ft": 32768,
 		"iS": 23753,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/Engagements-title.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/images\/error-page-bg.jpg": {
@@ -135,47 +139,52 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/error-page-bg.jpg",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/images\/Families-title.png": {
 		"ft": 32768,
 		"iS": 16152,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/Families-title.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/images\/favicon-16x16.png": {
 		"ft": 32768,
 		"iS": 1009,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/favicon-16x16.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/images\/favicon-32x32.png": {
 		"ft": 32768,
 		"iS": 1648,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/favicon-32x32.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/images\/favicon-64x64.png": {
 		"ft": 32768,
 		"iS": 1943,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/favicon-64x64.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/images\/inkbg.jpg": {
@@ -184,17 +193,19 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/inkbg.jpg",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
 	"\/assets\/images\/logo.png": {
 		"ft": 32768,
 		"iS": 150160,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/logo.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/images\/manifest.json": {
@@ -208,31 +219,34 @@
 	"\/assets\/images\/mstile-150x150.png": {
 		"ft": 32768,
 		"iS": 4407,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/mstile-150x150.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/images\/Personal-title.png": {
 		"ft": 32768,
 		"iS": 17603,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/Personal-title.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/images\/riddel-photographers-og.png": {
 		"ft": 32768,
 		"iS": 13377,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/riddel-photographers-og.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 1,
+		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/images\/safari-pinned-tab.svg": {
@@ -248,21 +262,23 @@
 	"\/assets\/images\/splatter.png": {
 		"ft": 32768,
 		"iS": 5391,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/splatter.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/images\/Weddings-title.png": {
 		"ft": 32768,
 		"iS": 17305,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/assets\/images\/Weddings-title.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/assets\/js\/app.js": {
@@ -5041,6 +5057,1482 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/bower_components\/PACE\/.bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/.bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/PACE\/bower.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/bower.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/PACE\/install.json": {
+		"ft": 524288,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/install.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/bower_components\/PACE\/LICENSE": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/LICENSE",
+		"oF": 0
+		},
+	"\/bower_components\/PACE\/pace.coffee": {
+		"ft": 32,
+		"ma": 0,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/pace.coffee",
+		"oF": 0,
+		"oS": 0,
+		"sC": 1
+		},
+	"\/bower_components\/PACE\/pace.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/pace.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/PACE\/pace.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/bower_components\/PACE\/pace.min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/bower_components\/PACE\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/README.md",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/bower_components\/PACE\/themes\/black\/pace-theme-barber-shop.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/black\/pace-theme-barber-shop.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/black\/pace-theme-big-counter.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/black\/pace-theme-big-counter.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/black\/pace-theme-bounce.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/black\/pace-theme-bounce.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/black\/pace-theme-center-atom.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/black\/pace-theme-center-atom.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/black\/pace-theme-center-circle.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/black\/pace-theme-center-circle.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/black\/pace-theme-center-radar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/black\/pace-theme-center-radar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/black\/pace-theme-center-simple.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/black\/pace-theme-center-simple.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/black\/pace-theme-corner-indicator.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/black\/pace-theme-corner-indicator.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/black\/pace-theme-fill-left.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/black\/pace-theme-fill-left.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/black\/pace-theme-flash.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/black\/pace-theme-flash.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/black\/pace-theme-flat-top.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/black\/pace-theme-flat-top.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/black\/pace-theme-loading-bar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/black\/pace-theme-loading-bar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/black\/pace-theme-mac-osx.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/black\/pace-theme-mac-osx.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/black\/pace-theme-minimal.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/black\/pace-theme-minimal.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/blue\/pace-theme-barber-shop.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/blue\/pace-theme-barber-shop.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/blue\/pace-theme-big-counter.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/blue\/pace-theme-big-counter.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/blue\/pace-theme-bounce.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/blue\/pace-theme-bounce.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/blue\/pace-theme-center-atom.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/blue\/pace-theme-center-atom.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/blue\/pace-theme-center-circle.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/blue\/pace-theme-center-circle.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/blue\/pace-theme-center-radar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/blue\/pace-theme-center-radar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/blue\/pace-theme-center-simple.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/blue\/pace-theme-center-simple.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/blue\/pace-theme-corner-indicator.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/blue\/pace-theme-corner-indicator.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/blue\/pace-theme-fill-left.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/blue\/pace-theme-fill-left.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/blue\/pace-theme-flash.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/blue\/pace-theme-flash.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/blue\/pace-theme-flat-top.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/blue\/pace-theme-flat-top.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/blue\/pace-theme-loading-bar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/blue\/pace-theme-loading-bar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/blue\/pace-theme-mac-osx.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/blue\/pace-theme-mac-osx.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/blue\/pace-theme-minimal.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/blue\/pace-theme-minimal.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/green\/pace-theme-barber-shop.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/green\/pace-theme-barber-shop.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/green\/pace-theme-big-counter.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/green\/pace-theme-big-counter.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/green\/pace-theme-bounce.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/green\/pace-theme-bounce.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/green\/pace-theme-center-atom.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/green\/pace-theme-center-atom.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/green\/pace-theme-center-circle.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/green\/pace-theme-center-circle.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/green\/pace-theme-center-radar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/green\/pace-theme-center-radar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/green\/pace-theme-center-simple.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/green\/pace-theme-center-simple.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/green\/pace-theme-corner-indicator.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/green\/pace-theme-corner-indicator.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/green\/pace-theme-fill-left.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/green\/pace-theme-fill-left.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/green\/pace-theme-flash.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/green\/pace-theme-flash.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/green\/pace-theme-flat-top.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/green\/pace-theme-flat-top.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/green\/pace-theme-loading-bar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/green\/pace-theme-loading-bar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/green\/pace-theme-mac-osx.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/green\/pace-theme-mac-osx.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/green\/pace-theme-minimal.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/green\/pace-theme-minimal.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/orange\/pace-theme-barber-shop.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/orange\/pace-theme-barber-shop.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/orange\/pace-theme-big-counter.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/orange\/pace-theme-big-counter.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/orange\/pace-theme-bounce.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/orange\/pace-theme-bounce.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/orange\/pace-theme-center-atom.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/orange\/pace-theme-center-atom.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/orange\/pace-theme-center-circle.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/orange\/pace-theme-center-circle.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/orange\/pace-theme-center-radar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/orange\/pace-theme-center-radar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/orange\/pace-theme-center-simple.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/orange\/pace-theme-center-simple.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/orange\/pace-theme-corner-indicator.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/orange\/pace-theme-corner-indicator.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/orange\/pace-theme-fill-left.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/orange\/pace-theme-fill-left.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/orange\/pace-theme-flash.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/orange\/pace-theme-flash.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/orange\/pace-theme-flat-top.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/orange\/pace-theme-flat-top.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/orange\/pace-theme-loading-bar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/orange\/pace-theme-loading-bar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/orange\/pace-theme-mac-osx.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/orange\/pace-theme-mac-osx.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/orange\/pace-theme-minimal.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/orange\/pace-theme-minimal.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/pink\/pace-theme-barber-shop.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/pink\/pace-theme-barber-shop.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/pink\/pace-theme-big-counter.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/pink\/pace-theme-big-counter.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/pink\/pace-theme-bounce.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/pink\/pace-theme-bounce.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/pink\/pace-theme-center-atom.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/pink\/pace-theme-center-atom.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/pink\/pace-theme-center-circle.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/pink\/pace-theme-center-circle.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/pink\/pace-theme-center-radar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/pink\/pace-theme-center-radar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/pink\/pace-theme-center-simple.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/pink\/pace-theme-center-simple.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/pink\/pace-theme-corner-indicator.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/pink\/pace-theme-corner-indicator.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/pink\/pace-theme-fill-left.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/pink\/pace-theme-fill-left.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/pink\/pace-theme-flash.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/pink\/pace-theme-flash.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/pink\/pace-theme-flat-top.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/pink\/pace-theme-flat-top.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/pink\/pace-theme-loading-bar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/pink\/pace-theme-loading-bar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/pink\/pace-theme-mac-osx.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/pink\/pace-theme-mac-osx.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/pink\/pace-theme-minimal.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/pink\/pace-theme-minimal.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/purple\/pace-theme-barber-shop.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/purple\/pace-theme-barber-shop.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/purple\/pace-theme-big-counter.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/purple\/pace-theme-big-counter.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/purple\/pace-theme-bounce.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/purple\/pace-theme-bounce.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/purple\/pace-theme-center-atom.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/purple\/pace-theme-center-atom.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/purple\/pace-theme-center-circle.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/purple\/pace-theme-center-circle.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/purple\/pace-theme-center-radar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/purple\/pace-theme-center-radar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/purple\/pace-theme-center-simple.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/purple\/pace-theme-center-simple.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/purple\/pace-theme-corner-indicator.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/purple\/pace-theme-corner-indicator.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/purple\/pace-theme-fill-left.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/purple\/pace-theme-fill-left.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/purple\/pace-theme-flash.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/purple\/pace-theme-flash.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/purple\/pace-theme-flat-top.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/purple\/pace-theme-flat-top.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/purple\/pace-theme-loading-bar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/purple\/pace-theme-loading-bar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/purple\/pace-theme-mac-osx.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/purple\/pace-theme-mac-osx.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/purple\/pace-theme-minimal.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/purple\/pace-theme-minimal.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/red\/pace-theme-barber-shop.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/red\/pace-theme-barber-shop.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/red\/pace-theme-big-counter.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/red\/pace-theme-big-counter.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/red\/pace-theme-bounce.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/red\/pace-theme-bounce.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/red\/pace-theme-center-atom.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/red\/pace-theme-center-atom.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/red\/pace-theme-center-circle.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/red\/pace-theme-center-circle.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/red\/pace-theme-center-radar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/red\/pace-theme-center-radar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/red\/pace-theme-center-simple.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/red\/pace-theme-center-simple.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/red\/pace-theme-corner-indicator.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/red\/pace-theme-corner-indicator.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/red\/pace-theme-fill-left.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/red\/pace-theme-fill-left.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/red\/pace-theme-flash.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/red\/pace-theme-flash.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/red\/pace-theme-flat-top.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/red\/pace-theme-flat-top.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/red\/pace-theme-loading-bar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/red\/pace-theme-loading-bar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/red\/pace-theme-mac-osx.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/red\/pace-theme-mac-osx.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/red\/pace-theme-minimal.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/red\/pace-theme-minimal.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/silver\/pace-theme-barber-shop.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/silver\/pace-theme-barber-shop.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/silver\/pace-theme-big-counter.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/silver\/pace-theme-big-counter.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/silver\/pace-theme-bounce.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/silver\/pace-theme-bounce.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/silver\/pace-theme-center-atom.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/silver\/pace-theme-center-atom.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/silver\/pace-theme-center-circle.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/silver\/pace-theme-center-circle.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/silver\/pace-theme-center-radar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/silver\/pace-theme-center-radar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/silver\/pace-theme-center-simple.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/silver\/pace-theme-center-simple.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/silver\/pace-theme-corner-indicator.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/silver\/pace-theme-corner-indicator.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/silver\/pace-theme-fill-left.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/silver\/pace-theme-fill-left.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/silver\/pace-theme-flash.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/silver\/pace-theme-flash.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/silver\/pace-theme-flat-top.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/silver\/pace-theme-flat-top.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/silver\/pace-theme-loading-bar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/silver\/pace-theme-loading-bar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/silver\/pace-theme-mac-osx.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/silver\/pace-theme-mac-osx.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/silver\/pace-theme-minimal.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/silver\/pace-theme-minimal.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/white\/pace-theme-barber-shop.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/white\/pace-theme-barber-shop.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/white\/pace-theme-big-counter.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/white\/pace-theme-big-counter.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/white\/pace-theme-bounce.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/white\/pace-theme-bounce.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/white\/pace-theme-center-atom.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/white\/pace-theme-center-atom.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/white\/pace-theme-center-circle.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/white\/pace-theme-center-circle.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/white\/pace-theme-center-radar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/white\/pace-theme-center-radar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/white\/pace-theme-center-simple.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/white\/pace-theme-center-simple.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/white\/pace-theme-corner-indicator.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/white\/pace-theme-corner-indicator.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/white\/pace-theme-fill-left.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/white\/pace-theme-fill-left.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/white\/pace-theme-flash.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/white\/pace-theme-flash.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/white\/pace-theme-flat-top.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/white\/pace-theme-flat-top.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/white\/pace-theme-loading-bar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/white\/pace-theme-loading-bar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/white\/pace-theme-mac-osx.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/white\/pace-theme-mac-osx.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/white\/pace-theme-minimal.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/white\/pace-theme-minimal.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/yellow\/pace-theme-barber-shop.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/yellow\/pace-theme-barber-shop.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/yellow\/pace-theme-big-counter.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/yellow\/pace-theme-big-counter.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/yellow\/pace-theme-bounce.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/yellow\/pace-theme-bounce.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/yellow\/pace-theme-center-atom.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/yellow\/pace-theme-center-atom.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/yellow\/pace-theme-center-circle.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/yellow\/pace-theme-center-circle.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/yellow\/pace-theme-center-radar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/yellow\/pace-theme-center-radar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/yellow\/pace-theme-center-simple.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/yellow\/pace-theme-center-simple.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/yellow\/pace-theme-corner-indicator.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/yellow\/pace-theme-corner-indicator.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/yellow\/pace-theme-fill-left.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/yellow\/pace-theme-fill-left.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/yellow\/pace-theme-flash.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/yellow\/pace-theme-flash.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/yellow\/pace-theme-flat-top.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/yellow\/pace-theme-flat-top.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/yellow\/pace-theme-loading-bar.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/yellow\/pace-theme-loading-bar.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/yellow\/pace-theme-mac-osx.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/yellow\/pace-theme-mac-osx.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/bower_components\/PACE\/themes\/yellow\/pace-theme-minimal.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/bower_components\/PACE\/themes\/yellow\/pace-theme-minimal.css",
+		"oF": 0,
+		"oS": 0
+		},
 	"\/bower_components\/slick-carousel\/.bower.json": {
 		"ft": 524288,
 		"oA": 2,
@@ -5592,6 +7084,7 @@
 		"oA": 0,
 		"oAP": "\/preview.jpg",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
@@ -5644,80 +7137,86 @@
 	"\/assets\/js\/app.js": [
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/vunit\/dist\/vunit-0.2.0.min.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/PACE\/pace.min.js",
 			"position": 0,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/animsition\/dist\/js\/animsition.min.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/vunit\/dist\/vunit-0.2.0.min.js",
 			"position": 1,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/jquery.inview\/jquery.inview.min.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/animsition\/dist\/js\/animsition.min.js",
 			"position": 2,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/slick-carousel\/slick\/slick.min.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/jquery.inview\/jquery.inview.min.js",
 			"position": 3,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/slick-carousel\/slick\/slick.min.js",
+			"position": 4,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/assets\/js\/background-clip-text-polyfill.js",
-			"position": 4,
-			"type": 0
-			},
-		{
-			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.core.js",
 			"position": 5,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.offcanvas.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.core.js",
 			"position": 6,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.reveal.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.offcanvas.js",
 			"position": 7,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.box.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.reveal.js",
 			"position": 8,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.keyboard.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.box.js",
 			"position": 9,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.mediaQuery.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.keyboard.js",
 			"position": 10,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.motion.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.mediaQuery.js",
 			"position": 11,
 			"type": 0
 			},
 		{
 			"followForSyntaxChecking": 0,
-			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.triggers.js",
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.motion.js",
 			"position": 12,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.triggers.js",
+			"position": 13,
 			"type": 0
 			}
 		]
@@ -6686,6 +8185,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
@@ -7510,14 +9013,6 @@
 		"orderOutput": 0,
 		"outputStyle": 1
 		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
-		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.html",
@@ -7580,7 +9075,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"enableLossy": 1,
+		"optimizerType": 1,
 		"quality": 100
 		},
 	"languageDefaultsPUG": {
