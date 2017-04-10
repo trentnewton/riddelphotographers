@@ -2,6 +2,8 @@
 
 <koken:load limit="0">
 	<koken:head>
+		<meta itemprop="name" content="{{ site.title }}">
+		<meta itemprop="description" content="{{ site.description strip_html='true' }}">
 		<meta property="og:site_name" content="{{ site.title }}">
 		<meta property="og:title" content="{{ album.title strip_html="true" }}">
 		<meta property="og:description" content="{{ album.summary | album.description strip_html="true" }}">

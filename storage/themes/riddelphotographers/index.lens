@@ -2,6 +2,8 @@
 
 <koken:load source="sets">
 	<koken:head>
+		<meta itemprop="name" content="{{ site.title }}">
+		<meta itemprop="description" content="{{ site.description strip_html='true' }}">
 		<meta property="og:site_name" content="{{ site.title }}">
 		<meta property="og:title" content="{{ site.title }}">
 		<meta property="og:description" content="{{ site.description strip_html='true' }}">
