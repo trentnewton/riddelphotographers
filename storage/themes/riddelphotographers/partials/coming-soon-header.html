@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html itemscope itemtype="http://schema.org/WebPage">
 	<head>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta charset="utf-8">
@@ -12,11 +12,14 @@
 		<link rel="manifest" href="{{ location.theme_path }}/assets/images/manifest.json">
 		<link rel="mask-icon" href="{{ location.theme_path }}/assets/images/safari-pinned-tab.svg" color="#be8f3a">
 		<meta name="theme-color" content="#ffffff">
+		<meta name="robots" content="follow, index">
+		<meta name="rating" content="general">
+		<meta name="HandheldFriendly" content="true">
 		<koken:meta />
 		<style type="text/css">
 			<koken:include file="assets/css/critical.css" />
 		</style>
-		<koken:asset rel="preload" file="assets/css/app.css" />
+		<koken:asset file="assets/css/app.css" media="all" />
 	</head>
 	<body class="login">
 		<koken:include file="partials/svg.html" />
