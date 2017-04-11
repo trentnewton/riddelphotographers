@@ -89,6 +89,48 @@
 		"oAP": "\/assets\/css\/fonts\/normal.ttf",
 		"oF": 0
 		},
+	"\/assets\/css\/fonts\/Pleasures.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/css\/fonts\/Pleasures.woff",
+		"oF": 0
+		},
+	"\/assets\/css\/fonts\/Titillium-Bold-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/css\/fonts\/Titillium-Bold-webfont.woff",
+		"oF": 0
+		},
+	"\/assets\/css\/fonts\/Titillium-BoldItalic-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/css\/fonts\/Titillium-BoldItalic-webfont.woff",
+		"oF": 0
+		},
+	"\/assets\/css\/fonts\/Titillium-Light-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/css\/fonts\/Titillium-Light-webfont.woff",
+		"oF": 0
+		},
+	"\/assets\/css\/fonts\/Titillium-LightItalic-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/css\/fonts\/Titillium-LightItalic-webfont.woff",
+		"oF": 0
+		},
+	"\/assets\/css\/fonts\/Titillium-Regular-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/css\/fonts\/Titillium-Regular-webfont.woff",
+		"oF": 0
+		},
+	"\/assets\/css\/fonts\/Titillium-RegularItalic-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/assets\/css\/fonts\/Titillium-RegularItalic-webfont.woff",
+		"oF": 0
+		},
 	"\/assets\/images\/android-chrome-192x192.png": {
 		"ft": 32768,
 		"iS": 4127,
