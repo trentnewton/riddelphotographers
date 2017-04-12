@@ -182,7 +182,7 @@
 		"oAP": "\/assets\/images\/error-page-bg.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/images\/Families-title.png": {
@@ -236,7 +236,7 @@
 		"oAP": "\/assets\/images\/inkbg.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/assets\/images\/logo.png": {
