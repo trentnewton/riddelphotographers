@@ -137,8 +137,8 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/android-chrome-192x192.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -148,7 +148,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/android-chrome-512x512.png",
 		"oF": 0,
-		"oIPL": 0,
+		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
@@ -159,7 +159,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/apple-touch-icon.png",
 		"oF": 0,
-		"oIPL": 0,
+		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
@@ -170,8 +170,8 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/Engagements-title.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -191,8 +191,8 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/Families-title.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -202,7 +202,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/favicon-16x16.png",
 		"oF": 0,
-		"oIPL": 0,
+		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
@@ -213,7 +213,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/favicon-32x32.png",
 		"oF": 0,
-		"oIPL": 0,
+		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
@@ -224,7 +224,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/favicon-64x64.png",
 		"oF": 0,
-		"oIPL": 0,
+		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
@@ -245,8 +245,8 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/logo.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -264,7 +264,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/mstile-150x150.png",
 		"oF": 0,
-		"oIPL": 0,
+		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
@@ -275,8 +275,8 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/Personal-title.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -286,7 +286,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/riddel-photographers-og.png",
 		"oF": 0,
-		"oIPL": 0,
+		"oIPL": 1,
 		"opt": 1,
 		"oT": 1,
 		"q": 100
@@ -307,8 +307,8 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/splatter.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -318,8 +318,8 @@
 		"oA": 0,
 		"oAP": "\/assets\/images\/Weddings-title.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -3519,7 +3519,7 @@
 	"\/bower_components\/jquery\/dist\/jquery.min.js": {
 		"ft": 64,
 		"mi": 1,
-		"oA": 2,
+		"oA": 1,
 		"oAP": "\/bower_components\/jquery\/dist\/jquery.min.js",
 		"oF": 0,
 		"sC": 1,
@@ -7120,6 +7120,167 @@
 		"oAP": "\/partials\/svg.html",
 		"oF": 0
 		},
+	"\/paulakern.com.au\/css\/app.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/paulakern.com.au\/css\/app-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/paulakern.com.au\/css\/fonts\/bold-italic.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paulakern.com.au\/css\/fonts\/bold-italic.ttf",
+		"oF": 0
+		},
+	"\/paulakern.com.au\/css\/fonts\/bold.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paulakern.com.au\/css\/fonts\/bold.ttf",
+		"oF": 0
+		},
+	"\/paulakern.com.au\/css\/fonts\/light-italic.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paulakern.com.au\/css\/fonts\/light-italic.ttf",
+		"oF": 0
+		},
+	"\/paulakern.com.au\/css\/fonts\/light.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paulakern.com.au\/css\/fonts\/light.ttf",
+		"oF": 0
+		},
+	"\/paulakern.com.au\/css\/fonts\/normal-italic.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paulakern.com.au\/css\/fonts\/normal-italic.ttf",
+		"oF": 0
+		},
+	"\/paulakern.com.au\/css\/fonts\/normal.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paulakern.com.au\/css\/fonts\/normal.ttf",
+		"oF": 0
+		},
+	"\/paulakern.com.au\/css\/fonts\/Pleasures.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paulakern.com.au\/css\/fonts\/Pleasures.woff",
+		"oF": 0
+		},
+	"\/paulakern.com.au\/css\/fonts\/Titillium-Bold-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paulakern.com.au\/css\/fonts\/Titillium-Bold-webfont.woff",
+		"oF": 0
+		},
+	"\/paulakern.com.au\/css\/fonts\/Titillium-BoldItalic-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paulakern.com.au\/css\/fonts\/Titillium-BoldItalic-webfont.woff",
+		"oF": 0
+		},
+	"\/paulakern.com.au\/css\/fonts\/Titillium-Light-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paulakern.com.au\/css\/fonts\/Titillium-Light-webfont.woff",
+		"oF": 0
+		},
+	"\/paulakern.com.au\/css\/fonts\/Titillium-LightItalic-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paulakern.com.au\/css\/fonts\/Titillium-LightItalic-webfont.woff",
+		"oF": 0
+		},
+	"\/paulakern.com.au\/css\/fonts\/Titillium-Regular-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paulakern.com.au\/css\/fonts\/Titillium-Regular-webfont.woff",
+		"oF": 0
+		},
+	"\/paulakern.com.au\/css\/fonts\/Titillium-RegularItalic-webfont.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paulakern.com.au\/css\/fonts\/Titillium-RegularItalic-webfont.woff",
+		"oF": 0
+		},
+	"\/paulakern.com.au\/images\/inkbg.jpg": {
+		"ft": 16384,
+		"iS": 36399,
+		"oA": 0,
+		"oAP": "\/paulakern.com.au\/images\/inkbg.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/paulakern.com.au\/images\/splatter.png": {
+		"ft": 32768,
+		"iS": 5391,
+		"oA": 0,
+		"oAP": "\/paulakern.com.au\/images\/splatter.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/paulakern.com.au\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paulakern.com.au\/index.html",
+		"oF": 0
+		},
+	"\/paulakern.com.au\/js\/app.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/paulakern.com.au\/js\/min\/app-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
+	"\/paulakern.com.au\/js\/min\/app-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/paulakern.com.au\/js\/min\/min\/app-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/paulakern.com.au\/js\/min\/app-min.js.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paulakern.com.au\/js\/min\/app-min.js.map",
+		"oF": 0
+		},
+	"\/paulakern.com.au\/js\/min\/jquery-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/paulakern.com.au\/js\/min\/min\/jquery-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/paulakern.com.au\/scss\/app.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/paulakern.com.au\/css\/app.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/preview.jpg": {
 		"ft": 16384,
 		"iS": 90046,
@@ -7259,6 +7420,38 @@
 			"followForSyntaxChecking": 0,
 			"linkedFileAbbreviatedPath": "\/bower_components\/foundation-sites\/js\/foundation.util.triggers.js",
 			"position": 13,
+			"type": 0
+			}
+		],
+	"\/paulakern.com.au\/js\/app.js": [
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/PACE\/pace.min.js",
+			"position": 0,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/jquery\/dist\/jquery.min.js",
+			"position": 1,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/animsition\/dist\/js\/animsition.min.js",
+			"position": 2,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 0,
+			"linkedFileAbbreviatedPath": "\/bower_components\/jquery.inview\/jquery.inview.min.js",
+			"position": 3,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/assets\/js\/background-clip-text-polyfill.js",
+			"position": 4,
 			"type": 0
 			}
 		]
