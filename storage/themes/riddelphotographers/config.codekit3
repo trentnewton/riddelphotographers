@@ -7130,6 +7130,12 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/paulakern.com.au\/css\/app.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/paulakern.com.au\/css\/app.css.map",
+		"oF": 0
+		},
 	"\/paulakern.com.au\/css\/fonts\/bold-italic.ttf": {
 		"ft": 8192,
 		"oA": 2,
@@ -7275,16 +7281,16 @@
 		"tS": 0
 		},
 	"\/paulakern.com.au\/scss\/app.scss": {
-		"aP": 0,
-		"bl": 0,
+		"aP": 1,
+		"bl": 1,
 		"dP": 10,
 		"dS": 0,
 		"ft": 4,
-		"ma": 0,
+		"ma": 1,
 		"oA": 0,
 		"oAP": "\/paulakern.com.au\/css\/app.css",
 		"oF": 0,
-		"oS": 0,
+		"oS": 3,
 		"uL": 1
 		},
 	"\/preview.jpg": {
