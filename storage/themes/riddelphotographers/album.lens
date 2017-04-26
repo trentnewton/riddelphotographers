@@ -74,12 +74,10 @@
 		</section>
 	</main>
 	<koken:else>
-		<div class="row">
-			<div class="content small-12 column" itemprop="text">
-				<koken:note>
-					<p class="error">No {{ labels.album.singular }} loaded</p>
-				</koken:note>
-			</div>
+		<div class="row column content" itemprop="text">
+			<koken:note>
+				<p class="error">No {{ labels.album.singular }} loaded</p>
+			</koken:note>
 		</div>
 </koken:load>
 <koken:include file="partials/footer.html" />

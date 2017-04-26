@@ -37,29 +37,23 @@
 				<img src="{{ location.theme_path }}/assets/images/{{ album.title }}-title.png" width="375" height="110" alt="{{ album.title }}">
 			</h1>
 		</header>
-		<article class="row">
+		<article class="row column content" itemprop="text">
 			<koken:unlisted>
-				<div class="content small-12 column" itemprop="text">
-					<p class="unlisted">
-						This {{ labels.album.singular }} is unlisted. Please don't share a link to it.
-					</p>
-				</div>
+				<p class="unlisted">
+					This {{ labels.album.singular }} is unlisted. Please don't share a link to it.
+				</p>
 			</koken:unlisted>
-			<div class="content small-12 column" itemprop="text">
-				{{ album.description paragraphs="true" }}
-			</div>
+			{{ album.description paragraphs="true" }}
 		</article>
 		<section class="gallery-container-page">
 			<koken:include file="partials/album-slider.html" />
 		</section>
 	</main>
 	<koken:else>
-		<div class="row">
-			<div class="content small-12 column" itemprop="text">
-				<koken:note>
-					<p class="error">No {{ labels.set.singular }} found. Create one in the Library.</p>
-				</koken:note>
-			</div>
+		<div class="row column content" itemprop="text">
+			<koken:note>
+				<p class="error">No {{ labels.set.singular }} found. Create one in the Library.</p>
+			</koken:note>
 		</div>
 </koken:load>
 

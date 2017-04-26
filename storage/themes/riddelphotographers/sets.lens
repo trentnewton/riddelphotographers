@@ -41,17 +41,13 @@
 			<header class="page-title-container">
 				<h1 class="page-title" itemprop="headline">&#xe00c;{{ labels.set.plural }}&#xe013;</h1>
 			</header>
-			<div class="row">
-				<koken:unlisted>
-					<div class="content small-12 column" itemprop="text">
-						<p class="unlisted">
-							This {{ labels.album.singular }} is unlisted. Please don't share a link to it.
-						</p>
-					</div>
-				</koken:unlisted>
-				<div class="content small-12 column" itemprop="text">
+			<koken:unlisted>
+				<div class="row column content" itemprop="text">
+					<p class="unlisted">
+						This {{ labels.album.singular }} is unlisted. Please don't share a link to it.
+					</p>
 				</div>
-			</div>
+			</koken:unlisted>
 		</article>
 		<koken:loop>
 			<section id="{{ album.title }}" class="slides-container vh_height100">
@@ -75,12 +71,10 @@
 			</section>
 		</koken:loop>
 		<koken:else>
-			<div class="row">
-				<div class="content small-12 column" itemprop="text">
-					<koken:note>
-						<p class="error">No {{ labels.set.plural }} found. Create some in the Library.</p>
-					</koken:note>
-				</div>
+			<div class="row column content" itemprop="text">
+				<koken:note>
+					<p class="error">No {{ labels.set.plural }} found. Create some in the Library.</p>
+				</koken:note>
 			</div>
 	</koken:load>
 </main>
