@@ -8,6 +8,7 @@
 		<meta property="og:title" content="{{ labels.set.plural }}">
 		<meta property="og:description" content="{{ site.description strip_html='true' }}">
 		<meta property="og:type" content="website">
+		<meta property="og:locale" content="en_au">
 		<koken:first>
 			<koken:covers>
 				<koken:first>

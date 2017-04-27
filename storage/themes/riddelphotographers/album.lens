@@ -9,6 +9,7 @@
 		<meta property="og:description" content="{{ album.summary | album.description strip_html="true" }}">
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="{{ album.url }}">
+		<meta property="og:locale" content="en_au">
 		<koken:covers>
 			<koken:shift>
 				<meta property="og:image" content="{{ content.presets.medium_large.url }}">
