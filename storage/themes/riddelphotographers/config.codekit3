@@ -15,6 +15,12 @@
 		"oAP": "\/album.lens",
 		"oF": 0
 		},
+	"\/albums.lens": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/albums.lens",
+		"oF": 0
+		},
 	"\/assets\/css\/app.css": {
 		"aP": 0,
 		"bl": 0,
