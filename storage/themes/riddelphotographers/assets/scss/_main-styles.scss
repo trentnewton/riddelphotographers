@@ -44,6 +44,7 @@ optgroup,
 select,
 textarea {
 	font-family: $body-font-family;
+	font-synthesis: none;
 }
 
 svg {
