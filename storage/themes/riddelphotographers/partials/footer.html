@@ -14,5 +14,17 @@
 		</div>
 		<koken:asset file="assets/js/min/app-min.js" />
 		<script async defer src="//assets.pinterest.com/js/pinit.js"></script>
+		<script>
+
+			// background clip polyfill
+
+			var element = document.querySelector('.page-title');
+			element.backgroundClipPolyfill({
+				'patternID' : 'mypattern',
+				'patternURL' : '{{ location.theme_path }}/assets/images/inkbg.jpg',
+				'class' : 'page-title-svg'
+			});
+
+		</script>
 	</body>
 </html>

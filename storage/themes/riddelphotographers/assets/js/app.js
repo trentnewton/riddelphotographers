@@ -206,12 +206,3 @@ new vUnit({
   $('.footer-nav a[title*="Instagram"]').html('<svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>');
 
 })(jQuery);
-
-// background clip polyfill
-
-var element = document.querySelector('.page-title');
-element.backgroundClipPolyfill({
-  'patternID' : 'mypattern',
-  'patternURL' : '/storage/themes/riddelphotographers/assets/images/inkbg.jpg',
-  'class' : 'page-title-svg'
-});
