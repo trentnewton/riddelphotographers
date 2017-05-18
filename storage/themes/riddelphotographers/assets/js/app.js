@@ -3,23 +3,23 @@
 
 // create class for viewport measurements
 
-new vUnit({
-  CSSMap: {
-    // The selector (VUnit will create rules ranging from .selector1 to .selector100)
-    '.vh_height': {
-      // The CSS property (any CSS property that accepts px as units)
-      property: 'height',
-      // What to base the value on (vh, vw, vmin or vmax)
-      reference: 'vh'
-    },
-    '.vh_min-height': {
-      // The CSS property (any CSS property that accepts px as units)
-      property: 'min-height',
-      // What to base the value on (vh, vw, vmin or vmax)
-      reference: 'vh'
-    }
-  }
-}).init(); // call the public init() method
+// new vUnit({
+//   CSSMap: {
+//     // The selector (VUnit will create rules ranging from .selector1 to .selector100)
+//     '.vh_height': {
+//       // The CSS property (any CSS property that accepts px as units)
+//       property: 'height',
+//       // What to base the value on (vh, vw, vmin or vmax)
+//       reference: 'vh'
+//     },
+//     '.vh_min-height': {
+//       // The CSS property (any CSS property that accepts px as units)
+//       property: 'min-height',
+//       // What to base the value on (vh, vw, vmin or vmax)
+//       reference: 'vh'
+//     }
+//   }
+// }).init(); // call the public init() method
 
 // jquery functions
 

@@ -26,7 +26,7 @@
 	</koken:head>
 	<main id="content" class="main-front-page-content" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 		<koken:loop>
-			<section id="{{ album.title }}" class="slides-container vh_height100">
+			<section id="{{ album.title }}" class="slides-container">
 				<div class="main-slide">
 					<a class="gallery-trigger" href="#move-over" aria-label="{{ language.view }}&nbsp;{{ album.title }}" title="{{ language.view }}&nbsp;{{ album.title }}">
 						<div class="main-title">
