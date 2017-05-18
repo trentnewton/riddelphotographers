@@ -124,8 +124,8 @@ fieldset {
 
 .off-canvas-content {
 	background: inherit;
-	display: flex;
-	flex-direction: column;
+	// display: flex;
+	// flex-direction: column;
 }
 
 // styling for Pace, an automatic web page progress bar.
@@ -149,13 +149,13 @@ fieldset {
 	height: rem-calc(3);
 }
 
-.main-front-page-content {
-	flex: 1;
-}
+// .main-front-page-content {
+// 	flex: 1;
+// }
 
-.main-content {
-	flex: 2;
-}
+// .main-content {
+// 	flex: 2;
+// }
 
 .disappear {
 	display: none;
