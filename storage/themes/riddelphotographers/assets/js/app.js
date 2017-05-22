@@ -61,10 +61,6 @@
     variableWidth: true
   });
 
-	// remove query string from koken.js
-
-	$('script[src*="koken.js"]').replaceWith('<script src="/koken.js"></script>');
-
   // detect iOS and add class to body
 
   var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
