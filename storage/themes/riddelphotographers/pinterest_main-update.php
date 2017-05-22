@@ -2,8 +2,8 @@
 // script to update local version of Pinterest script
 
 // Remote file to download
-$remoteFile = 'https://assets.pinterest.com/js/pinit.js';
-$localfile = '/var/www/html/storage/themes/riddelphotographers/assets/js/pinit.js';
+$remoteFile = 'https://assets.pinterest.com/js/pinit_main.js';
+$localfile = '/var/www/html/storage/themes/riddelphotographers/assets/js/pinit_main.js';
 //For Cpanel it will be /home/USERNAME/public_html/local-ga.js
 
 // Connection time out
