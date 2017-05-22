@@ -19,8 +19,19 @@
 		<style type="text/css">
 			<koken:include file="assets/css/critical.css" />
 		</style>
-		<koken:asset file="assets/css/app.css" media="all" />
-		<!-- <koken:settings /> -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+
+				if ($('body').size()>0){
+		    		if (document.createStyleSheet){
+						document.createStyleSheet('{{ location.theme_path }}/assets/css/app.css');
+					}
+					else {
+						$('head').append($('<link rel="stylesheet" href="{{ location.theme_path }}/assets/css/app.css" type="text/css" media="all" />'));
+					}
+				}
+			});
+		</script>
 	</head>
 	<body>
 		<koken:include file="partials/svg.html" />
