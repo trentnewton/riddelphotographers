@@ -137,6 +137,10 @@
 			color: $primary-color-50-lighter;
 		}
 
+		&:focus {
+			color: inherit;
+		}
+
 	}
 
 }
