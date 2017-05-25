@@ -67,10 +67,7 @@
 
 }
 
-.content,
-.contents {
-	padding-top: rem-calc(48);
-	padding-bottom: rem-calc(48);
+.content {
 
 	p {
 		opacity: 0;
@@ -84,6 +81,13 @@
 		}
 
 	}
+
+}
+
+.content,
+.contents {
+	padding-top: rem-calc(48);
+	padding-bottom: rem-calc(48);
 
 	a {
 		overflow: hidden;
