@@ -19,23 +19,7 @@
 		<style type="text/css">
 			<koken:include file="assets/css/critical.css" />
 		</style>
-		<script>
-
-			// inlining main CSS
-
-			window.onload = function (){
-				var css = '{{ location.theme_path }}/assets/css/app.css';
-				if ($('body').size()>0){
-					if (document.createStyleSheet){
-						document.createStyleSheet(css);
-					}
-					else {
-						$('head').append($('<link rel="stylesheet" href="' + css + '" type="text/css" media="all" />'));
-					}
-				}
-			};
-
-		</script>
+		<koken:asset file="assets/css/app.css" media="all" />
 	</head>
 	<body>
 		<koken:include file="partials/svg.html" />
