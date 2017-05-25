@@ -28,7 +28,7 @@
 
   // load animsition
 
-  $('.animsition').animsition({
+  $('.k-lens-set .off-canvas-wrapper, .k-lens-page .off-canvas-wrapper, .k-lens-index .off-canvas-wrapper, .k-lens-albums .off-canvas-wrapper, .k-lens-sets .off-canvas-wrapper, .k-lens-login .off-canvas-wrapper').animsition({
     inClass: 'fade-in',
     outClass: 'fade-out',
     inDuration: 1500,
