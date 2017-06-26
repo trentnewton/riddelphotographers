@@ -1,5 +1,8 @@
+site
 # Ignore configuration files that may contain sensitive information.
 storage/configuration/*
+!storage/configuration/key.php
+!storage/configuration/user_setup.php
 
 # Ignore paths that contain generated content.
 storage/cache/*
@@ -10,6 +13,7 @@ storage/wallpaper/*
 
 * Ignore default themes and plugins
 storage/plugins/*
+!storage/plugins/pulponair-xml-sitemap
 storage/themes/index.html/*
 storage/themes/elementary/*
 
