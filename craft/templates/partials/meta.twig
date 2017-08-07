@@ -30,9 +30,9 @@
 {% endif %}
 {% if metatags.handheldfriendly is defined %}<meta name="HandheldFriendly" content="true">{% endif %}
 {% if summary != null %}
-	<meta name="description" content="{{ summary }}&hellip;">
+	<meta name="description" content="{{ summary|striptags }}&hellip;">
 {% elseif description is defined %}
-	<meta name="description" content="{{ description }}">
+	<meta name="description" content="{{ description|striptags }}">
 {% endif %}
 {% if entry.slug == 'homepage' %}
 	<meta itemprop="name" content="{{ siteName }}">
@@ -78,9 +78,9 @@
 	{% endif %}
 {% endif %}
 {% if summary != null %}
-	<meta name="twitter:description" content="{{ summary }}&hellip;">
+	<meta name="twitter:description" content="{{ summary|striptags }}&hellip;">
 {% elseif description is defined %}
-	<meta name="twitter:description" content="{{ description }}">
+	<meta name="twitter:description" content="{{ description|striptags }}">
 {% endif %}
 <meta name="twitter:card" content="summary">
 {% for asset in entry.coverImage %}
