@@ -1,0 +1,36 @@
+{#
+ # 404 template
+ # ------------
+ #
+ # This template is loaded whenever Craft cannot figure out how to
+ # respond to an incoming request. No setup is involved to get your
+ # 404 page working; you just need to call it 404.html and put it
+ # at the root of your craft/templates/ folder.
+ #
+ # You can also create 400.html, 403.html, 500.html, and 503.html
+ # templates if you’d like. If Craft can’t find an error template
+ # to match the error code, it will just use the one in
+ # craft/app/templates/ instead.
+ #
+ # See this page for more details on how Craft routes requests:
+ # http://craftcms.com/docs/routing
+ #}
+
+{% extends "layouts/_error" %}
+{% set title = '404' %}
+{% set summary = 'Page not found!' | translate %}
+
+{% block content %}
+	<main class="main-content" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+		<section class="row align-center">
+			<div class="medium-6 columns login-form">
+				<h1 itemprop="headline">{{ 'Error' | translate }}: 404</h1>
+				<div class="content" itemprop="text">
+					<p>{{ summary }}</p>
+					<p><a href="{{ siteRoot }}" title="{{ 'Go Home' | translate }}"><svg class="icon icon-home"><use xlink:href="#icon-home"></use></svg>&nbsp;{{ 'Home' | translate }}</a></p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<div class="bg-overlay"></div>
+{% endblock %}

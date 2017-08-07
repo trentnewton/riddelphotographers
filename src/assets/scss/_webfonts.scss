@@ -1,0 +1,55 @@
+@font-face {
+	font-family: Titillium;
+	src: url('#{$asset-path}/fonts/Titillium-Bold-webfont.woff') format('woff');
+	font-style: normal;
+	font-weight: bold;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Titillium;
+	src: url('#{$asset-path}/fonts/Titillium-RegularItalic-webfont.woff') format('woff');
+	font-style: italic;
+	font-weight: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Titillium;
+	src: url('#{$asset-path}/fonts/Titillium-Regular-webfont.woff') format('woff');
+	font-style: normal;
+	font-weight: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Titillium;
+	src: url('#{$asset-path}/fonts/Titillium-BoldItalic-webfont.woff') format('woff');
+	font-style: italic;
+	font-weight: bold;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Titillium;
+	src: url('#{$asset-path}/fonts/Titillium-LightItalic-webfont.woff') format('woff');
+	font-style: italic;
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: Titillium;
+	src: url('#{$asset-path}/fonts/Titillium-Light-webfont.woff') format('woff');
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+}
+
+@font-face {
+    font-family: pleasures;
+    src: url('#{$asset-path}/fonts/Pleasures.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

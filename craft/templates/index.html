@@ -1,0 +1,52 @@
+{#
+ # Homepage template
+ # ---------------
+ #
+ # When this template gets loaded, it will be because someone has accessed
+ # http://yoursite.com/ (without any URI). Craft checks to see if you have
+ # a Single section set to be the Homepage (as you do, by default), and
+ # loads the section’s Template (this file). A special ‘entry’ variable
+ # will already be set for you, assigned to the Homepage entry.
+ #
+ # It's worth noting that even if you didn't have a Homepage Single section,
+ # as long as this template remains at craft/templates/index.html, it
+ # would still be the one to get loaded when accessing http://yoursite.com/,
+ # albeit without an ‘entry’ variable already set for you.
+ #
+ # See this page for more details on how Craft routes requests:
+ # http://craftcms.com/docs/routing
+ #}
+
+{% extends "layouts/_home" %}
+{% set title = entry.title %}
+{% set summary = general.description %}
+
+{% block content %}
+	<main id="content" class="main-front-page-content" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+		{% set albumCategories = craft.categories.group('sets').find() %}
+		{% for category in albumCategories %}
+			<section id="{{ category.title }}" class="slides-container">
+				<div class="main-slide">
+					<a class="gallery-trigger" href="#move-over" aria-label="{{ 'View' | translate }} {{ category.title }}" title="{{ 'View' | translate }} {{ category.title }}">
+						<div class="main-title">
+							<h2 itemprop="headline">
+								<span class="visual-hide">{{ category.title }}</span>
+								<img src="{{ siteRoot }}dist/assets/img/{{ category.title }}-title.png" width="375" height="110" alt="{{ category.title }}">
+								<span class="flash">
+									<svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg>
+								</span>
+							</h2>
+						</div>
+					</a>
+					<div class="gallery-container">
+						{% include 'partials/album-slider.twig' %}
+					</div>
+				</div>
+				{% for image in category.coverImage %}
+{# 				{% set dominantColor = craft.imager.getDominantColor(image) %} #}
+					<div class="main-background" style="background-image: url('{{ image.getUrl('frontPageBackground') }}');"></div>
+				{% endfor %}
+			</section>
+		{% endfor %}
+	</main>
+{% endblock %}

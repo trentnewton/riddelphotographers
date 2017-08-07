@@ -1,0 +1,82 @@
+// footer
+
+.main-footer {
+	text-align: center;
+	padding: rem-calc(40 0);
+
+	a {
+		color: $secondary-color;
+
+		&:hover,
+		&:focus {
+			color: $secondary-color-25-darker;
+		}
+
+	}
+
+}
+
+.footer-nav {
+
+	a {
+		font-weight: $global-weight-bold;
+		font-size: rem-calc(30);
+	}
+
+	li:not(.menu-text) {
+
+		> a {
+			padding: rem-calc(0 8 0 0);
+		}
+
+		&:last-child {
+
+			> a {
+				padding-right: 0;
+			}
+
+		}
+
+	}
+
+}
+
+.scroll-up-container {
+	position: relative;
+	font-size: rem-calc(60);
+
+	a {
+		color: $anchor-color;
+		height: rem-calc(30);
+
+		&:hover,
+		&:focus {
+			color: $anchor-color-hover;
+		}
+
+	}
+
+	.icon-scroll-down {
+		transform: rotate(180deg);
+	}
+
+}
+
+.error-page {
+
+	.main-footer {
+		color: $white;
+
+		a {
+			color: $primary-color-50-lighter;
+
+			&:hover,
+			&:focus {
+				color: $anchor-color-hover;
+			}
+
+		}
+
+	}
+
+}

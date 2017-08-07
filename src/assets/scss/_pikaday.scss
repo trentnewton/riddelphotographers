@@ -1,0 +1,270 @@
+/*!
+ * Pikaday
+ * Copyright © 2014 David Bushell | BSD & MIT license | http://dbushell.com/
+ */
+
+// Variables
+// Declare any of these variables before importing this SCSS file to easily override defaults
+// Variables are namespaced with the pd (pikaday) prefix
+
+// Colours
+$pd-text-color: $primary-color;
+$pd-title-color: $primary-color;
+$pd-title-bg: $white;
+$pd-picker-bg: $white;
+$pd-picker-border: $primary-color-50-lighter;
+$pd-picker-border-bottom: $primary-color;
+$pd-picker-shadow: rgba($black,.5);
+$pd-th-color: $primary-color-25-lighter;
+$pd-day-color: $primary-color-25-lighter;
+$pd-day-bg: $primary-color-90-lighter;
+$pd-day-hover-color: $white;
+$pd-day-hover-bg: $anchor-color-hover;
+$pd-day-today-color: $primary-color;
+$pd-day-selected-color: $white;
+$pd-day-selected-bg: $primary-color;
+$pd-day-selected-shadow: transparent;
+$pd-day-disabled-color: #999 !default;
+$pd-week-color: #999 !default;
+
+// Font
+$pd-font-family: $body-font-family;
+
+
+.pika-single {
+    z-index: 9999;
+    display: block;
+    position: relative;
+    color: $pd-text-color;
+    background: $pd-picker-bg;
+    border: 1px solid $pd-picker-border;
+    // border-bottom-color: $pd-picker-border-bottom;
+    font-family: $pd-font-family;
+
+    &.is-hidden {
+        display: none;
+    }
+
+    &.is-bound {
+        position: absolute;
+        box-shadow: 0 5px 15px -5px $pd-picker-shadow;
+    }
+}
+
+// clear child float (pika-lendar), using the famous micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.pika-single {
+    *zoom: 1;
+
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+
+    &:after { clear: both }
+}
+
+.pika-lendar {
+    float: left;
+    width: 240px;
+    margin: 8px;
+}
+
+.pika-title {
+    position: relative;
+    text-align: center;
+
+    select {
+        cursor: pointer;
+        position: absolute;
+        z-index: 9998;
+        margin: 0;
+        left: 0;
+        top: 5px;
+        opacity: 0;
+    }
+}
+
+.pika-label {
+    display: inline-block;
+    *display: inline;
+    position: relative;
+    z-index: 9999;
+    overflow: hidden;
+    margin: 0;
+    padding: 5px 3px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: $global-weight-bold;
+    color: $pd-title-color;
+    background-color: $pd-title-bg;
+}
+
+.pika-prev,
+.pika-next {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    border: 0;
+    padding: 0;
+    width: rem-calc(20);
+    height: rem-calc(30);
+    text-indent: rem-calc(20); // hide text using text-indent trick, using width value (it's enough)
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    // background-size: 75% 75%;
+    // opacity: .5;
+    transition: all $transition-time;
+    *position: absolute;
+    *top: 0;
+
+    // &:hover {
+    //     opacity: 1;
+    // }
+
+    &.is-disabled {
+        cursor: default;
+        opacity: .2;
+    }
+}
+
+.pika-prev,
+.is-rtl .pika-next {
+    float: left;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E %3Cpath fill='#{$primary-color-rgb}' d='M14 5v10l-9-5 9-5z'%3E%3C/path%3E %3C/svg%3E");
+    *left: 0;
+
+	&:hover {
+		background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E %3Cpath fill='#{$secondary-color-rgb}' d='M14 5v10l-9-5 9-5z'%3E%3C/path%3E %3C/svg%3E");
+	}
+
+}
+
+.pika-next,
+.is-rtl .pika-prev {
+    float: right;
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E %3Cpath fill='#{$primary-color-rgb}' d='M15 10l-9 5v-10l9 5z'%3E%3C/path%3E %3C/svg%3E");
+    *right: 0;
+
+    &:hover {
+		background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20'%3E %3Cpath fill='#{$secondary-color-rgb}' d='M15 10l-9 5v-10l9 5z'%3E%3C/path%3E %3C/svg%3E");
+	}
+
+}
+
+.pika-select {
+    display: inline-block;
+    *display: inline;
+}
+
+.pika-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+
+    th,
+    td {
+        width: 14.285714285714286%;
+        padding: 0;
+    }
+
+    th {
+        color: $pd-th-color;
+        font-size: 12px;
+        line-height: 25px;
+        font-weight: $global-weight-bold;
+        text-align: center;
+
+		abbr[title] {
+			text-decoration: none;
+		}
+
+    }
+
+    abbr {
+        border-bottom: none;
+        cursor: help;
+    }
+}
+
+.pika-button {
+    cursor: pointer;
+    display: block;
+    box-sizing: border-box;
+    outline: none;
+    border: 0;
+    margin: 0;
+    width: 100%;
+    padding: rem-calc(5);
+    color: $pd-day-color;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+    background: $pd-day-bg;
+	transition: all $transition-time;
+
+    .is-today & {
+        color: $pd-day-today-color;
+        font-weight: $global-weight-bold;
+    }
+
+    .is-selected & {
+        color: $pd-day-selected-color;
+        font-weight: $global-weight-bold;
+        background: $pd-day-selected-bg;
+        box-shadow: inset 0 1px 3px $pd-day-selected-shadow;
+        // border-radius: $global-radius;
+    }
+
+    .is-disabled &,
+    .is-outside-current-month & {
+        color: $pd-day-disabled-color;
+        opacity: .3;
+    }
+
+    .is-disabled & {
+        pointer-events: none;
+        cursor: default;
+    }
+
+    &:hover {
+        color: $pd-day-hover-color;
+        background: $pd-day-hover-bg;
+        box-shadow: none;
+        // border-radius: $global-radius;
+    }
+
+    .is-selection-disabled {
+        pointer-events: none;
+        cursor: default;
+    }
+}
+
+.pika-week {
+    font-size: 11px;
+    color: $pd-week-color;
+}
+
+.is-inrange .pika-button {
+    background: #D5E9F7;
+}
+
+.is-startrange .pika-button {
+    color: $white;
+    background: #6CB31D;
+    box-shadow: none;
+    // border-radius: $global-radius;
+}
+
+.is-endrange .pika-button {
+    color: $white;
+    background: #33aaff;
+    box-shadow: none;
+    // border-radius: $global-radius;
+}

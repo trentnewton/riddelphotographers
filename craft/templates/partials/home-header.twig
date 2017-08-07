@@ -1,0 +1,21 @@
+<header id="header" class="main-front-page-header" itemscope itemtype="http://schema.org/WPHeader">
+	<div class="main-elements">
+		<a href="{{ siteRoot }}" aria-label="{{ 'Home' | translate }}" title="{{ 'Home' | translate }}">
+			<h1 itemprop="headline">
+				<span class="visual-hide">{{ siteName }}</span>
+				{% for asset in general.logo %}
+					<img src="{{ asset.url }}" class="main-logo" alt="{{ siteName }}" width="{{ asset.width }}" height="{{ asset.height }}">
+				{% endfor %}
+			</h1>
+		</a>
+		{% include 'partials/navigation.twig' %}
+		<div class="scroll-down-container">
+			<a class="scroll-down" href="#content" data-smooth-scroll data-animation-duration="1000" data-animation-easing="swing" aria-label="{{ 'Scroll Down' | translate }}" title="{{ 'Scroll Down' | translate }}">
+				<svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg>
+			</a>
+		</div>
+	</div>
+	<a class="hamburger" aria-label="{{ 'Open Mobile Menu' | translate }}" title="{{ 'Open Mobile Menu' | translate }}" data-toggle="offCanvasRight">
+	    <span class="bar" aria-hidden="true"></span>
+	</a>
+</header>

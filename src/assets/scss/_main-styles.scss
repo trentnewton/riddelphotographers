@@ -1,0 +1,178 @@
+// main styles / reset
+
+// body {
+// 	scroll-behavior: smooth;
+// }
+
+a {
+	transition: all $transition-time;
+}
+
+::selection {
+	background: $secondary-color;
+	color: $white;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track-piece  {
+	background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: $secondary-color;
+}
+
+a,
+input,
+select,
+textarea,
+button {
+
+	&:focus {
+		outline: none;
+	}
+
+}
+
+// button,
+// input,
+// optgroup,
+// select,
+// textarea {
+// 	font-family: $body-font-family;
+// 	font-synthesis: none;
+// }
+
+svg {
+	vertical-align: middle;
+}
+
+figure {
+	margin: 0;
+}
+
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+img:not([src]) {
+	visibility: hidden;
+	transition: all $transition-time;
+}
+
+/* Fixes Firefox anomaly during image load */
+@-moz-document url-prefix() {
+	img:-moz-loading {
+		visibility: hidden;
+	}
+}
+
+.responsive-svg-container {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.responsive-svg {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.icon {
+	width: 1em;
+	height: 1em;
+	display: inline-block;
+	fill: currentColor;
+}
+
+.old-browser-notice {
+	text-align: center;
+	font-weight: $global-weight-bold;
+	padding-top: $paragraph-margin-bottom;
+	padding-bottom: $paragraph-margin-bottom;
+	background-color: $white;
+}
+
+.visual-hide {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
+.mar-t-60 {
+	margin-top: rem-calc(60);
+}
+
+.iOS {
+
+	::-webkit-scrollbar {
+		all: unset;
+	}
+
+	::-webkit-scrollbar-track-piece  {
+		all: unset;
+	}
+
+	::-webkit-scrollbar-thumb {
+	    all: unset;
+	}
+
+}
+
+.off-canvas-wrapper {
+	-ms-overflow-style: none;
+}
+
+.off-canvas-content {
+	background: inherit;
+	// display: flex;
+	// flex-direction: column;
+}
+
+// styling for Pace, an automatic web page progress bar.
+
+.pace {
+	pointer-events: none;
+	user-select: none;
+}
+
+.pace-inactive {
+	display: none;
+}
+
+.pace .pace-progress {
+	background: $secondary-color;
+	position: fixed;
+	z-index: 2000;
+	top: 0;
+	right: 100%;
+	width: 100%;
+	height: rem-calc(3);
+}
+
+.disappear {
+	display: none;
+}
+
+.show {
+	opacity: 1;
+}
+
+.error {
+	color: $alert-color;
+}
+
+.reveal {
+	outline: none;
+}

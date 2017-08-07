@@ -1,0 +1,157 @@
+// gallery styles
+
+.gallery-item {
+	position: relative;
+}
+
+.grid-overlay-link {
+
+	&:hover,
+	&:focus {
+
+		.grid-overlay {
+			opacity: 1;
+		}
+
+		h3 {
+			@include fadeInUpVCentre;
+		}
+
+	}
+
+}
+
+.grid-overlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba($white, 0.8);
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity $transition-time;
+	color: $primary-color;
+
+	h3 {
+		text-transform: uppercase;
+		@include horizontal-center;
+		bottom: rem-calc(100);
+		white-space: nowrap;
+
+		@include breakpoint(medium down) {
+			bottom: 20%;
+			white-space: normal;
+		}
+
+	}
+
+}
+
+// gallery page
+
+.gallery-page {
+
+	.content,
+	.contents {
+		@extend .text-center;
+	}
+
+}
+
+.gallery-main {
+
+
+	img {
+		height: rem-calc(400);
+		width: auto;
+
+		@include breakpoint(small only) {
+			height: rem-calc(250);
+		}
+
+		@include medium-landscape {
+			height: rem-calc(250);
+		}
+
+	}
+
+}
+
+// grid
+
+.row.image-items-list {
+	margin-right: rem-calc(map-deep-get($grid-column-gutter, 'medium') / 2);
+	margin-left: rem-calc(map-deep-get($grid-column-gutter, 'medium') / 2);
+}
+
+.image-item {
+	position: relative;
+	width: 100%;
+	margin-bottom: rem-calc(8);
+	@include flex-grid-column(12, 0);
+
+	&.ratio-0\.666,
+	&.ratio-0\.667,
+	&.portrait {
+		@include flex-grid-column(6, 0);
+	}
+
+	img {
+		width: 100%;
+		opacity: 0;
+		transition: opacity 0.5s;
+
+		&.loaded {
+			opacity: 1;
+		}
+
+	}
+
+	.pin-it-button,
+	.download {
+		position: absolute;
+		top: rem-calc(10);
+		opacity: 0;
+		transition: opacity $transition-time;
+	}
+
+	.pin-it-button {
+		left: rem-calc(10);
+	}
+
+	.download {
+		right: rem-calc(10);
+		background: rgba($white, 0.8) none repeat scroll 0% 0%;
+		padding: rem-calc(5 15 10);
+		font-size: rem-calc(30);
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	&:hover,
+	&:focus {
+
+		.pin-it-button,
+		.download {
+			opacity: 1;
+		}
+
+	}
+
+}
+
+img.k-lazy-loading {
+	@include spinner;
+}
+
+.k-password-protected {
+
+	.pin-it-button {
+		@extend .hide;
+	}
+
+}

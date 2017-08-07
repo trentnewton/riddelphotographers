@@ -1,0 +1,22 @@
+{% extends 'layouts/_default' %}
+{% set entry = category %}
+{% set title = category.title %}
+{% set summary = null %}
+{# {% set description = category.body %} #}
+
+{% block content %}
+	<main class="main-content gallery-page set-{{ category.id }} set-{{ category.slug }}" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+		<header class="set-title-container">
+			<h1 itemprop="headline">
+				<span class="visual-hide">{{ category.title }}</span>
+				<img src="{{ siteRoot }}dist/assets/img/{{ category.title }}-title.png" width="375" height="110" alt="{{ entry.title }}">
+			</h1>
+		</header>
+		<article class="row column content" itemprop="text">
+			{{ category.body }}
+		</article>
+		<section class="gallery-container-page">
+			{% include 'partials/album-slider.twig' %}
+		</section>
+	</main>
+{% endblock %}
