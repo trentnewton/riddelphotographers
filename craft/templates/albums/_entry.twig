@@ -16,7 +16,7 @@
 					<figure class="image-item" style="background-color: {{ random(['#e3c997', '#e6bb6a', '#bdae98', '#bd9659', '#e7ba62', '#856d48', '#4f3d28', '#f0d8a8', '#f0c060', '#d8a860', '#d8c090', '#c09048', '#a87848']) }}">
 						<img data-original="{{ image.url }}" data-layout="{{ image.layout }}" width="{{ image.width }}" height="{{ image.height }}" alt="{{ image.title }}">
 						<div class="pin-it-button">
-							<a data-pin-do="buttonPin" data-pin-tall="true" data-pin-save="true" href="https://www.pinterest.com/pin/create/button/?url={{ siteUrl }}albums/{{ entry.slug }}&media={{ siteUrl }}{{ image.url }}&description={{ entry.title }} - {{ siteName }}"></a>
+							<a data-pin-do="buttonPin" data-pin-tall="true" data-pin-save="true" href="https://www.pinterest.com/pin/create/button/?url={{ entry.url }}&media={{ siteUrl }}{{ image.url }}&description={{ entry.title }} - {{ siteName }}"></a>
 						</div>
 					</figure>
 				{% endfor %}
