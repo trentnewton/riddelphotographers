@@ -139,16 +139,6 @@ $(window).bind('load', function () {
 
 	// detect portrait photos and add class
 
-	// function modify_image(image_dimensions){
-	// 	$('.image-item img').on('load', function() {
-	// 		var width = this.width;
-	// 	})
-	// 	.attr('src', image_src)
-	// 	.each(function() {
-	// 		if (this.complete) $(this).trigger('load');
-	// 	});
-	// }
-
 	$('.image-item img').each(function(){
 
 		// lazy load images
@@ -173,23 +163,7 @@ $(window).bind('load', function () {
 
 		}
 
-
-		// $(this).parent('.image-item').addClass(this.naturalWidth > this.naturalHeight ? 'landscape' : 'portrait');
-
-	 //    var $img = $(this);
-
-		// console.log(
-		//     $img.prop("naturalWidth") +'\n'+  // Width  (Natural)
-		//     $img.prop("naturalHeight") +'\n'+ // Height (Natural)
-		//     $img.prop("width") +'\n'+         // Width  (Rendered)
-		//     $img.prop("height") +'\n'+        // Height (Rendered)
-		//     $img.prop("x") +'\n'+             // X offset
-		//     $img.prop("y")                    // Y offset ... 
-		// );
 	});
-
-	// $('img[data-layout="portrait"]').parent('.image-item').addClass('portrait').removeClass('landscape');
-	// $('img[data-layout="landscape"]').parent('.image-item').addClass('landscape').removeClass('portrait');
 
 	// add animation class when in viewport
 
