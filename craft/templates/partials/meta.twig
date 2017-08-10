@@ -6,6 +6,9 @@
 {% else %}
 	<title>{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}</title>
 {% endif %}
+{% for asset in metatags.favicon32x32 %}
+	<link rel="shortcut icon" href="{{ asset.url }}">
+{% endfor %}
 <link type="text/plain" rel="author" href="{{ siteRoot }}humans.txt">
 {% for asset in metatags.appleTouchIcon %}
 	<link rel="apple-touch-icon" sizes="180x180" href="{{ asset.url }}">
