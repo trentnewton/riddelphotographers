@@ -24,6 +24,15 @@
 {% block content %}
 	<main id="content" class="main-front-page-content" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 		{% set albumCategories = craft.categories.group('sets').find() %}
+		<style>
+			{% for category in albumCategories %}
+				#{{ category.title }} .main-background {
+					{% for image in category.coverImage %}
+						background-image: url('{{ image.getUrl('frontPageBackground') }}');
+					{% endfor %}
+				}
+			{% endfor %}
+		</style>
 		{% for category in albumCategories %}
 			<section id="{{ category.title }}" class="slides-container">
 				<div class="main-slide">
@@ -43,8 +52,7 @@
 					</div>
 				</div>
 				{% for image in category.coverImage %}
-{# 				{% set dominantColor = craft.imager.getDominantColor(image) %} #}
-					<div class="main-background" style="background-image: url('{{ image.getUrl('frontPageBackground') }}');"></div>
+					<div class="main-background"></div>
 				{% endfor %}
 			</section>
 		{% endfor %}
