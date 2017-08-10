@@ -207,28 +207,11 @@ $(window).bind('load', function () {
 
 // home page sliding content
 
-$('#Weddings .main-slide .gallery-trigger').on('click', function () {
-	$('#Weddings .gallery-container').toggleClass('mover-over');
-	$('#Weddings .main-background, #Weddings .main-title').fadeToggle(1000);
-	return false;
-});
-
-$('#Engagements .main-slide .gallery-trigger').on('click', function () {
-	$('#Engagements .gallery-container').toggleClass('mover-over');
-	$('#Engagements .main-background, #Engagements .main-title').fadeToggle(1000);
-	return false;
-});
-
-$('#Families .main-slide .gallery-trigger').on('click', function () {
-	$('#Families .gallery-container').toggleClass('mover-over');
-	$('#Families .main-background, #Families .main-title').fadeToggle(1000);
-	return false;
-});
-
-$('#Personal .main-slide .gallery-trigger').on('click', function () {
-	$('#Personal .gallery-container').toggleClass('mover-over');
-	$('#Personal .main-background, #Personal .main-title').fadeToggle(1000);
-	return false;
+$('.slides-container .main-slide .gallery-trigger').click(function() {
+    $(this).parent().find('.gallery-container').toggleClass('mover-over');
+    $(this).parent().parent().find('.main-background').fadeToggle(1000);
+    $(this).find('.main-title').fadeToggle(1000);
+    return false;
 });
 
 // trigger extra fields for contact form
