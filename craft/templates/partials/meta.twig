@@ -94,3 +94,17 @@
 	<meta name="twitter:image:alt" content="{% if title is defined %}{{ title }} - {% endif %}{{ siteName }}">
 {% endfor %}
 {% if metatags.robots is defined %}<meta name="robots" content="{{ metatags.robots }}">{% endif %}
+{# Google Analytics #}
+{% if metatags.googleAnalyticsCode is defined %}
+	<script>
+		if(navigator.userAgent.indexOf('Speed Insights') == -1) {
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','{{ siteUrl }}dist/assets/vendor/google-analytics.js','ga');
+
+			ga('create', '{{ metatags.googleAnalyticsCode }}', 'auto');
+			ga('send', 'pageview');
+		}
+	</script>
+{% endif %}

@@ -47,14 +47,6 @@
 				{# Main site JS #}
 				<script src="{{ siteRoot }}dist/assets/js/app.js" async defer></script>
 
-				{# Google Analytics #}
-				{% if metatags.googleAnalyticsCode is defined %}
-					<script src="https://cdn.jsdelivr.net/ga-lite/latest/ga-lite.min.js" async></script>
-					<script>
-						var galite = galite || {};
-						galite.UA = '{{ metatags.googleAnalyticsCode }}';
-					</script>
-				{% endif %}
 			</body>
 		</html>
 	{% endminify %}

@@ -50,11 +50,6 @@
 					<script src="https://cdn.jsdelivr.net/ga-lite/latest/ga-lite.min.js" async></script>
 				{% endif %}
 				<script>
-					{# Google Analytics #}
-					{% if metatags.googleAnalyticsCode is defined %}
-						var galite = galite || {};
-						galite.UA = '{{ metatags.googleAnalyticsCode }}';
-					{% endif %}
 
 					{# background clip polyfill #}
 					var element = document.querySelector('.page-title');
