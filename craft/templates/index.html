@@ -34,7 +34,7 @@
 			{% endfor %}
 		</style>
 		{% for category in albumCategories %}
-			<section class="slides-container">
+			<section id="{{ category.title }}" class="slides-container">
 				<div class="main-slide">
 					<a class="gallery-trigger" href="#move-over" aria-label="{{ 'View' | translate }} {{ category.title }}" title="{{ 'View' | translate }} {{ category.title }}">
 						<div class="main-title">
