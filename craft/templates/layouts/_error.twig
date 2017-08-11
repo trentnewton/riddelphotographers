@@ -28,6 +28,7 @@
 						</div>
 					</div>
 				</div>
+				{# Load app.css when page is fully loaded #}
 				<script>
 					{# generate css after the browser is finished loading #}
 					var cb = function () {
@@ -40,7 +41,18 @@
 					if (raf) raf(cb);
 					else window.addEventListener('load', cb);
 				</script>
-				<script src="{{ siteRoot }}dist/assets/js/app.js"></script>
+
+				{# Main site JS #}
+				<script src="{{ siteRoot }}dist/assets/js/app.js" async defer></script>
+
+				{# Google Analytics #}
+				{% if metatags.googleAnalyticsCode is defined %}
+					<script src="https://cdn.jsdelivr.net/ga-lite/latest/ga-lite.min.js" async></script>
+					<script>
+						var galite = galite || {};
+						galite.UA = '{{ metatags.googleAnalyticsCode }}';
+					</script>
+				{% endif %}
 			</body>
 		</html>
 	{% endminify %}

@@ -28,6 +28,7 @@
 						</div>
 					</div>
 				</div>
+				{# Load app.css when page is fully loaded #}
 				<script>
 					{# generate css after the browser is finished loading #}
 					var cb = function () {
@@ -40,19 +41,31 @@
 					if (raf) raf(cb);
 					else window.addEventListener('load', cb);
 				</script>
-				<script src="{{ siteRoot }}dist/assets/js/app.js"></script>
+
+				{# Main site JS #}
+				<script src="{{ siteRoot }}dist/assets/js/app.js" async defer></script>
+
+				{# Google Analytics #}
+				{% if metatags.googleAnalyticsCode is defined %}
+					<script src="https://cdn.jsdelivr.net/ga-lite/latest/ga-lite.min.js" async></script>
+				{% endif %}
 				<script>
+					{# Google Analytics #}
+					{% if metatags.googleAnalyticsCode is defined %}
+						var galite = galite || {};
+						galite.UA = '{{ metatags.googleAnalyticsCode }}';
+					{% endif %}
 
-					// background clip polyfill
-
+					{# background clip polyfill #}
 					var element = document.querySelector('.page-title');
 					element.backgroundClipPolyfill({
 						'patternID' : 'mypattern',
 						'patternURL' : '{{ siteRoot }}dist/assets/img/inkbg.jpg',
 						'class' : 'page-title-svg'
 					});
-
 				</script>
+
+				{# pin it button #}
 				<script async defer src="{{ siteRoot }}dist/assets/vendor/pinit.js"></script>
 			</body>
 		</html>
