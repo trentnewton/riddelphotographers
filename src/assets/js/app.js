@@ -125,14 +125,14 @@ $('#offCanvasRight').bind('opened.zf.offcanvas closed.zf.offcanvas', function ()
 });
 
 $(document).ready(function() {
-  var img = $('.image-item img');//jQuery id selector
+	var img = $('.image-item img');//jQuery id selector
 
-  var width = img.width(); //jQuery width method
-  var height = img.height(); //jQuery height method
+	var width = img.width(); //jQuery width method
+	var height = img.height(); //jQuery height method
 
-  if(width > height){
-     img.addClass('portrait');
-  }
+	if(width > height){
+		img.addClass('portrait');
+	}
 });
 
 $(window).bind('load', function () {
@@ -182,10 +182,10 @@ $(window).bind('load', function () {
 // home page sliding content
 
 $('.slides-container .main-slide .gallery-trigger').click(function() {
-    $(this).parent().find('.gallery-container').toggleClass('mover-over');
-    $(this).parent().parent().find('.main-background').fadeToggle(1000);
-    $(this).find('.main-title').fadeToggle(1000);
-    return false;
+	$(this).parent().find('.gallery-container').toggleClass('mover-over');
+	$(this).parent().parent().find('.main-background').fadeToggle(1000);
+	$(this).find('.main-title').fadeToggle(1000);
+	return false;
 });
 
 // trigger extra fields for contact form
