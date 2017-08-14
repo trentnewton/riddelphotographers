@@ -109,24 +109,28 @@
 
 	}
 
-	.pin-it-button,
-	.download {
+	// .pin-it-button,
+	// .download {
+	// 	position: absolute;
+	// 	top: rem-calc(10);
+	// 	opacity: 0;
+	// 	transition: opacity $transition-time;
+	// }
+
+	.pin-it-button {
+		left: rem-calc(10);
 		position: absolute;
 		top: rem-calc(10);
 		opacity: 0;
 		transition: opacity $transition-time;
 	}
 
-	.pin-it-button {
-		left: rem-calc(10);
-	}
-
-	.download {
-		right: rem-calc(10);
-		background: rgba($white, 0.8) none repeat scroll 0% 0%;
-		padding: rem-calc(5 15 10);
-		font-size: rem-calc(30);
-	}
+	// .download {
+	// 	right: rem-calc(10);
+	// 	background: rgba($white, 0.8) none repeat scroll 0% 0%;
+	// 	padding: rem-calc(5 15 10);
+	// 	font-size: rem-calc(30);
+	// }
 
 	&:last-child {
 		margin-bottom: 0;
@@ -144,10 +148,10 @@
 
 }
 
-.k-password-protected {
+// .k-password-protected {
 
-	.pin-it-button {
-		@extend .hide;
-	}
+// 	.pin-it-button {
+// 		@extend .hide;
+// 	}
 
-}
+// }
