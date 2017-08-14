@@ -6,7 +6,7 @@ import $ from 'jquery';
 // import whatInput from 'what-input';
 import animsition from 'animsition';
 import jquery_inview from 'jquery-inview';
-import slick_carousel from 'slick-carousel';
+import slick from 'slick-carousel';
 window.$ = $;
 
 // import Foundation from 'foundation-sites';
