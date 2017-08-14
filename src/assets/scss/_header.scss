@@ -1,7 +1,9 @@
 // main header
 
 .main-front-page-header {
-	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	height: 100vh;
 
 	.icon-scroll-down {
@@ -20,22 +22,19 @@
 }
 
 .main-elements {
-	@include absolute-center;
 	filter: blur(0);
 }
 
 .main-logo {
 	position: relative;
-	transform: translateX(-50%);
 	width: rem-calc(717);
 	height: auto;
-	left: 42%;
+	left: -8%;
 	filter: blur(0);
 
 	@include breakpoint(small only) {
 		max-width: initial;
 		width: rem-calc(400);
-		left: 40.5%;
 	}
 
 	@include medium-portrait {
