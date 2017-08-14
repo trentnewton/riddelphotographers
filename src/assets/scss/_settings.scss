@@ -75,14 +75,11 @@ $foundation-palette: (
   warning: #ffae00,
   alert: #cc4b37,
 );
-$primary-color-rgb: rgba(get-color(primary), 0.99);
-$secondary-color-rgb: rgba(get-color(secondary), 0.99);
 $light-gray: #e6e6e6;
 $medium-gray: #cacaca;
 $dark-gray: #8a8a8a;
 $black: #0a0a0a;
 $white: #fefefe;
-$arrow-colour: rgba($white, 0.99);
 $body-background: $white;
 $body-font-color: get-color(primary);
 $body-font-family: Titillium, Helvetica, Roboto, Arial, sans-serif;
@@ -102,6 +99,10 @@ $global-color-pick-contrast-tolerance: 0;
 $print-transparent-backgrounds: true;
 
 @include add-foundation-colors;
+
+$primary-color-rgb: rgba(get-color(primary), 0.99);
+$secondary-color-rgb: rgba(get-color(secondary), 0.99);
+$arrow-colour: rgba($white, 0.99);
 
 // 2. Breakpoints
 // --------------
@@ -732,7 +733,7 @@ $reveal-padding: $global-padding;
 $reveal-border: 1px solid $medium-gray;
 $reveal-radius: $global-radius;
 $reveal-zindex: 1005;
-$reveal-overlay-background: rgba($black, 0.45);
+$reveal-overlay-background: rgba($black, 0.5);
 
 // 48. Slider
 // ----------

@@ -148,7 +148,7 @@ img:not([src]) {
 }
 
 .pace-inactive {
-	display: none;
+	@extend .disappear;
 }
 
 .pace .pace-progress {
