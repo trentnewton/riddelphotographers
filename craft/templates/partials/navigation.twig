@@ -1,6 +1,13 @@
 <nav class="main-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
-	{{ craft.amNav.getNav('main', {
-		class: 'menu',
-		id: ''
-	}) }}
+	{% if entry.slug == 'homepage' %}
+		{{ craft.amNav.getNav('main', {
+			class: 'menu align-center',
+			id: ''
+		}) }}
+	{% else %}
+		{{ craft.amNav.getNav('main', {
+			class: 'menu',
+			id: ''
+		}) }}
+	{% endif %}
 </nav>
