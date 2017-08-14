@@ -22,6 +22,7 @@
 }
 
 .main-elements {
+	text-align: center;
 	filter: blur(0);
 }
 
@@ -130,11 +131,7 @@
 
 .scroll-down-container {
 	position: relative;
-	left: 50%;
 	top: rem-calc(60);
-	transform: translateX(-50%);
-	width: rem-calc(60);
-	height: rem-calc(25);
 	filter: blur(0);
 
 	@include small-portrait {
