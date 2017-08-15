@@ -10,10 +10,10 @@
 	{% endminify %}
 				<style type="text/css">
 					{% include 'assets/css/critical.css' %}
+					{% block styles %}
+					{% endblock %}
 				</style>
 	{% minify %}
-				{% block meta %}
-				{% endblock %}
 			</head>
 			<body>
 				{% include 'partials/svg.twig' %}

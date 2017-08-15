@@ -2,6 +2,15 @@
 {% set title = entry.title %}
 {% set summary = entry.body| length > 160 ? entry.body | slice(0, 160) ~ '' : entry.body %}
 
+{% block styles %}
+	{% for image in entry.coverImage.limit(1) %}
+		.split-page-bg {
+			background-image: url('{{ image.getUrl('pageImage') }}');
+			background-position: {{ image.focusPctX }}% {{ image.focusPctY }}%;
+		}
+	{% endfor %}
+{% endblock %}
+
 {% block content %}
 	<main id="main" class="main-content regular-page page-{{ entry.id }} page-{{ entry.slug }}" itemscope="" itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 		<header class="page-title-container">
@@ -104,16 +113,7 @@
 					{% endif %}
 				</div>
 			</div>
-			{% for image in entry.coverImage %}
-			{# {% set transformedImage = craft.imager.transformImage(image, { width: 2552, jpegQuality: 70 }) %} #}
-				{# {% set dominantColor = craft.imager.getDominantColor(image) %} #}
-				<div class="columns medium-6 split-box-right split-page-bg" style="{# background-color: {{ dominantColor }};  #}background-image: url('{{ image.getUrl('pageImage') }}');
-					    background-position: {{ image.focusPctX }}% {{ image.focusPctY }}%;">
-				</div>
-			{% endfor %}
-{# 			{% set image = craft.assets().limit(1).first() %}
-			{% set transformedImage = craft.imager.transformImage(image, { width: 1000 }) %}
-			<img src="{{ transformedImage.url }}"> #}
+			<div class="columns medium-6 split-box-right split-page-bg"></div>
 		</section>
 	</main>
 {% endblock %}

@@ -21,17 +21,15 @@
 {% set title = entry.title %}
 {% set summary = general.description %}
 
-{% block meta %}
+{% block styles %}
 	{% set albumCategories = craft.categories.group('sets').find() %}
-	<style>
-		{% for category in albumCategories %}
-			#{{ category.title }} .main-background {
-				{% for image in category.coverImage %}
-					background-image: url('{{ image.getUrl('frontPageBackground') }}');
-				{% endfor %}
-			}
-		{% endfor %}
-	</style>
+	{% for category in albumCategories %}
+		#{{ category.title }} .main-background {
+			{% for image in category.coverImage %}
+				background-image: url('{{ image.getUrl('frontPageBackground') }}');
+			{% endfor %}
+		}
+	{% endfor %}
 {% endblock %}
 
 {% block content %}
