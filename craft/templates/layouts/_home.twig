@@ -5,7 +5,7 @@
 {% cache %}
 	{% minify %}
 		<!DOCTYPE html>
-		<html>
+		<html itemscope itemtype="http://schema.org/WebPage">
 			<head>
 				{% include 'partials/meta.twig' %}
 	{% endminify %}
@@ -13,6 +13,8 @@
 					{% include 'assets/css/critical.css' %}
 				</style>
 	{% minify %}
+				{% block meta %}
+				{% endblock %}
 			</head>
 			<body>
 				{% include 'partials/svg.twig' %}

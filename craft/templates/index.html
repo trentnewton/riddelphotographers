@@ -21,18 +21,22 @@
 {% set title = entry.title %}
 {% set summary = general.description %}
 
+{% block meta %}
+	{% set albumCategories = craft.categories.group('sets').find() %}
+	<style>
+		{% for category in albumCategories %}
+			#{{ category.title }} .main-background {
+				{% for image in category.coverImage %}
+					background-image: url('{{ image.getUrl('frontPageBackground') }}');
+				{% endfor %}
+			}
+		{% endfor %}
+	</style>
+{% endblock %}
+
 {% block content %}
 	<main id="content" class="main-front-page-content" itemscope itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
 		{% set albumCategories = craft.categories.group('sets').find() %}
-		<style>
-			{% for category in albumCategories %}
-				#{{ category.title }} .main-background {
-					{% for image in category.coverImage %}
-						background-image: url('{{ image.getUrl('frontPageBackground') }}');
-					{% endfor %}
-				}
-			{% endfor %}
-		</style>
 		{% for category in albumCategories %}
 			<section id="{{ category.title }}" class="slides-container">
 				<div class="main-slide">
