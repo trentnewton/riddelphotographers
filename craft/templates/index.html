@@ -26,7 +26,8 @@
 	{% for category in albumCategories %}
 		#{{ category.title }} .main-background {
 			{% for image in category.coverImage %}
-				background-image: url('{{ image.getUrl('frontPageBackground') }}');
+				{# background-image: url('{{ image.getUrl('frontPageBackground') }}'); #}
+				background-image: url('{{ image.url }}');
 			{% endfor %}
 		}
 	{% endfor %}
