@@ -15,3 +15,6 @@ CHANGELOG.md
 htaccess
 .htaccess
 web.config
+*.sublime-project
+
+*.sublime-workspace
