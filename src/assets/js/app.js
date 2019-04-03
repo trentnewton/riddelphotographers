@@ -1,15 +1,22 @@
-import pace from 'pace';
+import pace from 'pace-progressbar';
 import './lib/background-clip-text-polyfill.js';
 import Pikaday from 'pikaday';
 import LazyLoad from 'vanilla-lazyload';
 import $ from 'jquery';
-// import whatInput from 'what-input';
+// import 'what-input';
 import animsition from 'animsition';
 import jquery_inview from 'jquery-inview';
 import slick from 'slick-carousel';
-window.$ = $;
 
-// import Foundation from 'foundation-sites';
+// Foundation JS relies on a global varaible. In ES6, all imports are hoisted
+// to the top of the file so if we used`import` to import Foundation,
+// it would execute earlier than we have assigned the global variable.
+// This is why we have to use CommonJS require() here since it doesn't
+// have the hoisting behavior.
+window.jQuery = $;
+// window.$ = $;
+// require('foundation-sites');
+
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
 import './lib/foundation-explicit-pieces';
@@ -18,9 +25,6 @@ import './lib/foundation-explicit-pieces';
 
 var picker = new Pikaday({ field: document.getElementById('wedding-date') });
 
-// jquery functions
-
-// start foundation
 
 $(document).foundation();
 
@@ -113,9 +117,14 @@ if (iOS) {
 // detect album parent set and add active class to corresonding link
 
 var setId = $('.gallery-page').attr('id');
+var pageName = $('.regular-page').attr('id');
 
 if (setId) {
 	$('.main-nav a[title="' + setId + '"]').parent('li').addClass('active');
+}
+
+if (pageName) {
+	$('.main-nav a[title="' + pageName + '"]').parent('li').addClass('active');
 }
 
 // hamburger icon animation
@@ -202,27 +211,32 @@ $('#weddings').change(function () {
 
 // contact form ajax
 
-$('#ajax-contact').submit(function (ev) {
-	// Prevent the form from actually submitting
-	ev.preventDefault();
-	$('#spinner').addClass('show');
+$('#ajax-contact').submit(function(ev) {
+    // Prevent the form from actually submitting
+    ev.preventDefault();
+    $('#spinner').addClass('show');
 
-	// Get the post data
-	var data = $(this).serialize();
-
-	// Send it to the server
-	$.post('/', data, function (response) {
-		if (response.success) {
-			$('#thanks').fadeIn();
-			$('#error').fadeOut();
-			$('#spinner').removeClass('show');
-			$('#ajax-contact').each(function () {
+    // Send it to the server
+    $.post({
+        url: '/',
+        dataType: 'json',
+        data: $(this).serialize(),
+        success: function(response) {
+            if (response.success) {
+                $('#thanks').fadeIn();
+                $('#error').fadeOut();
+                $('#spinner').removeClass('show');
+                $('#ajax-contact').each(function () {
 				this.reset();
 			});
-		} else {
-			$('#error').fadeIn();
-			$('#thanks').fadeOut();
-			$('#spinner').removeClass('show');
-		}
-	});
+            } else {
+                // response.error will be an object containing any validation errors that occurred, indexed by field name
+                // e.g. response.error.fromName => ['From Name is required']
+                // alert('An error occurred. Please try again.');
+                $('#error').fadeIn();
+				$('#thanks').fadeOut();
+				$('#spinner').removeClass('show');
+            }
+        }
+    });
 });

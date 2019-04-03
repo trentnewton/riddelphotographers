@@ -172,7 +172,7 @@
 .split-box-left {
 
 	@include breakpoint(small only) {
-		height: auto;
+		min-height: auto;
 	}
 
 }

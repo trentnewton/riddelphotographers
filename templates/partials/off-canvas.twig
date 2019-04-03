@@ -1,0 +1,19 @@
+<nav class="off-canvas position-right" id="offCanvasRight" data-off-canvas itemscope itemtype="http://schema.org/SiteNavigationElement">
+	{% set navigation = craft.entries.section('navigation') %}
+		<ul id="off-canvas" class="menu vertical side-nav">
+		{% nav node in navigation.level(1).all() %}
+		{% if node.hasDescendants() %}
+		{% else %}
+			<li>
+				{% if node.type == 'internalSiteLink' %}
+					<a href="{{ node.sitePageLink[0].url }}" {% if node.openInNewWindow %} target="_blank" {% endif %} title="{{ node.title }}">{{ node.title }}</a>
+				{% elseif node.type == 'internalCategoryLink' %}
+					<a href="{{ node.siteCategoryLink[0].url }}" {% if node.openInNewWindow %} target="_blank" {% endif %} title="{{ node.title }}">{{ node.title }}</a>
+				{% elseif node.type == 'offsiteLink' %}
+					<a href="{{ node.offsiteLink }}" {% if node.openInNewWindow %} target="_blank" {% endif %} title="{{ node.title }}">{{ node.title }}</a>
+				{% endif %}
+			</li>
+		{% endif %}
+		{% endnav %}
+		</ul>
+</nav>

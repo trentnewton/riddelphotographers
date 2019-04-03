@@ -1,0 +1,116 @@
+{% extends 'layouts/_default' %}
+{% set title = entry.title %}
+{% set summary = entry.body| length > 160 ? entry.body | slice(0, 160) ~ '' : entry.body %}
+
+{% block styles %}
+	{% for image in entry.coverImage.limit(1).all() %}
+		.split-page-bg {
+			background-image: url('{{ image.getUrl('pageImage') }}');
+			background-position: {{ image.focalPoint | first * 100 ~ '%' }} {{ image.focalPoint | last * 100 ~ '%' }};
+		}
+	{% endfor %}
+{% endblock %}
+
+{% block content %}
+	<main class="main-content regular-page page-{{ entry.id }} page-{{ entry.slug }}" id="{{ entry.title }}" itemscope="" itemprop="mainContentOfPage" itemtype="http://schema.org/WebPageElement">
+		<header class="page-title-container">
+			<h1 class="page-title" itemprop="headline">&#xe00c;{{ entry.title }}&#xe013;</h1>
+		</header>
+		<section class="split-boxes {{ entry.slug }}-page page">
+			<div class="columns medium-6 split-box-left">
+				<div class="content">
+					{{ entry.body }}
+					{% if entry.slug == 'contact' %}
+						{% macro errorList(errors) %}
+							{% if errors %}
+								<span class="form-error is-visible">
+									{% for error in errors %}
+										{{ error }}
+									{% endfor %}
+								</span>
+							{% endif %}
+						{% endmacro %}
+
+						{% from _self import errorList %}
+						<form method="post" action="" accept-charset="UTF-8" id="ajax-contact">
+							{{ csrfInput() }}
+							<input type="hidden" name="action" value="contact-form/send">
+							{# <input type="hidden" name="redirect" value="{{ 'pages/contact/thanks'|hash }}"> #}
+							<div class="small-12" itemprop="text">
+								<p id="thanks" class="contact-form-success" style="display: none">
+									{{ 'Your message has been sent.' | translate }}
+								</p>
+								<p id="error" class="contact-form-error" style="display: none;">
+									{{ 'An error occurred. Please try again.' | translate }}
+								</p>
+							</div>
+							<div class="row form-columns">
+								<div class="medium-6 columns first-column">
+									<div class="form-group">
+										<label for="from-name">{{ 'Name' | translate }}</label>
+										<input type="text" id="from-name" name="fromName" value="{{ message.fromName ?? '' }}" aria-invalid="false" required>
+										{{ message is defined and message ? errorList(message.getErrors('fromName')) }}
+									</div>
+									<div class="form-group">
+										<label for="from-email">{{ 'Email' | translate }}</label>
+										<input type="email" id="from-email" name="fromEmail" value="{{ message.fromEmail ?? '' }}" aria-invalid="false" required>
+										{{ message is defined and message ? errorList(message.getErrors('fromEmail')) }}
+									</div>
+									<div class="form-group">
+										<h4>{{ 'What services are you interested in?' | translate }}</h4>
+									</div>
+									<div class="form-group">
+										<label><input type="checkbox" id="weddings" name="message[Services][]" value="Weddings">&nbsp;{{ 'Weddings' | translate }}</label>
+									</div>
+									<div class="form-group">
+										<label><input type="checkbox" id="engagements" name="message[Services][]" value="Engagements">&nbsp;{{ 'Engagements' | translate }}</label>
+									</div>
+									<div class="form-group">
+										<label><input type="checkbox" id="families" name="message[Services][]" value="Families">&nbsp;{{ 'Families' | translate }}</label>
+									</div>
+									<div class="form-group">
+										<label><input type="checkbox" id="other" name="message[Services][]" value="Other">&nbsp;{{ 'Other' | translate }}</label>
+									</div>
+									<div class="form-group" id="wedding-date-group">
+										<label for="wedding-date">{{ 'Wedding Date' | translate }}</label>
+										<div class="input-group">
+											<span class="input-group-label"><svg class="icon icon-calendar"><use xlink:href="#icon-calendar"></use></svg></span>
+											<input id="wedding-date" name="message[WeddingDate][]" type="date">
+										</div>
+									</div>
+									<div class="form-group" id="wedding-location-group">
+										<label for="wedding-location">{{ 'Wedding Location' | translate }}</label>
+										<input id="wedding-location" name="message[WeddingLocation][]" type="text">
+									</div>
+								</div>
+								<div class="medium-6 columns second-column">
+									<div class="form-group">
+										<label for="how-did-you-hear-about-us">{{ 'How did you hear about us?' | translate }}</label>
+										<input id="how-did-you-hear-about-us" name="message[HowDidYouHear][]" type="text">
+									</div>
+									<div class="form-group">
+										<label for="subject">{{ 'Subject' | translate }}</label>
+										<input type="text" id="subject" name="subject" value="{{ message.subject ?? '' }}" aria-invalid="false" required>
+										{{ message is defined and message ? errorList(message.getErrors('subject')) }}
+									</div>
+									<div class="form-group">
+										<label for="message">{{ 'Message' | translate }}</label>
+										<textarea name="message[body]" id="message" rows="10" aria-invalid="false" required>{{ message.message ?? '' }}</textarea>
+										{{ message is defined and message ? errorList(message.getErrors('message')) }}
+									</div>
+								</div>
+							</div>
+							<input class="hide" id="preferredKitten" name="preferredKitten" type="text">
+							<div class="form-group contact-form-submit row column">
+								{{ craft.recaptcha.render() }}
+								<button type="submit" data-text="Send" class="button">{{ 'Send Enquiry' | translate }}</button>
+								<div id="spinner" class="form-spinner spinner-loading"></div>
+							</div>
+						</form>
+					{% endif %}
+				</div>
+			</div>
+			<div class="columns medium-6 split-box-right split-page-bg"></div>
+		</section>
+	</main>
+{% endblock %}

@@ -1,0 +1,26 @@
+<footer id="footer" class="main-footer" itemscope itemtype="http://schema.org/WPFooter">
+	<p>&copy;&nbsp;{{ now|date('Y') }}&nbsp;{% if general.copyright is defined %}{{ general.copyright }}{% endif %}</p>
+	<nav class="footer-nav">
+		<ul class="align-center menu">
+			{% if socialMedia.facebookPage is defined %}
+				<li>
+					<a title="{{ 'Facebook' | translate }}" href="{{ socialMedia.facebookPage }}">
+						<svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
+					</a>
+				</li>
+			{% endif %}
+			{% if socialMedia.instagramUserName is defined %}
+				<li>
+					<a title="{{ 'Instagram' | translate }}" href="https://www.instagram.com/{{ socialMedia.instagramUserName }}">
+						<svg class="icon icon-instagram"><use xlink:href="#icon-instagram"></use></svg>
+					</a>
+				</li>
+			{% endif %}
+		</ul>
+	</nav>
+	<div class="scroll-up-container">
+		<a class="scroll-up" href="#top" data-smooth-scroll data-animation-duration="1000" data-animation-easing="swing" aria-label="{{ 'Back to Top' | translate }}" title="{{ 'Back to Top' | translate }}">
+			<svg class="icon icon-scroll-down"><use xlink:href="#icon-scroll-down"></use></svg>
+		</a>
+	</div>
+</footer>

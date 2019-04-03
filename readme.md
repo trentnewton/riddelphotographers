@@ -1,4 +1,4 @@
-# ZURB Template
+# ZURB WebApp Template
 
 [![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
 
@@ -12,14 +12,14 @@ This is the official ZURB Template for use with [Foundation for Sites](http://fo
 - Built-in BrowserSync server
 - For production builds:
   - CSS compression
-  - JavaScript compression
+  - JavaScript module bundling with webpack
   - Image compression
 
 ## Installation
 
 To use this template, your computer needs:
 
-- [NodeJS](https://nodejs.org/en/) (0.12 or greater)
+- [NodeJS](https://nodejs.org/en/) (Version 6 or greater recommended, tested with 6.11.4 and 8.12.0)
 - [Git](https://git-scm.com/)
 
 This template can be installed with the Foundation CLI, or downloaded and set up manually.
@@ -58,15 +58,13 @@ Then open the folder in your command line, and install the needed dependencies:
 
 ```bash
 cd projectname
-npm install
-bower install
+yarn
 ```
 
-Finally, run `npm start` to run Gulp. Your finished site will be created in a folder called `dist`, viewable at this URL:
+Finally, run `yarn start` to run Gulp. Your finished site will be created in a folder called `dist`, viewable at this URL:
 
 ```
 http://localhost:8000
 ```
 
-To create compressed, production-ready assets, run `npm run build`.
-# duckcreek-client
+To create compressed, production-ready assets, run `yarn run build`.

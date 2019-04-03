@@ -1,0 +1,21 @@
+<div class="gallery-main">
+{% set sets = craft.entries.relatedTo(category) %}
+
+{% set entries = sets.all() %}
+
+{% for entry in entries %}
+	<div class="gallery-item">
+		<a aria-label="{{ 'View' | translate }} {{ entry.title }}" title="{{ 'View' | translate }} {{ entry.title }}" href="{{ entry.url }}" class="grid-overlay-link">
+			{% if entry.coverImage is not null %}
+				{% for image in entry.coverImage.all() %}
+					<img src="{{ image.getUrl('coverImage') }}" alt="{{ entry.title }}" width="{{ image.width }}" height="{{ image.height }}">
+				{% endfor %}
+			{% else %}
+			{% endif %}
+			<div class="grid-overlay">
+				<h3 itemprop="headline">{{ entry.title }}</h3>
+			</div>
+		</a>
+	</div>
+{% endfor %}
+</div>
