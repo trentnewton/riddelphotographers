@@ -217,8 +217,7 @@ $('#ajax-contact').submit(function(ev) {
     $('#spinner').addClass('show');
 
     // Send it to the server
-    $.ajax({
-    	method: 'POST',
+    $.post({
         url: '/',
         dataType: 'json',
         data: $(this).serialize(),
