@@ -35,7 +35,7 @@
 						<form method="post" action="" accept-charset="UTF-8" id="ajax-contact">
 							{{ csrfInput() }}
 							<input type="hidden" name="action" value="contact-form/send">
-							{# <input type="hidden" name="redirect" value="{{ 'pages/contact/thanks'|hash }}"> #}
+							<input type="hidden" name="redirect" value="{{ 'pages/contact'|hash }}">
 							<div class="small-12" itemprop="text">
 								<p id="thanks" class="contact-form-success" style="display: none">
 									{{ 'Your message has been sent.' | translate }}
