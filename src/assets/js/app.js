@@ -211,32 +211,32 @@ $('#weddings').change(function () {
 
 // contact form ajax
 
-// $('#ajax-contact').submit(function(ev) {
-//     // Prevent the form from actually submitting
-//     ev.preventDefault();
-//     $('#spinner').addClass('show');
+$('#ajax-contact').submit(function(ev) {
+    // Prevent the form from actually submitting
+    ev.preventDefault();
+    $('#spinner').addClass('show');
 
-//     // Send it to the server
-//     $.post({
-//         url: '/',
-//         dataType: 'json',
-//         data: $(this).serialize(),
-//         success: function(response) {
-//             if (response.success) {
-//                 $('#thanks').fadeIn();
-//                 $('#error').fadeOut();
-//                 $('#spinner').removeClass('show');
-//                 $('#ajax-contact').each(function () {
-// 				this.reset();
-// 			});
-//             } else {
-//                 // response.error will be an object containing any validation errors that occurred, indexed by field name
-//                 // e.g. response.error.fromName => ['From Name is required']
-//                 // alert('An error occurred. Please try again.');
-//                 $('#error').fadeIn();
-// 				$('#thanks').fadeOut();
-// 				$('#spinner').removeClass('show');
-//             }
-//         }
-//     });
-// });
+    // Send it to the server
+    $.post({
+        url: '/',
+        dataType: 'json',
+        data: $(this).serialize(),
+        success: function(response) {
+            if (response.success) {
+                $('#thanks').fadeIn();
+                $('#error').fadeOut();
+                $('#spinner').removeClass('show');
+                $('#ajax-contact').each(function () {
+				this.reset();
+			});
+            } else {
+                // response.error will be an object containing any validation errors that occurred, indexed by field name
+                // e.g. response.error.fromName => ['From Name is required']
+                // alert('An error occurred. Please try again.');
+                $('#error').fadeIn();
+				$('#thanks').fadeOut();
+				$('#spinner').removeClass('show');
+            }
+        }
+    });
+});
