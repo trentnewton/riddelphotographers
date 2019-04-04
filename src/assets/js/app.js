@@ -227,8 +227,8 @@ $('#ajax-contact').submit(function(ev) {
                 $('#error').fadeOut();
                 $('#spinner').removeClass('show');
                 $('#ajax-contact').each(function () {
-				this.reset();
-			});
+					this.reset();
+				});
             } else {
                 // response.error will be an object containing any validation errors that occurred, indexed by field name
                 // e.g. response.error.fromName => ['From Name is required']
