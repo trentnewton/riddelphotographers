@@ -15,8 +15,10 @@
 
 User-agent: *
 Disallow: /admin/
-Disallow: /craft/
-Disallow: /*/*/content/*/lightbox/
+Disallow: /config/
+Disallow: /storage/
+Disallow: /modules/
+Disallow: /vendor/
 Crawl-delay: 10
 
 Disallow: /index.php
