@@ -9,16 +9,18 @@ package-lock.json
 .cache
 .idea
 
-config
+composer.json
+composer.lock
+config/
 craft
 craft.bat
-etc
-modules
-storage
-vendor
+etc/
+modules/
+storage/
+vendor/
 yarn.lock
-web/images
-web/imager
+web/images/
+web/imager/
 index.php
 readme.txt
 CHANGELOG.md
