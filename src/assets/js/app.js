@@ -220,7 +220,7 @@ $('#ajax-contact').submit(function(ev) {
     $.post({
         url: '/',
         dataType: 'json',
-        data: $(this).serialize(),
+        data: $('#ajax-contact').serialize(),
         success: function(response) {
             if (response.success) {
                 $('#thanks').fadeIn();
