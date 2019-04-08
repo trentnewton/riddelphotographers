@@ -220,7 +220,7 @@ $('#ajax-contact').submit(function(ev) {
     $.post({
         url: '/',
         dataType: 'json',
-        data: $('#ajax-contact').serialize(),
+        data: $(this).serialize(),
         success: function(response) {
             if (response.success) {
                 $('#thanks').fadeIn();
@@ -232,7 +232,6 @@ $('#ajax-contact').submit(function(ev) {
             } else {
                 // response.error will be an object containing any validation errors that occurred, indexed by field name
                 // e.g. response.error.fromName => ['From Name is required']
-                // alert('An error occurred. Please try again.');
                 $('#error').fadeIn();
 				$('#thanks').fadeOut();
 				$('#spinner').removeClass('show');
