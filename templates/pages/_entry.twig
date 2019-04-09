@@ -39,8 +39,13 @@
 								{{ csrfInput() }}
 							{% endnocache %}
 							<input type="hidden" name="action" value="contact-form/send">
-							{{ redirectInput('pages/contact') }}
+							{# {{ redirectInput('pages/contact') }} #}
 							<div class="small-12" itemprop="text">
+								{% if craft.app.session.hasFlash('notice') %}
+								    <p id="thanks" class="message notice">{{ craft.app.session.getFlash('notice') }}</p>
+								{% elseif craft.app.session.hasFlash('error') %}
+								    <p id="error" class="message error">{{ craft.app.session.getFlash('error') }}</p>
+								{% endif %}
 								<p id="thanks" class="contact-form-success" style="display: none">
 									{{ 'Your message has been sent.' | translate }}
 								</p>
