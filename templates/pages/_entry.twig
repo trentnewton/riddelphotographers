@@ -107,8 +107,7 @@
 							</div>
 							<input class="hide" id="preferredKitten" name="preferredKitten" type="text">
 							<div class="form-group contact-form-submit row column">
-								{# {{ craft.recaptcha.render() }} #}
-								{# {{ craft.contactFormExtensions.recaptcha | raw }} #}
+								{{ craft.recaptcha.render() }}
 								<button type="submit" data-text="Send" class="button">{{ 'Send Enquiry' | translate }}</button>
 								<div id="spinner" class="form-spinner spinner-loading"></div>
 							</div>
