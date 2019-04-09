@@ -218,7 +218,7 @@ $('#ajax-contact').submit(function(ev) {
 
     // Send it to the server
     $.post({
-        url: '/',
+        url: '',
         dataType: 'json',
         data: $(this).serialize(),
         success: function(response) {
