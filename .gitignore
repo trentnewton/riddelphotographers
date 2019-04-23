@@ -8,10 +8,7 @@ package-lock.json
 *.swp
 .cache
 .idea
-
-composer.json
-composer.lock
-config/
+config/*
 craft
 craft.bat
 etc/
@@ -29,3 +26,4 @@ htaccess
 web.config
 *.sublime-project
 *.sublime-workspace
+!config/contact-form-validation.php
