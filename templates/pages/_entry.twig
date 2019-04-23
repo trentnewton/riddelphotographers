@@ -112,11 +112,15 @@
 							</div>
 							<input class="hide" id="preferredKitten" name="preferredKitten" type="text">
 							<div class="form-group contact-form-submit row column">
-								{# {% nocache %}{{ craft.contactFormExtensions.recaptcha | raw }}{% endnocache %} #}
+                            	<div id="recaptcha" class="g-recaptcha" data-sitekey="6Leo7h4UAAAAAGMgVWIFiK2h8EiZ8bvtVpg6_0Wv"></div>
+                            	<div class="help-block with-errors">
+                                	<span class="msg-error error"></span>
+                            	</div>
 								<button type="submit" data-text="Send" class="button">{{ 'Send Enquiry' | translate }}</button>
 								<div id="spinner" class="form-spinner spinner-loading"></div>
 							</div>
 						</form>
+						<script src='https://www.google.com/recaptcha/api.js'></script>
 					{% endif %}
 				</div>
 			</div>
