@@ -1,55 +1,56 @@
 {% set title = entry.title %}
 {% set description = entry.summary|striptags %}
 {% set siteRoot = '/' %}
-{{ block('content')|replace({'${csrfInput}': csrfInput()})|raw }}
-
-{% cache %}
-	{% minify %}
-		<!DOCTYPE html>
-		<html itemscope itemtype="http://schema.org/WebPage">
-			<head>
-				{% include 'partials/meta.twig' %}
-	{% endminify %}
-				<style type="text/css">
-					{% include 'assets/css/critical.css' %}
-					{% block styles %}
-					{% endblock %}
-				</style>
-	{% minify %}
-			</head>
-			<body>
-				{% include 'partials/svg.twig' %}
-				<div id="top" class="off-canvas-wrapper page-load">
-					<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-						{% include 'partials/off-canvas.twig' %}
-						<div class="off-canvas-content" data-off-canvas-content>
-							{% include 'partials/home-header.twig' %}
-							{% block content %}
-								<p>If you see me, you haven’t set your <code>{% verbatim %}{% block content %}…{% endblock %}{% endverbatim %}</code> yet.</p>
-								<p>See Twig’s <a href="http://twig.sensiolabs.org/doc/templates.html#template-inheritance">Template Inheritance</a> documentation for an explanation.</p>
-							{% endblock %}
-							{% include 'partials/footer.twig' %}
+{% set myContent %}
+	{% cache %}
+		{% minify %}
+			<!DOCTYPE html>
+			<html itemscope itemtype="http://schema.org/WebPage">
+				<head>
+					{% include 'partials/meta.twig' %}
+		{% endminify %}
+					<style type="text/css">
+						{% include 'assets/css/critical.css' %}
+						{% block styles %}
+						{% endblock %}
+					</style>
+		{% minify %}
+				</head>
+				<body>
+					{% include 'partials/svg.twig' %}
+					<div id="top" class="off-canvas-wrapper page-load">
+						<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+							{% include 'partials/off-canvas.twig' %}
+							<div class="off-canvas-content" data-off-canvas-content>
+								{% include 'partials/home-header.twig' %}
+								{% block content %}
+									<p>If you see me, you haven’t set your <code>{% verbatim %}{% block content %}…{% endblock %}{% endverbatim %}</code> yet.</p>
+									<p>See Twig’s <a href="http://twig.sensiolabs.org/doc/templates.html#template-inheritance">Template Inheritance</a> documentation for an explanation.</p>
+								{% endblock %}
+								{% include 'partials/footer.twig' %}
+							</div>
 						</div>
 					</div>
-				</div>
 
-				{# Load app.css when page is fully loaded #}
-				<script>
-					{# generate css after the browser is finished loading #}
-					var cb = function () {
-						var l = document.createElement('link'); l.rel = 'stylesheet';
-						l.href = '{{ siteRoot }}dist/assets/css/app.css';
-						var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
-					};
-					var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-						webkitRequestAnimationFrame || msRequestAnimationFrame;
-					if (raf) raf(cb);
-					else window.addEventListener('load', cb);
-				</script>
+					{# Load app.css when page is fully loaded #}
+					<script>
+						{# generate css after the browser is finished loading #}
+						var cb = function () {
+							var l = document.createElement('link'); l.rel = 'stylesheet';
+							l.href = '{{ siteRoot }}dist/assets/css/app.css';
+							var h = document.getElementsByTagName('head')[0]; h.parentNode.insertBefore(l, h);
+						};
+						var raf = requestAnimationFrame || mozRequestAnimationFrame ||
+							webkitRequestAnimationFrame || msRequestAnimationFrame;
+						if (raf) raf(cb);
+						else window.addEventListener('load', cb);
+					</script>
 
-				{# Main site JS #}
-				<script src="{{ siteRoot }}dist/assets/js/app.js" async defer></script>
-			</body>
-		</html>
-	{% endminify %}
-{% endcache %}
+					{# Main site JS #}
+					<script src="{{ siteRoot }}dist/assets/js/app.js" async defer></script>
+				</body>
+			</html>
+		{% endminify %}
+	{% endcache %}
+{% endset %}
+{{ myContent|replace({'%%MY_CSRF%%': csrfInput()})|raw }}

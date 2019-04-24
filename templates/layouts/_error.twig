@@ -1,6 +1,5 @@
 {% set description = entry.summary %}
 {% set siteRoot = '/' %}
-{{ block('content')|replace({'${csrfInput}': csrfInput()})|raw }}
 
 {% cache %}
 	{% minify %}
