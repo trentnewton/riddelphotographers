@@ -35,9 +35,7 @@
 						{% from _self import errorList %}
 
 						<form method="post" action="" accept-charset="UTF-8" id="ajax-contact">
-							{% nocache %}
-								{{ csrfInput() }}
-							{% endnocache %}
+							${csrfInput}
 							<input type="hidden" name="action" value="contact-form/send">
 							{# {{ redirectInput('pages/contact') }} #}
 							<div class="small-12" itemprop="text">
